@@ -1,0 +1,17 @@
+body { 
+	background-color: #FFFFFF; 
+}
+input select{
+	background-clip: #fff;
+} 
+.apptip {
+	width: 100%;
+    height: 1.2rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.12rem;
+    padding: 0.15rem 0;
+    color: #333333;
+    margin-bottom: 0.1rem;
+}
+ 

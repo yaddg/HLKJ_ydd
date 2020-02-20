@@ -1,0 +1,131 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>新手训练营</title>
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="../../js/common.js"></script>
+		<link rel="stylesheet" href="../../css/common.css">
+		<!--私有-->
+		<link href="css/indexKnow.css" rel="stylesheet" />
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', '84c70e0abc352f90', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+
+			utq('track', 'Download', '107202');
+		</script>
+	</head>
+
+	<body>
+		<div class="headTop"></div>
+		<div class="indexKnowCard01 indexKnowCardbg">
+			<div>
+				<p onclick="knowTp()">建仓操作流程&nbsp;<img src="http://qiniuapp.mqkji.cn/indexKnowIcon.png" /></p>
+			</div>
+			<div>唯一的操作：买涨/买跌</div>
+			<div>
+				<p>建仓（即下单成功）之后，接下来的点位相比您买入的点位<span>上升即为涨，下降即为跌；</span></p>
+				<p>您可随时建仓或平仓（即卖出），平仓后金额立到余额，资金0延迟安全无忧！</p>
+				<img class="indexKnowCard01Img" src="http://qiniuapp.mqkji.cn/indexKnowTab01.png" />
+				<p class="knowTip">注：休市期间无法进行建仓或平仓操作哦</p>
+			</div>
+			<div class="knowSwitch01" onclick="knowSwitch(1)">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowDown.png" />
+			</div>
+		</div>
+		<div class="indexKnowCard02 indexKnowCardbg">
+			<div></div>
+			<div>
+				<img src="http://qiniuapp.mqkji.cn/indexKnowBg02.png" />
+			</div>
+		</div>
+		<div class="indexKnowCard03 indexKnowCardbg">
+			<div></div>
+			<div class="indexKnowCard03Cen">
+				<div>
+					<p>单品种单规格</p>
+					<div>最多可同时持仓30手</div>
+				</div>
+				<div>
+					<p>一单</p>
+					<div>最大能买5000元</div>
+				</div>
+			</div>
+			<div>
+				<p>根据下面的价格表，购买的产品不同，浮动<span>1</span>点位，您将盈利/亏损对应的金额； </p>
+				<p>有时行情走势波动较大，您可通过<span>止盈止损</span>进行风险控制，选择好平仓盈利/亏损的金额，当到达该金额时，该笔建仓会自动平仓，以保证您的利益。</p>
+				<img class="indexKnowCard01Img" src="http://qiniuapp.mqkji.cn/indexKnowTab02.png" />
+			</div>
+			<div class="knowSwitch03" onclick="knowSwitch(3)">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowDown.png" />
+			</div>
+		</div>
+		<div class="indexKnowCard04 indexKnowCardbg">
+			<div></div>
+			<div class="indexKnowCard04Cen">
+				<div></div>
+				<div>
+					<p><span>波动是最大的，</span>也是最容易频繁 出现单子盈利翻倍的情况 </p>
+				</div>
+			</div>
+			<div>
+				重要时间段：<span>9点到10点左右；13点到17点 左右；19点到收盘；</span>
+			</div>
+			<div class="indexKnowCard04CenT">
+				<div></div>
+				<div>
+					<p>最容易盈利翻倍的时间段是 <span>20:30到收盘；</span></p>
+				</div>
+			</div>
+			<div class="knowSwitch04" onclick="knowSwitch(4)">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowDown.png" />
+			</div>
+		</div>
+		<div class="indexKnowCard05 indexKnowCardbg">
+			<div></div>
+			<div class="indexKnowCard05O">
+				<div>1.手续费</div>
+				<p>每个产品在平仓的时候都会收取手续费，根据产品的规格不同，收取的费用也会不同（代金券交易时不收取任何手续费）。</p>
+				<img src="http://qiniuapp.mqkji.cn/indexKnowTab04.png" />
+			</div>
+			<div class="indexKnowCard05T">
+				<div>2.持仓过夜费</div>
+				<p>持仓过夜即建仓当天没平仓，交易所将会收取夜晚持仓的费用，每个产品不同收取的费用也会不同（代金券到达凌晨休市时间会自动平仓无法过夜）。</p>
+				<img src="http://qiniuapp.mqkji.cn/indexKnowTab03.png" />
+			</div>
+			<div class="indexKnowCard05Th">
+				<div>3.提现费</div>
+				<p>充值无需手续费，即时到账，最低充值金额<span>10</span>元；出金<span>300</span>或以下的收<span>3</span>元/笔，超过300的收取提现金额的<span>1%</span>费用（30元封顶），最小提现金额需<span>≧50</span>元。
+					<br/>（工作日8:00-12:00申请提现当天到账，其他时间申请提现T+1到账）</p>
+			</div>
+			<div class="knowSwitch05" onclick="knowSwitch(5)">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowDown.png" />
+			</div>
+		</div>
+		<div class="indexKnowCard06 indexKnowCardbg">
+			<div></div>
+			<div>
+				<p>K线不是线，它是一种能够清晰准确表达股票价格变化信息的神奇图形。K线将一只股票的开盘价、收盘价、最高价、最低价，全部融合在一个简洁直观的图形里，让投资者一看就能明白。</p>
+			</div>
+			<div></div>
+			<div class="knowSwitch06" onclick="knowSwitch(6)">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowDown.png" />
+			</div>
+		</div>
+		<script src="js/indexKnow.js" type="text/javascript"></script>
+	</body>
+
+</html>

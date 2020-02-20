@@ -1,0 +1,203 @@
+body{
+	background-color: #FFFFFF;
+	display: none;
+}
+p{
+	margin: 0;
+}
+.icon { 
+     font-size: 0.16rem; 
+}
+.headTop{
+	width: 100%;
+	height: 0.85rem;
+	background-color: #1C1C1C;
+}
+.headTion{
+	position: absolute;
+	width: 100%;
+}
+.headCenter{
+	/*position: absolute;*/
+    width: 100%;
+    height: 1.65rem;
+    /*margin-left: 5%;*/
+    /*margin-top: -1.45rem;*/
+    border-radius: 5px;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallHead.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.headBot{
+	width: 100%;
+	/*height: 1.3rem;*/
+	height: 0.7rem;
+	background-color: #FFFFFF;
+	padding-top: 0.56rem;
+}
+.headCenterO{
+	width: 100%;
+	/*height: 0.75rem;
+	padding-left: 6%;
+	padding-top: 0.15rem;*/
+}
+.headCenterT{
+	width: 100%;
+	height: 0.4rem;
+	line-height:0.4rem;
+	color: #333333;
+	font-size: 0.12rem;
+	text-align: center;
+	/*padding-right: 0.12rem;*/
+}
+.headCenterO>div:first-child{
+	width: 0.68rem;
+	height: 0.78rem;
+	margin: 0 auto;
+	padding-top: 0.1rem;
+	/*float: left;*/
+}
+.headCenterO>div:nth-child(2){
+	
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.6rem;
+	/*float: right;*/
+	/*line-height: 0.25rem;*/
+	/*color: #FFFFFF;*/
+	color: #333333;
+	font-size: 0.16rem;
+	text-align: center;
+	/*padding-top: 0.15rem;*/
+	
+}
+.headCenterO>div:nth-child(3){
+	height: 0.6rem;
+	width: 60%;
+	/*float: right;*/
+	line-height: 0.25rem;
+	/*color: #FFFFFF;*/
+	color: #FFFEFE;
+	font-size: 0.14rem;
+	padding-top: 0.1rem;
+	letter-spacing: 2px;
+}
+.headCenterT span{
+	color: #333333;
+	font-size: 0.18rem;
+}
+
+.headCenterOt{
+	color: #FFFFFF;
+	font-size: 0.12rem;
+	width: 0.76rem;
+	height: 0.2rem;
+	line-height:0.2rem;
+	float: right;
+	background-color: #EDC278;
+	border-radius: 12px 0 0 12px;
+	padding-right: 0.05rem;
+}
+/*切换展示*/
+.integVoucher {
+	width: 100%;
+	height: 0.44rem;
+	background-color: #fff;
+	border-bottom: 1px solid #F9F9F9;
+	text-align: center; 
+	font-size: 0.16rem;
+	/*margin-top: -0.2rem;*/
+	margin-bottom: 0.05rem;
+}
+
+.integVoucher div:first-child {
+	width: 49%;
+	height: 0.44rem;
+	float: left; 
+}
+.integVoucher div span{ 
+	
+    display: inline-block;
+    height: 60%;
+    /*font-weight: bold;*/
+    margin-top: 0.14rem;
+} 
+
+.integVoucher div:nth-child(2) {
+	width: 50%;
+	height: 0.44rem; 
+	float: right;
+}
+.mycol {
+	color: #333333;
+	font-weight: bold;
+}
+
+.othcol {
+	color: #666666;
+}
+.mycols{
+	border-bottom: 2px solid #FFC20B;
+}
+.integVoucherO{
+	width: 100%; 
+}
+.integDataTxtP{
+	text-align: center;
+	font-size: 0.12rem;
+	color: #8F8F8F;
+}
+
+.integVoucherT{
+	width: 100%;
+}
+.integVoucherE{
+	width: 100%;
+}
+.integVoucherE>div{
+	width: 1.3rem;
+	height: 1.11rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	background-image: url(../../images/socpersEmpty.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.integVoucherE>p{
+	text-align: center;
+	color: #666666;
+	font-size: 0.15rem;
+	line-height: 0.4rem;
+}
+li{
+	width: 100%;
+	height: 0.68rem;
+	padding: 0 0.15rem;
+	border-bottom: 1px solid #F9F9F9;
+}
+li>div:first-child{
+	float: left;
+	width: 66%;
+	height: 0.68rem;
+	line-height: 0.25rem;
+    padding-top: 0.1rem;
+}
+li>div:first-child>p:first-child{
+	color: #333333;
+	font-size: 0.15rem;
+	font-weight: bold;
+}
+li>div:first-child>p:nth-child(2){
+	color: #9A9A9A;
+	font-size: 0.12rem;
+}
+li>div:nth-child(2){
+	float: right;
+	width: 33%;
+	height: 0.68rem;
+	text-align: right;
+	line-height: 0.68rem;
+	color: #FF424A;
+}

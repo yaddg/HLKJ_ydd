@@ -1,0 +1,284 @@
+/*html{
+	font-size: 100px;
+}*/
+
+body {
+	font-size: 0;
+}
+
+.conetnt {
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+	padding-bottom: 0.12rem;
+	background: -webkit-linear-gradient(#F96B53, #FA4443);
+	background: -o-linear-gradient(#F96B53, #FA4443);
+	background: -moz-linear-gradient(#F96B53, #FA4443);
+	background: linear-gradient(#F96B53, #FA4443);
+	/*
+    height: 14.35rem;
+    background-image: url(http://qiniuapp.hailangtaojin.com/couponAd01Bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;*/
+}
+
+.conetnt img {
+	width: 100%;
+}
+.noviceWelfareDstjTip{
+	position: fixed;
+	width: 0.64rem;
+	height: 0.3rem;
+	right: 0;
+	top: 0.12rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/noviceWelfareDstjTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+.noviceWelfareDstjIp{
+	position: fixed;
+	width: 0.64rem;
+	height: 0.3rem;
+	right: 0;
+	top: 0.58rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/noviceWelfareDstjIp.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+/*蒙版*/
+
+.receiveBox {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+    background: rgba(0,0,0,0.4);
+	z-index: 100;
+}
+.mySuper{
+	position: absolute;
+    width: 100%;
+    height: 0.28rem;
+}
+.mySupernatantIonic{
+	width: 0.14rem;
+    height: 0.14rem;
+    margin-left: 2%;
+    margin-top: 0.14rem;
+    background-image: url(https://jpg.hailangkj.cn/octoberScrClose.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.mySupernatantTxt{
+	width: 92%;
+	height: 62%;
+    margin: 0 auto;
+    font-size: 0.14rem;
+    color: #333333;
+    /* background-color: #FFFFFF; */
+    /*position: relative;*/
+    margin-top: 0.42rem;
+    /*top: 0.42rem;*/
+    background: rgba(255,255,255,1);
+    border-radius: 5px;
+    text-align: left;
+    padding-top: 0.24rem;
+    padding-bottom: 0.8rem;
+     overflow:scroll;
+}
+.mySupernatantTxt p:first-child{
+	color: #E83E38;
+	font-size: 0.18rem;
+	font-weight: bold;
+	text-align: center;
+}
+.mySupernatantTxt p:nth-child(2){ 
+	font-size: 0.12rem;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.mySupernatantTxt p{
+	width: 90%;
+	margin: 0 auto;
+	line-height: 0.24rem;
+}
+.mySupernatantTxt span{
+	font-size: 0.12rem;
+}
+.boxbg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBgs {
+	position: absolute;
+	top: -0.52rem;
+	/* left: 5px; */
+	height: 140px;
+	width: 100%;
+	/* border-radius: 5px; */
+	/*background-color: #FFF;*/
+	text-align: center;
+	display: none;
+}
+
+.receiveButImgs {
+	position: absolute;
+	bottom: 15%;
+	height: 50px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.optionBg {
+	position: absolute;
+	top: 0px;
+	/* left: 5px; */
+	height: 100%;
+	width: 100%;
+	/* border-radius: 5px; */
+	/*background-color: #FFF;*/
+	text-align: center;
+}
+
+#optionTitle {
+	height: 0.35rem;
+	position: absolute;
+	left: 0.48rem;
+	top: 0.05rem;
+	position: absolute;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+}
+
+
+/*主页*/
+
+.RegisterThBut {
+	width: 94%;
+	height: 1rem;
+	/*line-height: 0.6rem;*/
+	margin: 0 auto;
+	margin-top: 0.12rem;
+	padding-top: 0.42rem;
+	padding-bottom: 0.2rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/couponDstj0829CardBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+#ul1 {
+	width: 100%;
+	height: 1rem;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+}
+
+#ul1 li {
+	width: 100%;
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.couponFiTSp01 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp02 {
+	color: #FFCD80;
+	font-weight: bold;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp03 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp04 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.RegisterTxt {
+	width: 100%;
+	text-align: center;
+	color: #E83531;
+	font-size: 0.14rem;
+}
+
+.RegisterAdBut {
+	position: absolute;
+	top: 12.76rem;
+	left: 6%;
+	width: 88%;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.17rem;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 21px;
+	background: -webkit-linear-gradient(#FECC7F, #FFA320);
+	background: -o-linear-gradient(#FECC7F, #FFA320);
+	background: -moz-linear-gradient(#FECC7F, #FFA320);
+	background: linear-gradient(#FECC7F, #FFA320);
+}
+
+.RegisterAdTip {
+	/* position: absolute; */
+    width: 100%;
+    /* bottom: 1%; */
+    padding: 0.1rem 0;
+    line-height: 0.16rem;
+    text-align: center;
+    font-size: 0.08rem;
+    padding-bottom: 0.88rem;
+    color: #E13724;
+    background-color: #ffffff;
+    /* opacity: 0.8; */
+}
+
+.noviceWelfareDstjBut {
+	position: fixed;
+    bottom: 0.18rem;
+    width: 96%;
+    left: 2%;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    /* margin: 0 auto; */
+    color: #7E2C03;
+    font-size: 0.18rem;
+    /* margin-top: 0.16rem; */
+    font-weight: bold;
+    z-index: 99;
+    background-image: url(http://qiniuapp.hailangkeji.com/couponDstj0829But.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}

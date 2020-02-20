@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>海浪淘金 </title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/jquery.min.js"></script>
+<script  type="text/javascript">
+	
+	var domainUrl = 'http://d.lcc8.com/hltj-api';      //生产环境
+	//var domainUrl = "http://192.168.8.101:8886/hltj-api";//本地环境
+	var addVisitRecordUrl = "/api/aitaoec/addVisitRecord"; //添加访问记录地址
+	var rqstObj = null;  //参数
+	var channel = null;  //参数 渠道
+	function hongbao2(){
+		document.getElementById('petalbox').innerHTML = "";
+		var hongbaoBgDiv = document.getElementById('hongbaoBgDiv');
+		hongbaoBgDiv.style.display = 'block';
+		var htmlWidth = document.documentElement.clientWidth;
+		var htmlHeight = document.documentElement.clientHeight
+		/*alert("htmlWidth"+htmlWidth);
+		alert("htmlHeight"+htmlHeight);*/
+		var hongbaoBgDivHeight = hongbaoBgDiv.offsetHeight;
+		var hongbaoBgDivWidth = hongbaoBgDiv.offsetWidth;
+		/*alert("hongbaoBgDivHeight"+hongbaoBgDivHeight);
+		alert("hongbaoBgDivWidth"+hongbaoBgDivWidth);*/
+		
+		var top  = (htmlHeight - hongbaoBgDivHeight)/2;
+		var left = (htmlWidth - hongbaoBgDivWidth)/2;
+		/*alert("top"+top);
+		alert("left"+left);*/
+		hongbaoBgDiv.style.top = top+"px";
+		hongbaoBgDiv.style.left = left+"px";
+		
+		var hongbaoText = document.getElementById('hongbaoText');
+		hongbaoText.style.display = 'block';
+		hongbaoText.style.top = (top - 70)+"px";
+		hongbaoText.style.left = left+"px";
+		
+		
+		var receiveDiv = document.getElementById('receive_div');
+		receiveDiv.style.display = 'block';
+		var hongbaoDiv = document.getElementById('hongbao_div');
+		hongbaoDiv.style.display = 'block';
+	}
+	
+	var invitecode = null;
+	var downloadUrl = null;
+	var system ={
+		win : false,
+		mac : false,
+		xll : false
+	};
+
+	//检测平台
+
+	var p = navigator.platform;
+
+	system.win = p.indexOf("Win") == 0;
+
+	system.mac = p.indexOf("Mac") == 0;
+
+	system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+
+	//跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+
+	
+	function download(){
+		if(system.win||system.mac||system.xll){
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregisterpc.html?invitecode="+invitecode;
+				urlStr += "&channel="+channel;
+			 window.location.href= urlStr;
+		}else{
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregister.html?invitecode="+invitecode;
+				urlStr += "&channel="+channel;
+			 window.location.href= urlStr;
+		}
+	
+		
+		// window.location.href="http://qr32.cn/BwEdOA";
+	}
+	
+	
+	//访问量记录
+	function addVisitRecord(){
+		channel = rqstObj.channel;
+		$.ajax({
+			url: domainUrl + addVisitRecordUrl,
+			data:{channel:channel},
+			type: "GET",
+			dataType:'json',
+			success:function(data,status, xhr){
+			
+			},
+			error:function(er){
+				
+			}
+		});
+	}
+	window.onload = function(){
+		rqstObj = getTheRequestParams();
+		//alert(rqstObj.invitecode);
+		invitecode = rqstObj.invitecode;  //获取邀请码
+		//downloadUrl = rqstObj.downloadUrl;  //app下载链接
+		//addVisitRecord();
+		//download();
+	}
+	
+	function getTheRequestParams(){
+		var url = location.search; //获取url中"?"符后的字串 
+		var theRequest = new Object();
+		if (url.indexOf("?") != -1) {
+			var str = url.substr(1);
+			strs = str.split("&");
+			for(var i = 0; i < strs.length; i ++) {
+				theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+			}
+		} 
+		return theRequest;
+	}
+	
+</script>
+<style>
+	.receive_div{
+		display:none;
+		position:fixed;
+		top:0px;
+		left:0px;
+		height:100%;
+		width:100%;
+		background-color:#000000;
+		opacity:0.7;
+		z-index:99px;
+	}
+	.hongbao_div{
+	  display:none;
+	  position: relative;
+      top: 45%;
+      transform: translateY(-50%);
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:200px;
+	  height:200px;
+	  /*background-image:url(../../images/hongbaoBg.png);*/
+	  background-repeat:no-repeat;
+	  background-position:0px 0px;
+	  background-size:100%;
+	  z-index:999px;
+	}
+	.hongbaoBut{
+		position: absolute;
+        left:0px;
+		bottom:0px;
+		width:100%;
+		font-size:0px;
+		margin-bottom:10px;
+		text-align:center;
+	}
+	.hongbaoBut img{
+		width:80%;
+	}
+	.hongbaoDesc{
+	  position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:100px;
+	  font-size:20px;
+	  line-height:20px;
+	  height:20px;
+	  color:rgb(255,224,0);
+	  text-align:center;
+	}
+	
+	
+	.hongbaoBgDiv{
+	  display:none;
+	  position: relative;
+	  width:60%;
+	  z-index:99px;
+	  font-size:0px;
+	}
+	.hongbaoBgDiv img{
+		width:100%;
+	}
+	
+	
+	
+	.hongbaoText{
+		display:none;
+		position: absolute;
+		width:60%;
+		z-index:100px;
+	}
+	.hongbaoText_top{
+	    text-align:center;
+		width:100%;
+		height:50px;
+		font-size:30px;
+		line-height:50px;
+		color:#FFF;
+		
+	}
+	.hongbaoText_bottom{
+	    text-align:center;
+		width:100%;
+		height:16px;
+		font-size:16px;
+		line-height:16px;
+		color:#FFF;
+	}
+	
+</style>
+</head>
+<body>
+
+<div id="petalbox" ></div>
+<!--<div style="background-color:#000000; height:100px; width:100%; z-index: 9999" onclick="hongbao2()"  ></div>-->
+<!--<script src="hb.js"></script>-->
+<div id="receive_div" class="receive_div" ></div>
+
+<!--<div id="hongbao_div" class="hongbao_div" >
+	<div></div>
+	<div class="hongbaoDesc" >9元</div>
+	<div  class="hongbaoBut" >
+		<img src="../images/hongbaoBut.png" />
+	</div>
+</div>-->
+<div id="hongbaoText" class="hongbaoText" >
+	<div class="hongbaoText_top" >恭喜您</div>
+	<div class="hongbaoText_bottom" >获得8元海浪淘金现金红包</div>
+</div>
+<div id="hongbaoBgDiv" class="hongbaoBgDiv" >
+	<img  src="../../images/hongbaoBg.png" onclick="download()"/>
+</div>
+
+</body>
+</html>
+

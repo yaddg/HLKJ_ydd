@@ -1,0 +1,102 @@
+body {
+	background-image: url(http://qiniuapp.hailangtaojin.com/couponAdBg05.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.receiveButImg {
+	    position: absolute;
+    top: 48%;
+    height: 80px;
+    width: 100%;
+    overflow: hidden; 
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF; 
+    font-size: 12px;
+}
+ul{
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;  
+    }
+ul li{
+      list-style-type:none;
+      line-height:30px; 
+      height:30px;
+      width:100%;
+    }
+p{
+    text-align:center;
+  }
+.receiveButImgs {
+	position: absolute;
+	bottom: 20%;
+	height: 50px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.receiveBox {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+.boxbg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBg {
+    position: absolute;
+    top: 0px;
+    height: 140px;
+    width: 100%; 
+    text-align: center;
+}
+
+#optionTitle {
+	height: 35px;
+    position: absolute;
+    left: 48px;
+    top: 10px;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 16px;
+	left: 70px;
+	height: 30px;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	height: 30px;
+}
+.receiveButtom{
+	position: absolute;
+	width: 100%;
+	bottom: 1%;	
+	/*padding: 0.2rem 0;*/
+	text-align: center;
+	font-size: 0.1rem;
+	color: #FFFFFF;
+	/*border: 1px solid red;*/
+	margin-left: auto;
+	margin-right: auto;
+}

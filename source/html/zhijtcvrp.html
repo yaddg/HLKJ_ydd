@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金 </title>
+		<!--<meta name="author" content="">-->
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+		<script src="http://qiniuapp.hailangtaojin.com/md5.js"></script>
+		<!--私有-->
+		<link rel="stylesheet" href="../css/cvrp.css" />
+
+	</head>
+
+	<body>
+
+		<div id="cvrpBg" class="cvrpBg"> </div>
+		<div id="cvrpContent" class="cvrpContent">
+			<span style="color: #FF0000;">var file = fso.GetFile(filepath);</span>
+			<h2 style="text-align:center;">大圣淘金个人隐私声明</h2>
+			<h3>一、隐私声明</h3>
+			<p>大圣淘金隐私权保护声明是本应该软件保护用户个人隐私的承诺。鉴于网络的特性，本应该软件将无可避免地与您产生直接或间接的互动关系，故特此说明本应该软件对用户个人信息的收集、使用和保护政策，请您务必仔细阅读：</p>
+			<p>1、 使用地理位置</p>
+			<p>我们将通过您的地理地址来收集您的账号登录位置，确保您账户的安全性，防止异步登录;</p>
+			<p>2、 个人资料</p>
+			<p>当您在大圣淘金进行正常的充值、提现操作时，为了保证账户的安全和确保是本人操作，本应用软件需要进行实名认证。</p>
+			<p>这些个人资料包括：</p>
+			<p>(1) 手机号码</p>
+			<p>(2) 银行卡号</p>
+			<p>(3) 身份证号码</p>
+			<p>请了解，在未经您同意及确认之前，本应用软件不会将您所提供的资料利用于其它商业目的（本应用软件用于改善、提升服务质量除外）。唯按下列第6条规定应政府及法律要求披露时不在此限。</p>
+			<p>3、 信息安全</p>
+			<p>本应用软件将对您所提供的资料进行严格的管理及保护，本应用软件将使用相应的技术，防止您的个人资料丢失、被盗用或遭篡改。</p>
+			<p>4、 用户权利</p>
+			<p>您对于自己的个人资料享有以下权利：</p>
+			<p> （1） 随时查询及请求阅览；</p>
+			<p> （2） 随时请求补充或更正；</p>
+			<p> （3）随时请求删除；</p>
+
+			<p>5、 限制利用原则本应用软件唯在符合下列条件之一，方对收集之个人资料进行必要范围以外之利用：</p>
+			<p>（1） 已取得您的书面同意；</p>
+			<p>（2）为免除您在生命、身体或财产方面之急迫危险；</p>
+			<p>（3） 为防止他人权益之重大危害；</p>
+			<p>（4）为增进公共利益，且无害于您的重大利益。</p>
+			<p>6、 个人资料</p>
+			<p>个人资料之披露 当政府机关依照法定程序要求本网站披露个人资料时，本应用软件将根据执法单位之要求或为公共安全之目的提供个人资料。在此情况下之任何披露，本应用软件均得免责。</p>
+			<p>7、 免责 除上述第6条规定属免责外，出现下列情况时本应用软件亦毋需承担任何责任：</p>
+			<p>（1）由于您将用户密码告知他人或与他人共享帐户，由此导致的任何个人资料泄露。</p>
+
+			<p>8、任何由于计算机2000年问题、黑客政击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等。</p>
+			<p>本应用之保护隐私声明的修改及更新权均属于大圣淘金。</p>
+		</div>
+		</div>
+		<script>
+			var  filepath = "D:\海浪科技\BaiduNetdiskDownload\125555.txt";        
+			var  fso = new  ActiveXObject("Scripting.FileSystemObject");                
+			dispay("DateCreated:" + file.DateCreated);        
+			dispay("DateLastAccessed:" + file.DateLastAccessed);        
+			dispay("DateLastModified:" + file.DateLastModified);        
+			dispay("Drive:" + file.Drive);        
+			dispay("Name:" + file.Name);        
+			dispay("ParentFolder:" + file.ParentFolder);        
+			dispay("Path:" + file.Path);        
+			dispay("ShortName:" + file.ShortName);        
+			dispay("ShortPath:" + file.ShortPath);        
+			dispay("Size:" + file.Size);        
+			dispay("Type:" + file.Type);                         
+			function  dispay(value) {            
+				document.write(value + "<br/>");        
+			}
+		</script>
+
+	</body>
+
+</html>

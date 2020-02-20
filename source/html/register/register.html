@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>海浪淘金 </title>
+<script src="../../js/jquery.min.js"></script>
+<style>
+	
+</style>
+<script  type="text/javascript">
+
+
+	
+	var rqstObj = null;  //参数
+	var channel = null;  //参数 渠道
+	var set_cookie = null;
+
+	var system ={
+		win : false,
+		mac : false,
+		xll : false
+	};
+
+	//检测平台
+
+	var p = navigator.platform;
+
+	system.win = p.indexOf("Win") == 0;
+
+	system.mac = p.indexOf("Mac") == 0;
+
+	system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+
+	//跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+
+	
+	function download(){
+		if(system.win||system.mac||system.xll){
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregisterpc.html?invitecode="+rqstObj.invitecode;
+				urlStr += "&channel="+rqstObj.channel;
+			 window.location.href= urlStr;
+		}else{
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregister.html?invitecode="+rqstObj.invitecode;
+				urlStr += "&channel="+rqstObj.channel;
+			 window.location.href= urlStr;
+		}
+	
+		
+		// window.location.href="http://qr32.cn/BwEdOA";
+	}
+	window.onload = function(){
+		rqstObj = getTheRequestParams();
+		download();
+	}
+	
+	
+	
+	function getTheRequestParams(){
+		var url = location.search; //获取url中"?"符后的字串 
+		var theRequest = new Object();
+		if (url.indexOf("?") != -1) {
+			var str = url.substr(1);
+			strs = str.split("&");
+			for(var i = 0; i < strs.length; i ++) {
+				theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+			}
+		} 
+		return theRequest;
+	}
+</script>
+</head>
+<body>
+	
+</body>
+</html>
+

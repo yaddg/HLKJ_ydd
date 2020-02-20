@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>瓜分十万元</title>
+
+		<script src="https://jpg.hailangkj.cn/jquery.min.js"></script>
+		<script src="https://jpg.hailangkj.cn/md5.js"></script>
+		<!--<script src="https://jpg.hailangkj.cn/jquery.liMarquee.js"></script>-->
+		<script src="/dstjmobile/source/js/common.js"></script>
+
+		<!--<link rel="stylesheet" href="https://jpg.hailangkj.cn/liMarquee.css">-->
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/julyCarveUp.css" />
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2017 GrowingIO, Inc. More info available at http://www.growingio.com -->
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+			gio('send');
+		</script>
+	</head>
+
+	<body>
+		<div class="conetnt">
+			<div id="actAnimation">
+			</div>
+
+			<!--<div class="actRope">
+
+			</div>-->
+			<div class="novRuleBg">
+				
+				<div id="marCashCouponCardBut">领取资格</div>
+				<p class="marCashCouponCardTxt">点击领取资格进入活动</p>
+				
+				<div class="marCashCouponCardBg">
+					<p>疯狂瓜分赛开始啦~速来参与抢头奖！<br/>日现金投资≥400元，累计满足天数越多，活动结束后获得瓜分的奖励就会越多！！！</p>
+					<p>注：累计天数需大于1才可获得活动瓜分奖励资格</p>
+				</div>
+			</div>
+			<div class="marCashCouponCardBot">
+				<div>
+					<img class="aprCarveUpImg" src="http://qiniuapp.hailangkeji.com/julyCarveUp400.png" />
+				</div>
+				<div class="aprCarveUpTxt">
+					<p class="marCashCouponInve">今日距离投资400元还差<span>400</span>元</p>
+					<p>累计满足天数:<span class="marCashCouponDay">0</span>天</p>
+					
+					<p class="marCashCouponNumTxt">您当前预计可瓜分<span class="marCashCouponNum">0</span>元</p>
+				</div>
+			</div>
+			
+			<img class="tossContRankBg" src="http://qiniuapp.hailangkeji.com/julyCarveUpTip.png" />
+			<div class="noviceWelfareDstjBut">
+				立即投资
+			</div>
+			<div class="RechTip">
+				<span>本产品属于高收益、高风险品种</span><br />
+				<span>大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+			</div>
+		</div>
+
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<div class="FortuneHint">
+					<p id="drawDesc"><img src="" /></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut" onclick="receiveObj.closeObtain()">
+					朕知道了
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="receiveObj.closeTips()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<p>活动规则</p>
+				<p>1、现金投资满200元可套取财神一次，只计算≧ 80元以上的数据，单个用户代金券奖励上限为800元； </p>
+				<p>2、活动奖励在活动结束后的两个工作日发放； </p>
+				<p>3、活动最终解释权归大圣淘金所有。</p>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<p>获奖记录</p>
+
+				<ul id="optionBgLi">
+
+				</ul>
+				<!--<p class="mySupTip">该板块奖励实时到账</p>-->
+			</div>
+		</div>
+		<script src="js/julyCarveUp.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

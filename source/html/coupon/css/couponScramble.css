@@ -1,0 +1,204 @@
+html{
+	font-size: 100px;
+}
+/*body {
+	background-image: url(../images/newUser03.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	overflow: hidden;
+	text-align: center;
+}*/
+.backimg{ 
+		width: 100%;
+		height: 3.46rem;
+		z-index: -100; 
+	} 
+.conetnt{
+	width: 100%;
+	/*height: 100%;*/
+	background-color: #EB4350;
+	font-size: 0.14rem;
+}
+/*.proIntroduce{
+	margin: 0 5%;
+	padding:0.1rem 0;
+	width: 90%; 
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}*/
+/*.proIntroduceBut{
+	margin:0 5%;
+	width: 90%;
+	height:0.5rem;
+	line-height:0.5rem;
+	border-radius: 50px;
+	background-color: #FF5534;
+	color: #FFFFFF;
+	text-align:center;
+	font-size: 0.22rem;
+}*/
+.proIntroduceDown{
+	position: fixed;
+	/*-webkit-transform: translateZ(0);*/
+    margin: 5% 10%;
+    /*bottom: 5%;*/
+    bottom: 0.05rem;
+    width: 80%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 50px;
+    background-color: #FFD130;
+    text-align: center;
+    font-size: 0.22rem;
+    z-index: 10;
+}
+
+
+.receiveBox {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	font-size: 0.14rem;
+}
+
+.boxbg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.optionBg {
+	position: fixed;
+    top: 20%; 
+    height: 3rem; 
+    width: 2.75rem; 
+    color: #FFFFFF;
+    /*font-weight: bold;*/
+    font-size: 0.17rem; 
+    padding-top: 1.2rem;
+    text-align: center;
+    /*border: 1px solid red;*/
+    background-image: url(../images/unradpack.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.optionBg span:first-child{
+	font-size: 0.18rem; 
+}
+.optionBut{
+	margin-top: 0.4rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: 1.8rem; 
+	border-radius:50px; 
+	text-align: center;
+	margin-left: 0.48rem;
+	font-size: 0.18rem;
+	background: -webkit-linear-gradient(#FF7A2d, #FFB431); 
+    background: -o-linear-gradient(#FF7A2, #FFB431); 
+    background: -moz-linear-gradient(#FF7A2); 
+    background: linear-gradient(#FF7A21, #FFB431); 
+}
+#optionTitle {
+	height: 0.35rem;
+    position: absolute;
+    left: 0.48rem;
+    top: 0.1rem; 
+}
+
+#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+} 
+/*.proAlert{
+	height: 0.54rem;
+	line-height: 0.54rem;
+}*/
+
+.proIntroduceTop{
+	height: 0.4rem;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.06rem;
+    font-size: 0.12rem;
+}
+.redenv{ 
+	width: 96%;
+	/*height: 6.2rem;*/
+	padding: 0 2%;
+	background-image: url(../images/ScramblebackImg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% auto; 
+	/*overflow: hidden;*/
+	text-align: center;
+	margin-top: -0.4rem;
+}
+.redenv:before{
+	content: ""; 
+	display: block; 
+	padding-top: 180%;
+}
+  
+.surplus{
+	position: absolute;
+    /* margin-top: 0.5rem; */
+    width: 96%;
+    
+    color: #FF4D4D;
+    /*font-weight: bold;*/
+    top: 3.46rem;
+}
+.surplus>p:first-child{
+	font-size: 0.19rem;
+	font-weight: bold;
+	line-height: 0.02rem;
+}
+.surplus>p:nth-child(2){
+	font-size: 0.5rem;
+	font-weight: bold;
+	line-height: 0.02rem;
+}
+.scrambleMon{
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.surplusT{
+	margin-top: 0.1rem;
+	margin: 0.1rem 20%  0 20%;
+    width: 60%;
+    height: 1rem;
+    /*border: 1px solid red;*/
+}
+.surplusTh{
+	margin-top: 0.2rem;
+    width: 100%;
+    line-height: 0.1rem;
+    color: #FFFFFF;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 0.15rem;
+    
+}
+.surplusTh p span{
+	color: #FFF778;
+}

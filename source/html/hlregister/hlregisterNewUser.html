@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>海浪淘金 </title>
+<script src="../../js/jquery.min.js"></script>
+
+<script src="../../js/md5.js"></script>
+<script src="../../js/common.js"></script>
+<link rel="stylesheet" href="../../css/common.css" /> 
+<!--私有-->
+<link rel="stylesheet" href="css/hlregisterNewUser.css" /> 
+</head>
+<body>
+	<img class="backimg" onclick="registerObj.downloadApp()" src="images/hlregisterNewUser.jpg" />
+	<div class="fromDiv">
+		<input id="invitecode" class="formItemInput" type="hidden"  value="" readonly="readonly" />
+		<div class="formItemDiv" >
+			<input id="userid" name="userid" class="formItemInput"  type="text"  placeholder="请输入手机号码"/>
+		</div>
+		
+		<div class="formItemDiv" >
+			<input id="verCodeInput" class="formItemInput" type="text"  placeholder="请输入验证码"/>
+			<div id="getVerCodeBut" onclick="registerObj.loadVerCode()" >获取验证码</div>
+		</div>
+		<div class="formItemDiv" >
+			<input id="pwd" class="formItemInput" type="password" style=""  placeholder="请设置密码(6位/数字)"/>
+		</div>
+		
+		<div id="cvrpBut" class= "cvrpBut" >
+			<input type="checkbox" id="isrRead" class="checkbox" name="isrRead"  value="Car" checked="checked" /> 
+			<label class="readTextLabel"  >同意海浪淘金平台注册协议</label>
+			<label class="readTextLabelLeft" onclick="registerObj.cvrpShow()" >（查看协议）</label>
+		</div>
+		<div class="registerBut" onclick="registerObj.register()" ></div>
+		
+	    <div id="cvrpBg" class="cvrpBg"></div> 
+	</div>
+	<!--<div class="receiveButImgs" onclick="registerObj.downloadApp()"></div>-->
+	<script src="js/hlregisterNewUser.js"></script>
+</body>
+</html>
+

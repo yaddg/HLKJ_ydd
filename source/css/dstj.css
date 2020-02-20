@@ -1,0 +1,507 @@
+html,
+body {
+	/*height: 100%;*/
+}
+ul li{
+	list-style:none;
+}
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+body {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding-top: 0;
+	/*padding-bottom: 40px;*/
+	background-color: #FFFFFF;
+	font-size: 0;
+}
+.datjIndexImgTop{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	/*width: 1920px;*/
+	height: 1rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexImgTop.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+/*.form-signin {
+	float: left;
+    width: 100%;
+    max-width: 6.08rem;
+    padding: 0.15rem;
+
+    height: 4.98rem;
+    margin-left: 4.2rem;
+    background-image: url(http://qiniuapp.mqkji.cn/decPcBgExc.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+	
+}
+
+.form-signin .checkbox {
+	font-weight: 400;
+}
+
+.form-signin .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 0.1rem;
+	font-size: 0.16rem;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}*/
+
+/*.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}*/
+.conetnt{
+	position: relative;
+	width: 100%;
+	max-width: 19.2rem;
+	font-size: 0;
+	/*width: 1920px;*/
+	/*background-color: #EE3E3E;*/
+}
+.datjIndexBanner{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	/*width: 1920px;*/
+	height: 6.5rem;
+	/*left: 4.21rem;*/
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexBanner.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.datjIndexQRcode{
+	position: relative;
+	top: 2.66rem;
+	width: 1.32rem;
+	margin: 0 auto;
+	padding: 0.1rem 0;
+	font-size: 0.12rem;
+	text-align: center;
+	color: #2D313D;
+	background:rgba(255,255,255,1);
+	border-radius:2px;
+}
+.datjIndexQRcode img{
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-bottom: 0.05rem;
+}
+.datjIndexQRBut{
+	position: relative;
+	top: 3rem;
+	width: 2.8rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	margin: 0 auto;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #000000;
+	background:rgba(255,194,11,1);
+	border-radius:8px;
+}
+.datjIndexQRcodeLast{
+	position: relative;
+	top: 0.4rem;
+	width: 1.32rem;
+	margin: 0 auto;
+	padding: 0.1rem 0;
+	font-size: 0.12rem;
+	text-align: center;
+	color: #2D313D;
+	background:rgba(255,255,255,1);
+	border-radius:2px;
+}
+.datjIndexQRcodeLast img{
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-bottom: 0.05rem;
+}
+.datjIndexImg01{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	height: 6.2rem;
+	/*left: -1.81rem;*/
+	/*top: 7.05rem;*/
+	font-size: 0.16rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexImg01.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.datjIndexImgAdd{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	height: 4.32rem;
+	/*left: -1.81rem;*/
+	/*top: 7.05rem;*/
+	font-size: 0.16rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexImgAdd.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.datjIndexImg02{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	height: 6.2rem;
+	/*left: -1.81rem;*/
+	/*top: 7.05rem;*/
+	font-size: 0.16rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexImg02.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.datjIndexImg03{
+	position: relative; */
+    width: 100%;
+    max-width: 19.2rem;
+    /* height: 8.6rem; */
+    padding-top: 0.99rem;
+    padding-bottom: 1rem;
+    /* left: -1.81rem; */
+    /* top: 7.05rem; */
+    font-size: 0.16rem;
+    background-color: #FFFFFF;
+}
+.datjIndexImg04{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 19.2rem;
+	height: 6rem;
+	/*left: -1.81rem;*/
+	/*top: 7.05rem;*/
+	font-size: 0.16rem;
+	background-color: #2D313D;
+}
+.datjIndexCard01{
+	/*position: relative;*/
+	width: 25.7%;
+	max-width: 4.94rem;
+	height: 1.38rem;
+	/*left: -1.81rem;*/
+	/*top: 7.05rem;*/
+	font-size: 0.16rem;
+	margin: 0 auto;
+	
+	background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCard01.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.dowebok{
+	float: left;
+	width: 100%;
+	max-width: 4.4rem;
+	padding: 0.15rem;
+	/*margin: 0 auto;*/
+	height: 4.98rem;
+	margin-left: 0.32rem;
+	background-image: url(http://qiniuapp.mqkji.cn/decPcBgScr.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+ul{
+	list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;  
+	padding: 0;
+	margin: 0;
+}
+.dowebokUl{
+	width: 100%;
+	height: 3.88rem;
+	margin-top: 0.62rem;
+	background: none;
+	/*overflow: hidden;*/
+}
+.dowebokUl ul{ 
+	width: 100%;
+	/*height: 3.88rem;*/
+	/*overflow: hidden;*/
+}
+.dowebok li{
+	height: 0.38rem;
+    line-height: 0.38rem;
+    padding: 0 11%;
+    font-size: 0.16rem;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dowebok li>p:first-child{
+	float: left;
+	width: 38%;
+	text-align: left;
+}
+.dowebok li>p:nth-child(2){
+	float: left;
+	width: 32%;
+	text-align: left;
+}
+.dowebok li>p:last-child{
+	float: left;
+	width: 28%;
+	text-align: left;
+}
+.dowebok li span{
+	font-size: 0.16rem;
+    color: #E67373;
+}
+.signinTxt{
+	margin-top: 0.28rem;
+	margin-bottom: 0.12rem;
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: #000000;
+}
+.signinTxt span{
+	color: #FF0707;
+}
+.signinPeoNum{
+	color: #999999;
+	font-size: 0.16rem;
+	margin-bottom: 0.18rem;
+}
+.signinPeoNum span{
+	color: #EC3C3D;
+}
+.telInput{
+    width: 4.7rem;
+    height: 0.6rem; 
+    padding: 0.02rem;
+    line-height: 0.58rem;
+    margin-left: 0.6rem;
+    /* padding-top: 2px; */
+    margin-bottom: 0.16rem;
+    border: 1px solid rgba(204,204,204,1);
+    border-radius: 4px;
+}
+input{
+	appearance: none;
+	border:none;
+	outline:medium;
+	text-align: left;
+	vertical-align:middle;
+}
+/*input:focus{
+	border: 0;
+	border: 1px solid red;
+}*/
+/*#search4:focus{ border:1px solid red; }
+#search5:focus{ border:1px solid red; }
+#search5: { appearance: none; }*/
+.telInput p{
+	float: left;
+    /* width: 66%; */
+    width: 1rem;
+    text-align: left;
+    height: 0.54rem;
+    line-height: 0.54rem;
+    margin-left: 0.12rem;
+    /* vertical-align: middle; */
+}
+.telInput input{
+	float: left;
+    width: 66%;
+    height: 0.54rem;
+    vertical-align:middle;
+}
+.codeInput{
+	width: 4.70rem;
+    height: 0.6rem; 
+    line-height: 0.6rem; 
+    margin-left: 0.6rem;
+    margin-bottom: 0.16rem;
+}
+.codeInput>div:first-child{
+	float: left;
+	width: 65%;
+    /* height: 0.6rem; */
+    padding: 0.02rem;
+    line-height: 0.58rem; 
+    border:1px solid rgba(204,204,204,1);
+	border-radius:4px;
+}
+.codeInput>div:first-child p{
+	float: left;
+    /* width: 66%; */
+    width: 1rem;
+    text-align: left;
+    height: 0.54rem;
+    line-height: 0.54rem;
+    margin-left: 0.12rem;
+    /* vertical-align: middle; */
+}
+.codeInput>div:nth-child(2){
+	float: left;
+	width: 33%;
+    height: 0.6rem; 
+    margin-left: 2%;
+    line-height: 0.6rem;
+    color: #FFFFFF;
+    background:rgba(235,102,10,1);
+	border-radius:4px;
+}
+.codeInput input{
+	float: left;
+	width: 58%;
+    height: 0.54rem;
+    margin: 0;
+    /* padding-bottom: 10px; */
+    /* margin-top: 0.01rem; */
+    /* text-align: center; */
+    vertical-align: middle;
+}
+.isLogin{
+	width: 4.70rem;
+    height: 0.64rem; 
+    margin-left: 0.6rem;
+    margin-top: 0.24rem;
+    color:rgba(255,255,255,1);
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.64rem;
+	background:linear-gradient(0deg,rgba(197,22,38,1),rgba(238,62,62,1));
+	border:1px solid rgba(162, 25, 11, 0.9);
+	border-radius:8px;
+}
+.decPcThird{
+	/*position: relative;*/
+	width: 100%;
+	max-width: 10.78rem;
+	height: 2.16rem;
+	margin-top: -2.96rem;
+	margin-left: 4.21rem;
+	/*left: -1.81rem;*/
+	background-image: url(http://qiniuapp.mqkji.cn/decPcAdBot.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+	border-radius:8px;
+	
+}
+.decPcFlo{
+	position: fixed;
+    width: 100%;
+    max-width: 1.88rem;
+    height: 2.80rem;
+    top: 5.6rem;
+    right: 1.86rem;
+    /*background-image: url(http://qiniuapp.mqkji.cn/decPcAdFlo.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;*/
+}
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.myObtainImg {
+	position: fixed;
+	left: 14%;
+	width: 100%;
+	max-width: 5.12rem;
+	height: 5.52rem;
+	font-size: 0.14rem;
+	top: 22%;
+	background-image: url(http://qiniuapp.mqkji.cn/decPcAdFloAlert.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+	z-index: 999;
+}
+
+.FortuneHint {
+	float: right;
+	width: 84%;
+	/* left: 5%; */
+	text-align: center;
+	/* margin: 0 auto; */
+	margin-right: 8%;
+	margin-top: 1.6rem;
+	font-size: 0.17rem;
+	color: #FFFFFF;
+}
+
+.FortuneHint>p:first-child {
+	line-height: 0.24rem;
+	/*font-weight: bold;*/
+}
+
+.FortuneHint>p:nth-child(2) {
+	margin-top: 0.1rem;
+	font-size: 0.15rem;
+	color: #FFE1A5;
+}
+
+
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+
+.FortuneBut {
+	float: left;
+	width: 80%;
+	height: 0.38rem;
+	margin-left: 10%;
+	color: #924C0E;
+	margin-top: 0.25rem;
+	font-size: 0.17rem;
+	font-weight: initial;
+	line-height: 0.38rem;
+	border-radius: 19px;
+	background:linear-gradient(0deg,rgba(253,173,58,1),rgba(255,246,158,1));
+	text-align: center;
+}

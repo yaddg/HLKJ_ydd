@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>积分商城</title>
+		<link href="../../css/ionic.min.css" rel="stylesheet" />
+		<link href="../../css/common.css" rel="stylesheet" />
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="../../js/ionic-config.js"></script>
+
+		<link href="css/integIndexPro.css" rel="stylesheet" />
+
+	</head>
+
+	<body ng-controller="claimReportPersonCtrl">
+		<div  class="headIcon" ng-click="myIntegRule()"></div>
+		<!--<div class="headTop">
+			<img src="images/socperRule.png" style="vertical-align: middle;width: 0.13rem;height: 0.13rem;" />
+			<div ng-click="myIntegRule()"></div>
+		</div>-->
+		<!--<div class="headBot">
+		</div>-->
+		<div class="headCenter">
+			<div class="emptyLine"> 
+			</div>
+			<div class="headCenterO">
+				<div>
+					<img src='{{headImg}}' style="width:0.68rem;height:0.68rem;border-radius: 25px;" />
+				</div>
+				
+				<div>
+					<p>{{integName}}</p>
+				</div>
+				<div class="headCenterT">
+					<p><span>{{integNum}}</span>积分</p>
+				</div>
+				
+			</div>
+
+			<!--<div class="headCenterT">
+				<p>积分：<span>{{integNum}}</span></p>
+			</div>-->
+			<div class="headCenterOt" ng-click="myIntegDet()">
+				<span>积分明细&nbsp;</span>
+				<!--<i class="icon ion-ios-arrow-right"></i>-->
+			</div>
+
+		</div>
+		<div class="voucherTxt">
+			<img src="http://qiniuapp.hailangkeji.com/dstjIntegralMallLineL.png" />
+			<span>兑换代金券</span>
+			<img src="http://qiniuapp.hailangkeji.com/dstjIntegralMallLineR.png" />
+		</div>
+		<div class="integVoucher">
+			<!--<p style="font-size: 0.15rem;line-height: 0.35rem;">赚取兑券</p>-->
+			<div class="voucher8" id="voucher{{x.amount}}" ng-model="repotMyExchge" ng-repeat="x in voucherData">
+				<div class="voucherRig">
+					<p>消耗{{x.needIntegral}}积分</p>
+					<div class="voucherExch" ng-click="myExchange(x)">立即兑换</div>
+				</div>
+				<div class="voucherCen">
+					<p>{{x.name}}</p>
+					<p><span>{{x.couponConvertTotal}}</span>人兑换</p>
+				</div>
+				<div class="voucherOne">
+					<p><span>￥</span>{{x.amount}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="integFetch">
+			<p>本产品属于高收益、高风险品种 </p>
+			<p>大圣淘金温馨提示：市场有风险，投资需谨慎</p>
+			<!--<div>
+				<img src="images/socperFetch.png" style="width: 0.5rem;height: 0.2rem;" />
+			</div>
+			<div>
+				<div class="integFetchO">
+					<p>立即下单，占据盈利排行榜首</p>
+					<p style="font-size: 0.13rem;color: #CE9A61;">
+						<img src="images/socperIcon.png" style="vertical-align: middle;width: 0.13rem;height: 0.13rem;" />
+						<span>最高赢取15000积分</span>
+					</p>
+				</div>
+				<div ng-click="myIntegGo()" class="integFetchT">
+					<div ng-class="{true:'integFetchTo',false:'integFetchTt'}[integFetchCss]">
+						{{integFetchTxt}}
+					</div>
+				</div>
+
+			</div>-->
+		</div>
+		<script type="text/javascript" src="js/integIndex.js"></script>
+	</body>
+
+</html>

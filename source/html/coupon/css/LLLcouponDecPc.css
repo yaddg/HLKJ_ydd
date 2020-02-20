@@ -1,0 +1,372 @@
+html {
+	font-size: 100px;
+}
+
+body {
+	/*width: 100%;*/
+	background-color: #dc3434;
+	/*background: -webkit-linear-gradient(#2BABFE, #1C67FF);
+	background: -o-linear-gradient(#2BABFE, #1C67FF);
+	background: -moz-linear-gradient(#2BABFE, #1C67FF);
+	background: linear-gradient(#2BABFE, #1C67FF);*/
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
+/*活动规则*/
+
+.novRule {
+	position: fixed;
+    right: 0;
+    top: 58%;
+    width: 0.8rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    font-size: 0.12rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 12px 0px 0px 12px;
+    background-image: url(http://qiniuapp.mqkji.cn/decBlreRedenveIconSbag.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    z-index: 100;
+}
+
+
+/*获奖记录*/
+
+.novRecord {
+	position: fixed;
+    right: 0;
+    top: 64%;
+    width: 0.8rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #FFFFFF;
+    background-image: url(http://qiniuapp.mqkji.cn/decBlreRedenveIconPrize.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 12px 0px 0px 12px;
+    z-index: 100;
+}
+
+.conetnt {
+	position: relative;
+	width: 100%;
+	max-width: 1078px;
+	/*height: 100%;*/
+	font-size: 0;
+}
+.decPcFirst{
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	/*width: 1920px;*/
+	height: 589px;
+	left: -421px;
+	background-image: url(http://qiniuapp.mqkji.cn/decPcHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.decPcSecond{
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	/*width: 1440px;*/
+	height: 822px;
+	left: -181px;
+	background-image: url(http://qiniuapp.mqkji.cn/decPcBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+/*.tossCont {
+	width: 100%;
+	text-align: center;
+	margin-top: -0.1rem;
+}*/
+
+/*.conetnt>div:first-child {
+	width: 100%;
+	height: 3.7rem;
+	background-image: url(http://qiniuapp.mqkji.cn/decBlreRedenveHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	background-color:none;
+}*/
+
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.myObtainImg {
+	position: fixed;
+	left: 14%;
+	width: 72%;
+	height: 2.5rem;
+	font-size: 0.14rem;
+	top: 22%;
+	/*background-image: url(http://qiniuapp.mqkji.cn/octoberScrWin.png);*/
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+	    z-index: 999;
+}
+
+.FortuneHint {
+	float: right;
+	width: 84%;
+	/* left: 5%; */
+	text-align: center;
+	/* margin: 0 auto; */
+	margin-right: 8%;
+	margin-top: 1.6rem;
+	font-size: 0.17rem;
+	color: #FFFFFF;
+}
+
+.FortuneHint>p:first-child {
+	line-height: 0.24rem;
+	/*font-weight: bold;*/
+}
+
+.FortuneHint>p:nth-child(2) {
+	margin-top: 0.1rem;
+	font-size: 0.15rem;
+	color: #FFE1A5;
+}
+
+
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+
+.FortuneBut {
+	float: left;
+	width: 80%;
+	height: 0.38rem;
+	margin-left: 10%;
+	color: #924C0E;
+	margin-top: 0.25rem;
+	font-size: 0.17rem;
+	font-weight: initial;
+	line-height: 0.38rem;
+	border-radius: 19px;
+	background:linear-gradient(0deg,rgba(253,173,58,1),rgba(255,246,158,1));
+	text-align: center;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#optionBgO {
+	display: none;
+	position: fixed;
+	left: 14%;
+	width: 72%;
+	height: 3.3rem;
+	font-size: 0.14rem;
+	top: 22%;
+	color: #FFFFFF;
+	background-image: url(http://qiniuapp.mqkji.cn/octoberScrWin.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#optionBgO li {
+	color: #FFE1A5;
+	font-size: 0.12rem;
+}
+
+#optionBgO ul {
+	height: 18%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+.sepAwardRecord {
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+
+.activityStatust {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	margin-bottom: 0.08rem;
+}
+
+#optionBgO span {
+	color: #FFF778;
+}
+
+.sepAwardBut {
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#myRecord {
+	display: none;
+	/*width: 72%;*/
+	height: 86%;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+}
+
+#myRecord li {
+	width: 80%;
+	margin: 0 auto;
+	color: #333333;
+	font-size: 0.12rem;
+	margin-bottom: 0.02rem;
+}
+
+#myRecord li>span {
+	color: #E83E38;
+	font-size: 0.12rem;
+}
+
+#myRecord ul {
+	height: 80%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+
+/*规则悬浮框*/
+
+.mySupernatant {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 155, 60, 1);
+	    z-index: 9999;
+}
+
+.mySupernatantIonic {
+	width: 0.13rem;
+	height: 0.13rem;
+	margin-left: 2%;
+	margin-top: 0.14rem;
+	background-image: url(http://qiniuapp.mqkji.cn/octoberScrClose.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+.mySupernatantTxt {
+	width: 96%;
+	height: 86%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+.mySupernatantTxt p {
+	width: 88%;
+	margin: 0 auto;
+	line-height: 0.24rem;
+}
+
+.mySupernatantTxt>p:first-child {
+	/*margin-top: 0.24rem;*/
+	font-size: 0.18rem;
+	/*color: #E83E38;*/
+	color: #FF9B3C;
+	line-height: 0.6rem;
+	text-align: center;
+}
+
+.mySupernatant>div:first-child {
+	width: 100%;
+	height: 0.28rem;
+}
+
+#myTip {
+	display: none;
+}
+
+#myRecord {
+	display: none;
+}
+
+.octoberBot {
+	width: 100%;
+	height: 2px;
+}
+
+.mySupTip {
+	color: #A0A0A0;
+	font-size: 0.12rem;
+	text-align: center;
+}
+
+#myRecord li>div {
+	float: left;
+	font-size: 0.14rem;
+	padding: 0.05rem 0;
+}
+.option01 {
+	width: 60%;
+}
+
+.option02 {
+	width: 30%;
+	color: #FF8910;
+}

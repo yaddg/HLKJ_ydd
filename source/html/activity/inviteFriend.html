@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+		<script src="http://qiniuapp.hailangtaojin.com/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<script src="http://qiniuapp.hailangkeji.com/jquery.liMarquee.js"></script>
+		<link rel="stylesheet" href="http://qiniuapp.hailangkeji.com/liMarquee.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/inviteFriend.css" />
+
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+		</script>
+
+		<!-- End GrowingIO Analytics code version: 2.1 -->
+
+	</head>
+
+	<body>
+		<div class="noviceWelfareDstjTip"></div>
+		<!--<div class="noviceWelfareDstjIp"></div>-->
+		<div class="conetnt">
+			<div id="receiveBox" class="receiveBox">
+
+				<img class="dstjInviteFriendCardBot" src="http://qiniuapp.hailangkeji.com/dstjInviteFriendCardBot.png" onclick="return false" />
+				<div class="mySupernatantTxt" id="myTip">
+					<!--<p>活动规则</p>
+					<p>（活动时间：2019年7月5日）</p>-->
+					<p>1.每成功邀请一位新用户（以下或称“好友”）,首次下载并使用本app，您（以下或称为“邀请者”）有机会获得奖励优惠券。您可将活动页面通过微信、qq或者面对面、链接等方式分享给好友。</p>
+					<p>2.被邀请人下载app并注册登录，邀请人即可获得1元代金券。</p>
+					<p>3.好友首充金额100元奖励，则您可获得20元代金券。</p>
+					<p>4.被成功邀请的好友现金交易金额满500元，您则可获得64元代金券，十天仅限一次。</p>
+					<p>5.本次活动十天内所有奖励每天全部得到<span>最多可获得255元代金券</span>。</p>
+					<p>6.<span>该活动奖励以积分形式次日发放，用户可兑换成相应金额代金券使用</span>。</p>
+				</div>
+				<div class="mySuper">
+					<div class="mySupernatantIonic"></div>
+				</div>
+			</div>
+			<!--<img src="http://qiniuapp.hailangkeji.com/couponDstjFiTBut.png" onclick="receiveObj.openApp()" style="position: fixed;bottom: 0rem;width: 100%;height: 0.55rem;" />-->
+			<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendHead.png" onclick="return false" style="width: 100%;margin-bottom: 0.08rem;" />
+			<div class="dstjInviteFriendCard">
+				<ul>
+					<li>
+						<div class="dstjCard20"></div>
+						<div class="dstjCard64"></div>
+						<div class="dstjCard01"></div>
+					</li>
+					<li>
+						<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendImg.png" onclick="return false" style="width: 88%;" />
+					</li>
+					<li>
+						<textarea id="input">请重新复制邀请链接</textarea>
+						<div class="dstjCardBut">
+							复制邀请链接
+						</div>
+					</li>
+					<li class="dstjCardInvitation">
+						<div class="dstjCardWeixin" onclick="openWeixin()">
+							<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendWeixin.png" onclick="return false" />
+							打开微信
+						</div>
+						<div class="dstjCardQQ" onclick="openQQ()">
+							<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendQQ.png" onclick="return false" />
+							打开QQ
+						</div>
+					</li>
+					<li>
+						<div class="dstjCardTxt">
+							<p>您已成功邀请了<span class="inviteNum">0名好友</span>，共计奖励<span class="inviteAmont">0元</span></p>
+							<p>注：活动奖励以积分形式发放</p>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+			<!--<img src="http://qiniuapp.hailangkeji.com/noviceWelfareDstj02.png" onclick="return false" style="width: 96%;margin-top: -0.02rem;" />
+			<img src="http://qiniuapp.hailangkeji.com/noviceWelfareDstj03.png" class="nwDstjImg" style="width: 96%;" />-->
+
+			<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendTip.png" onclick="return false" style="width: 92%;margin-top: 0.3rem;" />
+			<div class="RegisterThBut">
+				<div>
+					<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendIcon.png" onclick="return false" style="width: 0.15rem;height: 0.15rem;margin-top: 0.05rem;" />
+				</div>
+				<ul id="ul1">
+				</ul>
+			</div>
+			<!--<img src="http://qiniuapp.hailangkeji.com/couponDstjFiTTip.png" onclick="receiveObj.openApp()" style="width: 100%;height: 3.12rem;margin-top: 0.22rem;margin-bottom: 0.55rem;" />-->
+			<!--<div class="noviceWelfareDstjBut">
+				去充值
+			</div>-->
+		</div>
+		<!--<p id="text">我把你当兄弟你却想着复制我？</p>-->
+		
+		<div class="RegisterAdTip">
+			<span>本产品属于高收益、高风险品种 <br />大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+		</div>
+		<script src="js/inviteFriend.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

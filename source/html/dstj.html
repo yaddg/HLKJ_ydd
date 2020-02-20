@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<!--<meta name="author" content="">-->
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+		<script src="http://qiniuapp.hailangtaojin.com/md5.js"></script>
+		<link rel="icon" href="https://v4.bootcss.com/favicon.ico">
+
+		<title>大圣淘金</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://v4.bootcss.com/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://qiniuapp.mqkji.cn/liMarquee.css">
+		<!-- Custom styles for this template -->
+		<link href="/dstjmobile/source/css/dstj.css" rel="stylesheet">
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			a,
+			img {
+				border: 0;
+				text-decoration: none;
+			}
+			
+			.brand {
+				width: 12.4rem;
+				height: 2.8rem;
+				margin: 0 auto;
+				margin-top: 0.38rem;
+			}
+			
+			.brand a {
+				display: block;
+				float: left;
+				margin-left: 0.32rem;
+				width: 3.8rem;
+				height: 2.8rem;
+				text-align: center;
+				position: relative;
+			}
+			
+			.brand img {
+				width: 3.8rem;
+				height: 2.8rem;
+			}
+			
+			.brand .info {
+				display: none;
+				background-color: #f0f0f0;
+				color: #369242;
+				line-height: 240px;
+			}
+			
+			.vertical .info {
+				width: 3.8rem;
+				;
+				height: 2.8rem;
+				margin: 0 auto;
+			}
+			
+			.horizontal img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.horizontal .info {
+				width: 3.8rem;
+				height: 0;
+				top: 1.2rem;
+				position: absolute;
+				left: 0;
+			}
+			
+			.info01 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			
+			.info01:hover {
+				/*opacity: 0;*/
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl01.png);
+			}
+			
+			.info02 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg02.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			.info02:hover {
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl02.png);
+			}
+			.info03 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg03.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			.info03:hover {
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl03.png);
+			}
+			.info04 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg04.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			.info04:hover {
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl04.png);
+			}
+			.info05 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg05.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			.info05:hover {
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl05.png);
+			}
+			.info06 {
+				transition:background-image 1s;
+				-webkit-transition:background-image 1s; /* Safari */
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg06.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 100% 100%;
+			}
+			.info06:hover {
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl06.png);
+			}
+			#verticalDown {
+				margin-top: 0.26rem;
+			}
+			.datjIndexImg04Tel{
+				width: 100%;
+				padding-top: 0.6rem;
+				padding-bottom: 0.4rem;
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.datjIndexImg04Tel p:first-child{
+				font-size: 0.42rem;
+			}
+			.datjIndexImg04Tel p:last-child{
+				font-size: 0.2rem;
+			}
+			.datjIndexImg04But{
+				width: 3.3rem;
+				height: 0.66rem;
+				margin: 0 auto;
+				line-height: 0.66rem;
+				background:rgba(255,194,11,1);
+				border-radius:0.33rem;
+				font-size: 0.2rem;
+				color: #2D313D;
+				text-align: center;
+			}
+			.datjIndexImg04Tip{
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				bottom: 0.38rem;
+				color: #959CAE;
+				font-size: 0.14rem;
+				
+			}
+		</style>
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+		</script>
+
+		<!-- End GrowingIO Analytics code version: 2.1 -->
+	</head>
+
+	<body class="text-center">
+
+		<div class="conetnt">
+			<div class="datjIndexImgTop">
+			</div>
+			<div class="datjIndexBanner">
+				<div class="datjIndexQRcode">
+					<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexQRcode.png" /><br />
+					<span>扫码下载大圣淘金APP</span>
+				</div>
+				<div class="datjIndexQRBut">
+					下载大圣淘金APP
+				</div>
+			</div>
+			<div class="datjIndexImgAdd">
+			</div>
+			<div class="datjIndexImg01">
+			</div>
+			<div class="datjIndexImg02">
+			</div>
+			<div class="datjIndexImg03">
+				<div class="datjIndexCard01">
+				</div>
+
+				<div id="vertical" class="brand vertical">
+					<a target="_blank" class="info01" href="">
+						<!--<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png" />-->
+						<!--<div class="info info01">
+
+						</div>-->
+					</a>
+					<a target="_blank" class="info02" href="">
+						<!--<img lta="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg02.png" />-->
+						<!--<div class="info info02"></div>-->
+					</a>
+					<a target="_blank" class="info03" href="">
+						<!--<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg03.png" />-->
+						<!--<div class="info info03"></div>-->
+					</a>
+				</div>
+				<div class="brand vertical">
+					<a target="_blank" class="info04" href="">
+						<!--<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png" />-->
+						<!--<div class="info info01">
+
+						</div>-->
+					</a>
+					<a target="_blank" class="info05" href="">
+						<!--<img lta="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg02.png" />-->
+						<!--<div class="info info02"></div>-->
+					</a>
+					<a target="_blank" class="info06" href="">
+						<!--<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexCardBg03.png" />-->
+						<!--<div class="info info03"></div>-->
+					</a>
+				</div>
+			</div>
+			<div class="datjIndexImg04">
+				<div class="datjIndexImg04Tel">
+					<p>下载大圣淘金APP</p>
+					<p>现在下载，免费领取88元新人大礼包</p>
+				</div>
+				<div class="datjIndexImg04But">
+					Android下载
+				</div>
+				<div class="datjIndexQRcodeLast">
+					<img alt="" src="http://qiniuapp.hailangkeji.com/datjIndexQRcode.png" /><br />
+					<span>扫码下载大圣淘金APP</span>
+				</div>
+				<div class="datjIndexImg04Tip">
+					版权所有： 辽ICP备19005542号 盘锦蓝正科技有限公司<br/>市场有风险，投资需谨慎
+				</div>
+			</div>
+			<!--<div class="decPcThird"></div>-->
+			<!--<div class="decPcFlo">
+				<img src="http://qiniuapp.mqkji.cn/decPcAdFlo.png" alt="新人专享" />
+			</div>-->
+			<div class="myObtain" id="myObtain" onclick="receiveObj.closeObtain()">
+				<div class="myObtainImg">
+
+				</div>
+			</div>
+		</div>
+		<script src="/dstjmobile/source/js/dstj.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

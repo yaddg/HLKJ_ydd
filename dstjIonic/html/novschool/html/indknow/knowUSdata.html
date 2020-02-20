@@ -1,0 +1,111 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt">
+					美&nbsp;国&nbsp;数&nbsp;据&nbsp;影&nbsp;响
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<ul class="knowUlcont">
+						<li class="contColor">
+							<p>美元的影响</p>
+						</li>
+						<li>
+							<p>金融市场上，美元的一举一动都会牵动市场神经，美元基本上决定其他品种的走势；</p>
+						</li> 
+						<li>
+							<p>级别：五星级</p>
+						</li>
+						<li>
+							<p>范围：全部品种（对白银影响较大，对铜镍有一定影响）</p>
+						</li>
+						<li class="contCored">
+							<p>方向：反向走势；美元涨，其他跌；美元跌，其他涨。</p>
+						</li>
+						<li class="contColor">
+							<p>美国数据影响力排行：</p>
+						</li> 
+						<li>
+							<p>美联储：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对美元走势有决定性影响，是否加息决定美元未来一个月甚至几个月的走势。利率决议，当时影响行情大幅波动。</p>
+						</li>
+						<li>
+							<p>非农业就业人口数据：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;又称“非农数据”，美联储利率决议的重要参考之一每月的第一个周五晚上公布；就业人数增加，看涨美元；影响行情大幅快速波动，并决定此后几天甚至几周的方向走势。当周周三有ADP数据，是非农数据方向的重要参考。</p>
+						</li>
+						<li>
+							<p>CPI：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通货膨胀数据，美联储利率决议的重要参考之一，每个月公布一次。此外通胀数据还有PCE物价指数等。</p>
+						</li>
+						<li>
+							<p>初请失业金数据：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 反映其劳动力市场状况的指标之一，统计的是第一次申请领取失业金的人数。每周四晚上公布，市场重要的焦点数据，美国政府的财政压力很大，失业人数的大幅增加，对美元不利。</p>
+						</li>
+						<li>
+							<p>PMI：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 采购经理人指数，每月公布一次，影响较大的是制造业PMI和服务业PMI，两个公布机构：ISM（美国供应管理协会）和Markit（市场调查公司）</p>
+						</li>
+						<li>
+							<p>零售销售月率：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;零售数据对于判定一国的经济现状和前景具有重要指导作用，因为零售销售直接反映出消费者支出的增减变化。</p>
+						</li>
+						<li>
+							<p>GDP：</p>
+						</li> 
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 国民生产总值，衡量经济好坏的重要指标，影响美元走势，每个季度公布一次。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 具体数据公布时间关注首页财经日历；文字直播会及时发送相关数据情况。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

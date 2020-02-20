@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>新手训练营</title>
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="../../js/common.js"></script>
+		<link rel="stylesheet" href="../../css/common.css">
+		<!--私有-->
+		<link href="css/index.css" rel="stylesheet" />
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', '84c70e0abc352f90', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+
+			utq('track', 'Download', '107202');
+		</script>
+	</head>
+
+	<body>
+		<div class="headTop">
+			<!--<img src="images/socperRule.png" style="vertical-align: middle;width: 0.13rem;height: 0.13rem;" />-->
+			<!--<div ng-click="myIntegRule()"></div>-->
+		</div>
+		<!--<div class="headBot">
+		</div>-->
+		<div class="headCenter">
+			<div class="headCenterO">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowImg.png" style="vertical-align: middle;width: 0.59rem;height: 0.59rem;" />
+			</div>
+			<div class="headCenterT">
+				<p>专家在线指导，实时1对1答疑</p>
+				<div class="headButInfor" onclick="drawObj.myKnowInfor()">
+					专家咨询
+				</div>
+			</div>
+		</div>
+		<div class="headCenterKnow">
+			<div class="headCenterO">
+				<img src="http://qiniuapp.mqkji.cn/indexKnowBookImg.png" style="vertical-align: middle;width: 0.53rem;height: 0.72rem;" />
+			</div>
+			<div class="headCenterT">
+				<p>投资秘籍，一分钟快速入门</p>
+				<div>
+					<div class="headButKnow" onclick="drawObj.myKnowBook()">
+						投资知识
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contCardreward">
+			<div>
+				五日成长礼
+				<a href="javascript:;" onclick="drawObj.myIntegBook(1)">代金券使用秘籍</a>
+			</div>
+			<div class="contCardFloat">
+				<img src="http://qiniuapp.mqkji.cn/novTraFloat.png" />
+			</div>
+			<div>
+				<div class="contCardrewardBut">
+					待领取
+				</div>
+			</div>
+		</div>
+
+		<div class="integVoucher">
+			<div id="receiveButImg" class="receiveButImg">
+				<ul id="ul1">
+					<li>恭喜用户hltj215355获得<span>16元</span>代金券</li>
+					<li>恭喜用户hltj522313获得<span>8元</span>代金券</li>
+					<li>恭喜用户Yaddg获得<span>100元</span>代金券</li>
+					<li>恭喜用户jinyeyouxi获得<span>24元</span>代金券</li>
+					<li>恭喜用户heshibu获得<span>16元</span>代金券</li>
+					<li>恭喜用户大丰收获得<span>100元</span>代金券</li>
+					<li>恭喜用户和风沐浴获得<span>8元</span>代金券</li>
+					<li>恭喜用户一直到底获得<span>16元</span>代金券</li>
+					<li>恭喜用户hltj168127获得<span>24元</span>代金券</li>
+					<li>恭喜用户hltj521335获得<span>100元</span>代金券</li>
+					<li>恭喜用户小可爱获得<span>8元</span>代金券</li>
+					<li>恭喜用户起来获得<span>100元</span>代金券</li>
+				</ul>
+				<ul id="ul2"></ul>
+			</div>
+			<div class="voucher8">
+				<div class="voucherRig">
+					<div class="voucherExchFing" id="voucherExchO" onclick="drawObj.myExchange(1)">去完成</div>
+				</div>
+				<div class="voucherCen">
+					<p>完成注册可得<span>8</span>元券；下单亏损再送(<span>80</span>元封顶) 直到盈利！
+					</p>
+				</div>
+				<div class="voucherOne">
+					<p></p>
+				</div>
+			</div>
+			<div class="voucher100">
+				<div class="voucherRig">
+					<div class="voucherExchFing" id="voucherExchT" onclick="drawObj.myExchange(2)">去完成</div>
+				</div>
+				<div class="voucherCen">
+					<p>首充满<span>100</span>元送<span>16</span>元券；满<span>500</span>元送<span>100</span>元代金券 (不可同享)</p>
+
+				</div>
+				<div class="voucherOne">
+					<p></p>
+				</div>
+			</div>
+			<div class="voucher1000">
+				<div class="voucherRig">
+					<div class="voucherExchFing" id="voucherExchTh" onclick="drawObj.myExchange(3)">去完成</div>
+				</div>
+				<div class="voucherCen">
+					<p>首次使用现金投资(需≧80元) 亏损包赔(<span>1000</span>元封顶) 下单0风险！</p>
+
+				</div>
+				<div class="voucherOne">
+					<p></p>
+				</div>
+			</div>
+			<div class="vouchers100">
+				<div class="voucherRig">
+					<div class="voucherExchFing" id="voucherExchF" onclick="drawObj.myExchange(4)">去完成</div>
+				</div>
+				<div class="voucherCen">
+					<p>注册起<span>5</span>天内现金投资满<span>3</span>天 且累计现金额达<span>1000</span>元 即可获得该项奖励</p>
+				</div>
+				<div class="voucherOne">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="integFetch">
+			<p>活动规则</p>
+			<p>1、活动开始时间：<span>2018年11月5日 </span></p>
+			<p>2、除注册代金券实时发放外，其他任务奖励将 在您完成后的第二个工作日发放至您的账户中； </p>
+			<p>3、本活动解释权归海浪淘金所有，如有任何疑问请 您可通过在线客服解答</p>
+		</div>
+		<div class="boxbg" onclick="drawObj.myIntegBook(2)">
+		</div>
+		<script>
+			function load() {
+				//document.addEventListener('touchstart', touch, false);
+				document.addEventListener('touchmove', touch, false);
+				//document.addEventListener('touchend', touch, false);
+				function touch(event) {
+
+					var event = event || window.event;
+					//clientX：触摸目标在视口中的x坐标。
+					//clientY：触摸目标在视口中的y坐标。
+					//identifier：标识触摸的唯一ID。
+					//pageX：触摸目标在页面中的x坐标。
+					//pageY：触摸目标在页面中的y坐标。
+					//screenX：触摸目标在屏幕中的x坐标。
+					//screenY：触摸目标在屏幕中的y坐标。 
+					var distance = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+					if(distance > 208) { //当滚动条高度为0时
+						$(".headCenter").css("position", "fixed");
+					} else {
+						$(".headCenter").css("position", "static")
+					}
+				}
+			}
+			window.addEventListener('load', load, false);
+		</script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/txtMess.js"></script>
+	</body>
+
+</html>

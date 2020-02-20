@@ -1,0 +1,202 @@
+body { 
+	background-color: #123ACB; 
+}
+input select{
+	background-clip: #fff;
+}
+.button.button-light{
+	width: 100%;
+	background: -webkit-linear-gradient(#FFA128, #FF6B1B); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FFA128, #FF6B1B); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FFA128, #FF6B1B); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FFA128, #FF6B1B); /* 标准的语法 */
+   	color: #FFFEFE;
+   	letter-spacing:0.02rem; 
+   	font-size: 0.14rem;
+   	/*margin-top: 0.1rem; */
+}
+.receiveButImg {
+	position: absolute;
+    top: 0px;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    width: 100%;
+    overflow: hidden;
+    /* left: 14%; */
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    /* padding: 12px 0; */
+    font-size: 12px;
+}
+.mycol{
+	color: #c7000b;
+}
+
+.othcol{
+	color: #333333;
+}
+
+.receiveButImg li{
+	height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.12rem;
+    text-align: center;
+}
+.import{
+	width: 90%;
+	/*padding: 0 10%;*/
+	margin-left: 5%;
+	border-radius: 5px;
+	/*opacity: 0.3;*/
+	/*height: 3rem;*/
+	background-color: #3960F0;
+	padding: 0.1rem 0;
+	color: #FFFEFE;
+}
+.import ul{
+	padding: 0 4%;
+}
+ul {
+    /* width: 100%; */
+    /* background: #ffffff; */
+    list-style: none;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    padding: 0;
+    padding-left: 0.1rem;
+}
+.import li{
+	height: 0.4rem;
+	margin-bottom: 0.1rem; 
+	line-height: 0.4rem;
+	border-radius: 2px;
+	/*padding: 0 0.05rem;*/
+	background-color: #FFFFFF;
+}
+.import li img{ 
+	width: 0.2rem;
+	height: 0.2rem;
+}
+.import li input{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+.import ul:first-child li div:first-child{
+	float: left;
+	height: 100%;
+	padding-top: 0.12rem;
+	padding-left: 0.08rem;
+}
+.import ul:first-child li div:nth-child(2){
+	float: right;
+	height: 100%;
+	width: 88%;
+	text-align: left;
+	padding-right: 0.08rem;
+}
+.import ul:first-child li:first-child{
+	text-align: center;
+	letter-spacing:0.02rem; 
+	font-size: 0.18rem;
+	margin-bottom: 0px;
+	background-color: #3960F0;
+	color: #FFFEFE;
+	/*height: 0.6rem;  
+	line-height: 0.6rem;*/
+}
+.import ul:nth-child(2) li{
+	background-color: #3960F0;
+	border-bottom:0;
+	/*margin-bottom: 0.2rem;*/
+}
+.authCode{
+	float: left;
+	height: 100%;
+	width: 60%;
+	background-color: #fff;
+	padding: 0 0.08rem;
+	border-radius: 2px;
+}
+.authCode div:first-child{
+	float: left;
+	height: 100%; 
+	padding-top: 0.12rem;
+}
+.authCode div:nth-child(2){
+	float: right;
+	height: 100%;
+	width: 80%; 
+}
+.authCodeBut{
+	float: right;
+	height: 100%;
+	width: 35%; 
+	text-align: center; 
+	border-radius: 2px;
+    background: -webkit-linear-gradient(#FFA128, #FF6B1B); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FFA128, #FF6B1B); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FFA128, #FF6B1B); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FFA128, #FF6B1B); /* 标准的语法 */
+   	color: #FFFEFE;
+   	font-size: 0.14rem;
+}
+/*.import li input{ 
+	width: 100%;
+	
+}*/
+.proIntroduceTop{
+	/*height: 0.8rem;*/
+    width: 100%;
+    color: #A6B9FF;
+    text-align: center;
+    line-height: 0.1rem;
+    font-size: 0.12rem;
+    padding-top: 0.3rem;
+}
+.button.button-light:hover{
+	color: #FFFEFE;
+}
+.authCodeBut button{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	color: #FFFEFE;
+	background: -webkit-linear-gradient(#FFA128, #FF6B1B); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FFA128, #FF6B1B); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FFA128, #FF6B1B); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FFA128, #FF6B1B); /* 标准的语法 */
+}
+.importSuc{
+	width: 90%;
+    /* padding: 0 10%; */
+    margin-left: 5%;
+    border-radius: 5px;
+    /* opacity: 0.3; */
+    /* height: 3rem; */
+    background-color: #3960F0;
+    padding: 0.1rem;
+    color: #FFFEFE;
+    text-align: center;
+}
+.importline{
+	display: inline-block;
+   	width: 0.4rem;
+  	border-top: 1px solid #ccc
+}
+.importTxt{
+	vertical-align: -5px;
+}
+.importImg{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	display: inline-block;
+}

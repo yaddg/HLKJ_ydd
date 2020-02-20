@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>积分兑换</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="../../../js/ionic-config.js"></script>
+		<link href="css/integExchge.css" rel="stylesheet" />
+		
+	</head>
+
+	<body ng-controller="claimReportPersonCtrl">
+		<div id="receiveBox" class="receiveBox">
+			<div class="boxbg"></div>
+			<div id="optionBg" class="optionBg">
+				<div class="optionBgOmpty" style="background-image: url({{exchgeImg}});">
+					
+				</div>
+				<div class="optionBgTxt">
+					<span>{{exchgeStatus}}</span><br />
+					<span>{{exchgeTip}}</span>
+				</div>
+				<div class="optionBut" ng-show="optionBut">
+					<div ng-click="myConfirm()">确定</div>
+					<div ng-click="myGoem()">去使用</div>
+				</div>
+				<div class="optionButs" ng-show="optionButs">
+					<div ng-click="myConfirm()">确定</div> 
+				</div>
+			</div>
+		</div>
+		<div class="exchgeTop">
+			<div>
+				<div class="exchgeTopO-{{temp}}">
+					<span>￥</span>{{temp}}
+				</div>
+			</div>
+			<div>
+				<div class="exchgeTopT">
+					<p>{{voucherTxt}}</p>
+					<p>{{voucherInteg}}积分</p>
+				</div>
+				<div class="exchgeTopTh">
+					<p>x{{myIntegral}}</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<div>
+						购买数量
+					</div>
+					<div class="exchgeCount">
+						<div ng-click="myplus()">-</div>
+						<div>{{myIntegral}}</div>
+						<div ng-click="myreduce()">+</div>
+					</div>
+				</li>
+				<li>
+					<div>购买所需积分</div>
+					<div><span>{{myIntegral*voucherInteg}}积分</span></div>
+				</li>
+			</ul>
+		</div>
+		<div class="exchgeBot">
+			<div>
+				总计积分：<span>{{myIntegral*voucherInteg}}</span>
+			</div>
+			<div ng-click="userExchge()">
+				<span>确认兑换</span>
+			</div>
+		</div>
+		
+		<script src="js/integExchge.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>疯抢20万本金</title>
+
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/md5.js"></script>
+		<script src="../../js/common.js"></script>
+		<link rel="stylesheet" href="../../css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/couponScramble.css" />
+	</head>
+
+	<body> 
+		<div id="receiveBox" class="receiveBox">
+			<div class="boxbg" onclick="receiveObj.downloadKnow()"></div>
+			<div id="optionBg" class="optionBg"> 
+				<span class="activityStatus">活动未开始</span><br />
+				<span class="activityDate">开始时间:&nbsp;7月2日06:00 </span>
+				<div class="optionBut" onclick="receiveObj.downloadKnow()">
+					我知道了
+				</div>
+			</div>
+		</div> 
+		<div class="conetnt">
+			<img class="backimg" src="images/ScrambleheadImg.png" />
+			<div class="redenv">
+				<div class="surplus">
+					<p>当前剩余</p>
+					<p class="scrambleMon">200000</p>
+					<div class="surplusT" onclick="receiveObj.scrambleBut()"> 
+					</div>
+					<div class="surplusTh">
+						<p>我的当前投资额为<span class="surplusMons">0</span>元</p>
+						<p>可抢<span class="surplusMonsh">0</span>元代金券&nbsp;已抢<span class="surplusMonsht">0</span>元代金券</p>
+					</div>
+				</div> 
+			</div>
+			
+			<div class="proIntroduceTop"> 
+				<p>本产品属于高收益、高风险品种</p>
+				<p>海浪淘金温馨提示：市场有风险，投资需谨慎</p>
+			</div>
+		</div> 
+		<!--<div onclick="receiveObj.downloadApp()" class="proIntroduceDown">
+				下载海浪淘金APP
+			</div>-->
+		
+		<script src="js/couponScramble.js"></script>
+	</body>
+
+</html>

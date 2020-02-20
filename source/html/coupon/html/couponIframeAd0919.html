@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/0919.css" />
+	</head>
+
+	<body>
+		<div class="conetnt">
+			<div class="conetntImgBg">
+				<div class="RechButO" id="RechButO">
+					数据
+				</div>
+				<div class="RechButT" id="RechButT">
+					事件
+				</div>
+				<div class="RechButTh" id="RechButTh">
+					假期
+				</div>
+				<div class="RechButLine"></div>
+			</div>
+		</div>
+
+		<div class="conetntHead">
+			<div class="RechButEmpBg"></div>
+			<img style="width: 100%;" src="http://qiniuapp.hailangkeji.com/dstjToExamine0923Page01.jpg" onclick="return false" />
+		</div>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script src="js/0919.js"></script>
+	</body>
+
+</html>

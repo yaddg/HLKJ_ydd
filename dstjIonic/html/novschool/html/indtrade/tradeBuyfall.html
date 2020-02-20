@@ -1,0 +1,47 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>交易规则</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+		
+		<link href="css/indtrade.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">交易规则</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt"> 
+					什&nbsp;么&nbsp;是&nbsp;买&nbsp;涨&nbsp;买&nbsp;跌
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<img src="http://qiniuapp.mqkji.cn/tradeBuyfallImg.png" style="width: 100%;" />
+				</div>
+				<div class="voucherBottomDiv">
+					<div class="voucherDown">
+						<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+					</div>
+					<div class="voucherBottom">
+						<div>学完了快去试试身手吧！</div>
+						<div>去投资</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/indtrade.js"></script>
+	</body>
+
+</html>

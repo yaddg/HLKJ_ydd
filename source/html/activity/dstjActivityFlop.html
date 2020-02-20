@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>整点翻牌</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<!--<script src="js/extend.js"></script>-->
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/dstjActivityFlop.css" />
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+			utq('track', 'Download', '107206');
+		</script>
+	</head>
+
+	<body>
+		<div class="conetnt">
+			<div class="conetntHead">
+			</div>
+			<div class="conetntCardBg">
+				<div class="conetimeBg01">
+					<p>10:00</p>
+					<p>即将开始</p>
+				</div>
+				<div class="conetimeBg02">
+					<p>14:00</p>
+					<p>即将开始</p>
+				</div>
+				<div class="conetimeBg03">
+					<p>17:00</p>
+					<p>即将开始</p>
+				</div>
+				<div class="conetimeBg04">
+					<p>21:00</p>
+					<p>即将开始</p>
+					<img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopIcon.png" />
+				</div>
+				<div class="conetimeBg05">
+					<p>23:00</p>
+					<p>即将开始</p>
+				</div>
+			</div>
+			<div class="conetntCard" id="conetntCard">
+				<div class="conetntCardHead">
+					当前奖池&nbsp;<span id="conetntCardHead">50000</span>&nbsp;积分
+				</div>
+				<div class="conetntCardTxt">
+					<p><label>距离结束</label>&nbsp;<span class="flopH">00</span>:<span class="flopM">59</span>:<span class="flopS">59</span></p>
+					<p>您已获得翻牌机会</p>
+				</div>
+				<div class="flopSuc">
+					<img id="info01" alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopTurnOverCon.png" />
+					<p>本次翻牌获得<span>0</span>积分！</p>
+				</div>
+
+				<div class="conetntCards">
+					<div id="vertical0" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info01" alt="" src="" />
+							</div>
+						</a>
+					</div>
+					<div id="vertical1" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img lta="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info02" alt="" src="" />
+							</div>
+						</a>
+					</div>
+					<div id="vertical2" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info03" alt="" src="" />
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="conetntCards">
+					<div id="vertical3" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info04" alt="" src="" />
+							</div>
+						</a>
+					</div>
+					<div id="vertical4" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img lta="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info05" alt="" src="" />
+							</div>
+						</a>
+					</div>
+					<div id="vertical5" class="brand vertical">
+						<a target="_blank" href="javascript:;"><img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopCards.png" />
+							<div class="info">
+								<img id="info06" alt="" src="" />
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--<div class="conetntCardNum">
+					<div class="cardNumO">
+						当前剩余机会：<span id="cardNumO">0</span>次
+					</div>
+					<p class="cardNumT">
+						获奖记录<img src="http://qiniuapp.mqkji.cn/octoberFlopArrow.png" />
+					</p>
+				</div>-->
+			</div>
+			<div class="dstjMask">
+				<!--<p>活动未开始</p>-->
+			</div>
+			<div class="dstjMaskAl">
+				<div class="conetntCardHead">
+					当前奖池&nbsp;<span>50000</span>&nbsp;积分
+				</div>
+				<div class="dstjMaskAl01">
+					<!--<img alt="" src="http://qiniuapp.hailangkeji.com/dstjAcFlopTurnOverCon.png" />-->
+				</div>
+				<div class="dstjMaskAl02">
+					<p>0</p>
+					<span>积分</span>
+				</div>
+				<p class="dstjMaskAl03">
+					本次翻牌获得<span>0</span>积分！
+				</p>
+			</div>
+			<div class="dstjAcFlopTip">
+				<img src="http://qiniuapp.hailangkeji.com/dstjAcFlopRecord.png" onclick="return false" />
+			</div>
+			<!--<img src="http://qiniuapp.mqkji.cn/octoberFlopTip.png" style="width: 85%;" onclick="return false" />-->
+			<div class="RechTip">
+				<!--<img src="http://qiniuapp.mqkji.cn/octoberTip.png" width="100%"/>-->
+				<p>本产品属于高收益、高风险品种 </p>
+				<p>大圣淘金温馨提示：市场有风险，投资需谨慎</p>
+			</div>
+		</div>
+		<div class="eggObtain" id="eggObtain">
+		</div>
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<div class="FortuneHint">
+					<p id="drawDesc"></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut">
+					我知道了
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="receiveObj.closeObtain()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<p>活动规则</p>
+				<p>1、现金投资每满200元获得1次开宝箱的机会，单个用户开箱次数上限为100次</p>
+				<p>2、活动奖励代金券以积分的形式实时发放到账户</p>
+				<p>3、活动最终解释权归海浪淘金所有</p>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<p>获奖记录</p>
+				<ul id="optionBgLi">
+				</ul>
+			</div>
+		</div>
+		<script src="js/dstjActivityFlop.js"></script>
+		<script type="text/javascript">
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

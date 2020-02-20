@@ -1,0 +1,301 @@
+html{
+	font-size: 100px;
+}
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-color: #F3421F ;
+	font-size: 0.14rem;
+	font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+.sepHead {
+	width: 100%;
+	height: 3.22rem;
+	text-align: center;
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibagNHead.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+
+.sepCont{
+	    width: 95%;
+    /* height: 3.98rem; */
+    margin: 0 auto;
+    /* padding: 0.2rem 0; */
+    padding-bottom: 0.2rem;
+    background-image: url(http://qiniuapp.mqkji.cn/nwGibagNCardBg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    z-index: -1000;
+    font-size: 0.15rem;
+    color: #FFFFFF;
+}
+.sepEmpty{
+	width: 78%;
+    height: 0.36rem;
+    margin: 0 auto;
+    background-image: url(http://qiniuapp.mqkji.cn/nwGibagNBubble.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont8{
+	width: 83%;
+    height: 0.96rem;
+    margin: 0 auto;
+    margin-top: 0.22rem;
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibag8.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont100{
+	width: 83%;
+    height: 0.96rem;
+    margin: 0 auto;
+	/*margin-top: 0.2rem;*/
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibagN100s.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont1000{
+	width: 83%;
+    height: 0.96rem;
+    margin: 0 auto;
+	margin-top: 0.2rem;
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibag1000.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont100S{
+	width: 83%;
+    height: 0.96rem;
+    margin: 0 auto;
+	margin-top: 0.2rem;
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibag100S.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepContBut{
+	float: right;
+    width: 22%;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    margin-right: 4.2%;
+    margin-top: 0.36rem;
+    /*background-color: #C0C0C0;*/
+    border-radius: 15px;
+    font-size: 0.13rem;
+    color: #AC2C0A;
+    text-align: center;
+    background: -webkit-linear-gradient(#FFB21E , #FFF07E);
+ 	background: -o-linear-gradient(#FFB21E , #FFF07E);
+    background: -moz-linear-gradient(#FFB21E , #FFF07E);
+    background: linear-gradient(#FFB21E , #FFF07E);
+}
+.sepTip{
+	width: 92%;
+	height: 1.3rem;
+    margin: 0 auto;
+    margin-top: 0.24rem;
+    background-image: url(http://qiniuapp.mqkji.cn/nwGibagNTip.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepTips{
+	width: 100%;
+	padding: 0.21rem 0;
+	color: #FFF0ED;
+	font-size: 0.12rem;
+	text-align: center; 
+	font-family:SourceHanSansCN-Normal;
+}
+.contCardreward {
+	width: 95%;
+	height: 2.26rem;
+	font-size: 0.14rem;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(http://qiniuapp.mqkji.cn/nwGibagNCardUpBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.contCardreward>div:first-child {
+	width: 100%;
+    height: 0.64rem;
+    line-height: 0.92rem;
+    text-align: right;
+    color: #E8455A;
+    font-size: 0.2rem;
+    /*padding-right: 7%;*/
+    font-weight: bold;
+    text-align: center;
+}
+
+.contCardreward a {
+	/*text-indent : 20px;*/
+	margin-left: 0.25rem;
+	color: #E8455A;
+	font-size: 0.12rem;
+}
+
+.contCardreward>div:nth-child(3) {
+    width: 72%;
+    height: 0.38rem;
+    margin: 0 auto;
+    padding-top: 0.98rem;
+    text-align: center;
+    background-image: url(http://qiniuapp.mqkji.cn/nwGibagNAll200.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+
+.contCardrewardBut {
+	width: 1.57rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 0.13rem;
+	background: rgba(255, 153, 85, 1);
+	border-radius: 8px;
+}
+/*提示框*/
+.myObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.myObtainImg {
+	position: fixed;
+	left: 14%;
+    width: 72%;
+    height: 3.3rem;
+    font-size: 0.14rem;
+    top: 22%;
+    background-image: url(http://qiniuapp.mqkji.cn/sepReden.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.FortuneHint{
+	float: right;
+    width: 84%;
+    /* left: 5%; */
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 8%;
+    margin-top: 1.4rem;
+    font-size: 0.19rem;
+    color: #FFFFFF;
+}
+.FortuneHint>p:first-child{
+	line-height: 0.3rem;
+	/*font-weight: bold;*/
+}
+.FortuneHint>p:nth-child(2){
+	font-size: 0.15rem;
+}
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+.FortuneBut{
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.25rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#optionBgO{
+	display: none;
+	position: fixed;
+	left: 14%;
+    width: 72%;
+    height: 3.3rem;
+    font-size: 0.14rem;
+    top: 22%;
+    color: #FFFFFF;
+    background-image: url(http://qiniuapp.mqkji.cn/sepReden.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+#optionBgO li{
+	color: #FFE1A5;
+	font-size: 0.12rem;
+}
+#optionBgO ul{
+	height: 22%;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+.sepAwardRecord{
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+.activityStatust{
+	font-size: 0.14rem;
+    line-height: 0.2rem;
+    margin-bottom: 0.08rem;
+}
+.activityStatust span{
+	color: #FFF778;
+}
+.sepAwardBut{
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}

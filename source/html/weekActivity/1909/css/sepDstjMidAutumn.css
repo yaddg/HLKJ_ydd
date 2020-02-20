@@ -1,0 +1,688 @@
+/*html {
+	font-size: 100px;
+}*/
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+body {
+	width: 100%;
+	background-color: #473695;
+}
+ul li{
+	list-style:none;
+}
+ul{
+	list-style:none;
+	display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0rem;
+}
+.content {
+	width: 100%;
+	/*height: 100%;*/
+	font-size: 0;
+	text-align: center;
+	/*background-image: url(http://qiniuapp.mqkji.cn/octoberTigHead.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;*/
+	/*background: -webkit-linear-gradient(#c42a25, #d8332d);
+	background: -o-linear-gradient(#c42a25, #d8332d);
+	background: -moz-linear-gradient(#c42a25, #d8332d);
+	background: linear-gradient(#c42a25, #d8332d);*/
+}
+
+
+/*活动规则*/
+
+.novRule {
+	position: fixed;
+	right: 0;
+	top: 3.72rem;
+	width: 0.7rem;
+	height: 0.24rem;
+	line-height: 0.22rem;
+	/*font-size: 0.12rem;*/
+	text-align: center;
+	/*color:rgba(255,255,255,1);*/
+	/*background-color:#FF863E;
+	border-radius:12px 0px 0px 12px;*/
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCakeTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	z-index: 88;
+}
+/*我的奖品*/
+.RechCardRecord {
+	position: fixed;
+	right: 0;
+	top: 4.12rem;
+	width: 0.7rem;
+	height: 0.24rem;
+	line-height: 0.22rem;
+	/*font-size: 0.12rem;*/
+	text-align: center;
+	/*color:rgba(255,255,255,1);*/
+	/*background-color:#FF863E;
+	border-radius:12px 0px 0px 12px;*/
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCakeRecord.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	z-index: 88;
+}
+
+.contentHead {
+	width: 100%;
+	height: 4.85rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.contentCard {
+	width: 3.6rem;
+	max-width: 100%;
+	margin-top: -1.69rem;
+	
+}
+.contentCard01{
+	width: 2.65rem;
+	max-width: 74%;
+	height: 1.89rem;
+	margin: 0 auto;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCakeCard.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.contentCard02{
+	width: 3.44rem;
+	max-width: 96%;
+	height: 0.84rem;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCakeDownBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.contentCard02 img{
+	width: 1.04rem;
+	/*max-width: 96%;*/
+	height: 0.68rem;
+	/*margin: 0 auto;*/
+	padding-top: 0.12rem;
+}
+.contentCard03{
+	width: 3.44rem;
+	max-width: 96%;
+	height: 2rem;
+	margin: 0 auto;
+	padding-top: 0.13rem;
+	background:rgba(103,95,216,1);
+}
+
+.RechCardNum{
+	width: 94.6%;
+	height: 0.36rem;
+	line-height: 0.34rem;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	text-align: center;
+	font-weight: bold;
+	background:rgba(255,255,255,0.1);
+	border-radius:4px;
+	color: #FFFFFF;
+	font-size: 0.13rem;
+}
+.RechCardNum span{
+	color: #FFED77;
+	font-size: 0.16rem;
+}
+.secCardTipNum {
+	position: relative;
+    top: -0.18rem;
+    width: 3.44rem;
+	max-width: 98%;
+    height: 0.24rem;
+    /* line-height: 0.24rem; */
+    margin: 0 auto;
+    /* margin-top: 0.31rem; */
+    color: #FFFFFF;
+    font-size: 0.12rem;
+    /* font-weight: bold; */
+    text-align: center;
+    /* overflow: hidden; */
+    background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutListBg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    /* z-index: 55; */
+}
+
+
+.secCardTipNum span {
+	font-size: 0.12rem;
+	color: #FEE969;
+}
+.secCardTipNumIcon{
+	float: left;
+	width: 22%;
+	height: 0.24rem;
+	text-align: right;
+
+}
+.secCardTipNumIcon img{
+	position: relative;
+	top: 0.04rem;
+}
+.secCardTipNumList{
+	float: right;
+    width: 75%;
+    height: 0.24rem;
+    text-align: left;
+}
+.secCardTipNum li {
+	height: 0.2rem;
+	line-height: 0.18rem;
+	font-size: 0.13rem;
+}
+
+.contentCardTxt{
+	width: 3.32rem;
+	max-width: 97%;
+	/*height: 2.59rem;*/
+	margin: 0 auto;
+	/*padding: 0.15rem 0;*/
+	padding-top: 0.14rem;
+	padding-bottom: 0.12rem;
+	text-align: center;
+	background:rgba(84,64,174,1);
+	border-radius:5px;
+}
+.contentCardTxt p:first-child{
+	color: #FFFFFF;
+	font-size: 0.15rem;
+}
+.contentCardTxt p:last-child{
+	color: #DDDAFF;
+	font-size: 0.13rem;
+	line-height: 0.28rem;
+}
+.contentCardTxt span{
+	color: #FFED77;
+	font-weight: bold;
+}
+
+.contentMyCard{
+	width: 3.32rem;
+	max-width: 97%;
+	height: 0.6rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0.41rem;
+	margin-top: 0.15rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCakeMyBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.contentMyCard>div{
+	float: left;
+	width: 0.54rem;
+	max-width: 16.28%;
+	height: 0.54rem;
+	/*margin: 0 auto;*/
+	/*padding-top: 0.41rem;*/
+	/*margin-left: 0.09rem;*/
+}
+.contentMyCard img{
+	/*position: relative;*/
+    width: 0.5rem;
+    height: 0.18rem;
+    margin-bottom: 1px;
+    /*top: 0.2rem;*/
+    /* margin: 0 auto; */
+     padding-top: 0.2rem; 
+    /* margin-left: 0.09rem; */
+}
+.myCard01{
+	margin-left: 4.2%;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCake01s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.myCard02{
+	margin-left: 2.7%;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCake02s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.myCard03{
+	margin-left: 2.7%;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCake03s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.myCard04{
+	margin-left: 2.7%;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCake04s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.myCard05{
+	margin-left: 2.7%;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMoonCake05s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.myCardNum{
+	float: right;
+	position: relative;
+	z-index: -1;
+	/*display: none;*/
+	width: 0.17rem;
+	height: 0.17rem;
+	line-height: 0.17rem;
+	color: #FFFFFF;
+	font-size: 0.11rem;
+	text-align: center;
+	font-weight: bold;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutNumBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.RechTip {
+	width: 100%;
+	color: #F4F2FF;
+	text-align: center;
+	font-size: 0.12rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.24rem;
+	/* margin-top: 0.14rem; */
+	/* opacity: 0.5; */
+}
+/*红包背景*/
+.augDstjFirstRedCard{
+	width: 3.32rem;
+	max-width: 96%;
+	height: 2.59rem;
+	margin: 0 auto;
+	margin-top: 0.31rem;
+	background:rgba(84,64,174,1);
+	border-radius:4px;
+	border: 6px solid #675FD8;
+}
+.sepCard01{
+	float: left;
+	width: 1.52rem;
+	max-width: 45.5%;
+	height: 1.02rem;
+	margin-left: 6px;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutCard400s.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCardBut{
+	width: 1.3rem;
+	height: 0.26rem;
+	line-height: 0.24rem;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+	text-align: center;
+	background:linear-gradient(0deg,rgba(253,173,58,1),rgba(255,246,158,1));
+	border-radius:13px;
+	color: #703F2F;
+	font-size: 14px;
+}
+.sepCard02{
+	float: right;
+	width: 1.52rem;
+	max-width: 45.5%;
+	height: 1.02rem;
+	margin-right: 6px;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutCard8.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCard03{
+	float: left;
+	width: 1.52rem;
+	max-width: 45.5%;
+	height: 1.02rem;
+	margin-left: 6px;
+	margin-top: 15px;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutCard120.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCard04{
+	float: right;
+	width: 1.52rem;
+	max-width: 45.5%;
+	height: 1.02rem;
+	margin-right: 6px;
+	margin-top: 15px;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutCard400.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 99;
+}
+
+/*.myObtainImg {
+	position: fixed;
+    left: 13.9%;
+    width: 72.2%;
+    height: 1.94rem;
+    font-size: 0.16rem;
+    top: 25%;
+    background-image: url(http://qiniuapp.hailangkeji.com/augDstjFirstBgClose.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}*/
+.myObtainImg {
+	position: relative;
+    top: 27%;
+    width: 2.45rem;
+    max-width: 69%;
+    height: 2rem;
+    font-size: 0.16rem;
+    margin: 0 auto;
+    /*margin-top: 2.38rem;*/
+    background:linear-gradient(37deg,rgba(56,53,191,1),rgba(114,80,203,1));
+	border-radius:8px;
+    /*top: 25%;*/
+    /*background-image: url(http://qiniuapp.hailangkeji.com/augDstjFirstBgClose.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;*/
+    text-align: center;
+}
+
+.FortuneImg {
+	width: 2.45rem;
+    max-width: 100%;
+    height: 1.24rem;
+    margin-top: -0.73rem;
+}
+.FortuneHint {
+	/* float: right; */
+	/*position: relative;*/
+    width: 88%;
+    /*top: 1.04rem;*/
+    margin: 0 auto;
+    /* left: 5%; */
+    text-align: center;
+    /* margin: 0 auto; */
+    /* margin-right: 8%; */
+    margin-top: 0.21rem;
+    font-size: 0.17rem;
+    color: #FFFFFF;
+    }
+
+.FortuneHint>p:first-child {
+	line-height: 0.3rem;
+	/*font-weight: bold;*/
+}
+
+.FortuneHint>p:nth-child(3) {
+	/*margin-top: 0.1rem;*/
+	font-size: 0.16rem;
+	color: #FFFFFF;
+	margin-top: 0.22rem;
+}
+
+
+
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+
+.FortuneBut {
+	/*float: left;*/
+	/*position: relative;*/
+	width: 2.15rem;
+	max-width: 88%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	font-weight: 500;
+	margin: 0 auto;
+	margin-top: 0.48rem;
+	color: #703F2F;
+	/*margin-top: 0.18rem;*/
+	font-size: 0.14rem;
+	background:linear-gradient(0deg,rgba(253,173,58,1),rgba(255,246,158,1));
+	border-radius:19px;
+	/*background: -webkit-linear-gradient(#FFF69E, #FDAD3A);
+	background: -o-linear-gradient(#FFF69E, #FDAD3A);
+	background: -moz-linear-gradient(#FFF69E, #FDAD3A);
+	background: linear-gradient(#FFF69E, #FDAD3A);*/
+	/*background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;*/
+	text-align: center;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+.sepAwardRecord {
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+
+.activityStatust {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	margin-bottom: 0.08rem;
+}
+
+.sepAwardBut {
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#myRecord {
+	/*display: none;*/
+    /* width: 72%; */
+    /*position: relative;
+    top: 1.79rem;*/
+    height: 3.5rem;
+    max-height: 50%;
+    font-size: 0.14rem;
+    color: #6B1F1E;
+    padding: 0;
+    text-align: center;
+    margin-top: 1.68rem;
+    /*padding-bottom: 1.24rem;*/
+	/*background-image: url(http://qiniuapp.mqkji.cn/sprFesSecRecBg.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;*/
+	
+}
+#myRecord p:last-child{
+	position: relative;
+	/*color: #6B1F1E;*/
+    font-size: 0.13rem;
+    /*margin-top: 0.8rem;*/
+}
+#optionBgLi {}
+
+#myRecord li {
+	width: 80%;
+	margin: 0 auto;
+	color: #6B1F1E;
+	margin-bottom: 0.1rem;
+	text-align: left;
+}
+
+#myRecord li>span {
+	display: block;
+    float: right;
+	color: #D93435;
+	font-weight: 500;
+}
+
+#myRecord ul {
+	position: relative;
+    top: 0.26rem;
+	height: 88%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+
+/*规则悬浮框*/
+
+.mySupernatant {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFE;
+	/*background-image: url(http://qiniuapp.mqkji.cn/octoberScrClose.png);*/
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+
+.mySupernatantIonic {
+	width: 0.23rem;
+	height: 0.23rem;
+	margin-left: 0.1rem;
+	margin-top: 0.12rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/sepDstjMidAutClose.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+.mySupernatantTxt {
+	width: 92%;
+    margin: 0 auto;
+    font-size: 0.14rem;
+    color: #333333;
+    background: rgba(255,250,250,1);
+    border-radius: 5px;
+}
+
+.mySupernatantTxt p {
+	width: 88%;
+	margin: 0 auto;
+	line-height: 0.24rem;
+	
+}
+
+.mySupernatantTxt>p:first-child {
+	/*margin-top: 0.24rem;*/
+	font-size: 0.18rem;
+	font-weight: bold;
+	/*line-height: 0.46rem;*/
+	text-align: center;
+}
+
+.mySupernatant>div:first-child {
+	position: absolute;
+	width: 100%;
+	height: 0.28rem;
+}
+
+#myTip {
+	display: none;
+	/* background-color: #FFFFFF; */
+    /*position: relative;*/
+    /*top: 1rem;*/
+    margin-top: 1rem;
+    text-align: center;
+    
+    padding-top: 0.24rem;
+    padding-bottom: 0.7rem;
+}
+#myTip p:first-child {
+	color: #4EA150;
+	padding-bottom: 0.18rem;
+}
+#myTip img {
+	width: 2.95rem;
+	/*height: 2.11rem;*/
+	padding-top: 0.11rem;
+	padding-bottom: 0.35rem;
+}
+#myRecord {
+	display: none;
+}
+#myRecord p:first-child {
+	padding-top: 0.24rem;
+	padding-bottom: 0.18rem;
+	color: #3A178B;
+}
+.octoberBot {
+	width: 100%;
+	height: 2px;
+}

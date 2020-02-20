@@ -1,0 +1,84 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt">
+					趋&nbsp;势&nbsp;与&nbsp;支&nbsp;撑&nbsp;阻&nbsp;力
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+					<ul class="knowUlcont">
+						<li class="contColor">
+							<p>趋势与支撑</p>
+						</li>
+						<li>
+							<p>行情有三种状态：上涨、下跌和震荡；分析这三种状态的基础分析方法是趋势和支撑阻力。画出趋势线，可以大致预测后边的价格走向，而震荡阶段就要使用阻力支撑来判断。</p>
+						</li> 
+						<li class="contColor">
+							<p>趋势的定义：</p>
+						</li>
+						<li>
+							<p>趋势是指在某一时间段内，价格运行的方向。</p>
+						</li> 
+						<li class="contColor">
+							<p>趋势线的画法：</p>
+						</li>
+						<li>
+							<img src="http://qiniuapp.mqkji.cn/knowTrendsupImg.png" style="width: 100%;" />
+						</li>
+						<li class="contColor">
+							<p>支撑阻力：</p>
+						</li>
+						<li>
+							<p>简单的是指：一段价格的最高点和最低点，作为支撑和阻力，此外还有布林带的轨道线、均线、价格整数等。</p>
+						</li>
+						<li>
+							<p>支撑阻力，对价格有限制涨跌作用，可以用来判断买涨买跌的价位；</p>
+						</li>
+						<li>
+							<p>如图所示买入卖出点：</p>
+						</li>
+						<li>
+							<img src="http://qiniuapp.mqkji.cn/knowTrendsupImg01.png" style="width: 100%;" />
+						</li>
+						<li>
+							<p>注意点：用支撑阻力进行操作，要认识到是上升还是下跌趋势，尽量顺势交易。</p>
+						</li> 
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+		<script src="http://qiniuapp.hailangtaojin.com/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/inviteFriendPeo.css" />
+	</head>
+
+	<body>
+		<div class="conetnt">
+			<div id="receiveBox" class="receiveBox">
+				<div class="boxbg"></div>
+				<div id="optionBg" class="optionBg">
+					<img src="http://qiniuapp.mqkji.cn/weixinOff.png" onclick="" style="width: 100%;pointer-events: none;" />
+				</div>
+			</div>
+			<div class="inviteFriendHeadt">
+			</div>
+			<div class="inviteFriendPeoCon">
+				<ul>
+					<li>
+						<div class="inviteFriendGift">
+							<p id="inviteFriendGift">您的好友XXX邀您一起赚钱一起浪</p>
+						</div>
+					</li>
+					<li>
+						<div class="inviteFriendInp">
+							<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendPeoIcon.png" onclick="return false" />
+							<input type="number" onblur="receiveObj.phoneMobile()" placeholder="请输入您的手机号(被邀请人）" id="importBankIMobile" maxlength="11" />
+							
+						</div>
+						<p id="importMobileTxt"></p>
+					</li>
+					<li>
+						<div class="inviteFriendBut" onclick="receiveObj.openApp()">
+							立即下载领取
+						</div>
+					</li>
+					<li>
+						<img src="http://qiniuapp.hailangkeji.com/dstjInviteFriendPeoCard.png" onclick="return false" style="width: 3rem;max-width: 90%;margin-top: 0.35rem;" />
+					</li>
+				</ul>
+			</div>
+
+			<div class="inviteFriendTip">
+				<span>本产品属于高收益、高风险品种</span><br />
+				<span>大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+			</div>
+			<div style="width: 100%;height: 0.04rem;">
+			</div>
+		</div>
+		<script src="js/inviteFriendPeo.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

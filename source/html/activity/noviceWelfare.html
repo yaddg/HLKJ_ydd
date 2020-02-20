@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<script src="/dstjmobile/source/js/common.js"></script>-->
+		<title>大圣淘金</title>
+		<style>
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: #FF874C;
+			}
+			
+			.content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				font-size: 0;
+				text-align: center;
+			}
+			
+			.contentImg {
+				width: 100%;
+				height: 100%;
+				font-size: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<img class="contentImg" src="http://qiniuapp.hailangkeji.com/dstjNoviceActivity.png" />
+		</div>
+		<script>
+			function chkkkk() {
+				var memberId = getTheRequestParams().memberId;
+				if(memberId==null || memberId==undefined || memberId=="" ){
+					memberId = 0;
+				}
+				alert(memberId)
+				var _url = "dasheng://www.dasheng.com/loginDialog";
+				window.location.href = _url;
+			}
+		</script>
+	</body>
+
+</html>

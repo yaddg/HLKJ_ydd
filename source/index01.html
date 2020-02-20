@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>图片透明度</title>
+		<style>
+			div.img {
+				float: left;
+				padding: 5px;
+				margin: 5px;
+				border: 1px solid;
+				border-color: dimgrey;
+				text-align: center;
+				width: 160px;
+				width: 160px;
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBgAl01.png);
+			}
+			
+			div.img img {
+				margin: 3px;
+				border: 1px solid black;
+				opacity: 0;
+			}
+			/*
+        稍微多注意一下选择器选择的元素
+
+        opacity:0.4 设置透明度为0.4,鼠标不在图片上的时候透明的。
+        */
+			
+			div.img a:hover img {
+				border: 1px solid red;
+				opacity: 1;
+			}
+			/*
+        当鼠标移到图片上时设置透明度=1，也就是不透明。
+        */
+			
+			div.desc {
+				text-align: center;
+				font-weight: normal;
+				width: 150px;
+				font-size: 12px;
+			}
+			/*------------------------------------------------------------------------------------------------------*/
+			
+			div.back {
+				clear: left;
+				width: 400px;
+				height: 266px;
+				border: 1px solid beige;
+				background-image: url(http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png);
+				text-align: center;
+				margin: 10px;
+				padding: 0;
+			}
+			
+			p {
+				margin: 0;
+			}
+			/*在这里，我把back的内边距取消，transbox的外边距取消，发现还是无法让trans左上角与back左上角重合，
+        用chrome查看之后发现是段落p有一个外边距导致，设置成0就可以实现了。
+        chrome能够很好的查看元素的大小 位置 信息等。*/
+		</style>
+
+	</head>
+
+	<body>
+		<div class="img">
+			<a target="_blank" href="http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png">
+				<img src="http://qiniuapp.hailangkeji.com/datjIndexCardBg01.png" alt="图片" width="160px" height="160px" />
+			</a>
+			<div class="desc">在此添加对于图片的描述</div>
+		</div>
+
+		<!--结构是一个div，里头套着一个a（a里又有一个img），和一个div，用以创建包裹着 图片的一块区域-->
+
+		<div class="img">
+			<a target="_blank" href="http://qiniuapp.hailangkeji.com/datjIndexCardBg02.png">
+				<img src="http://qiniuapp.hailangkeji.com/datjIndexCardBg02.png" alt="图片" width="160px" height="160px" />
+			</a>
+			<div class="desc">在此添加对于图片的描述</div>
+		</div>
+
+		<div class="img">
+			<a target="_blank" href="http://qiniuapp.hailangkeji.com/datjIndexCardBg03.png">
+				<img src="http://qiniuapp.hailangkeji.com/datjIndexCardBg03.png" alt="图片" width="160px" height="160px" />
+			</a>
+			<div class="desc">在此添加对于图片的描述</div>
+		</div>
+		<!-----
+		<div class="img">
+			<a target="_blank" href="http://qiniuapp.hailangkeji.com/datjIndexCardBg04.png">
+				<img src="http://qiniuapp.hailangkeji.com/datjIndexCardBg04.png" alt="图片" width="160px" height="160px" />
+			</a>
+			<div class="desc">在此添加对于图片的描述</div>
+		</div>
+		-----------------------------------------------------------------------------------------
+		<div class="back">
+			<div class="transbox">
+				<p>ssssssssssssssssssssssssssss sssssssssssssssssssssss
+				</p>
+			</div>
+		</div>
+		----->
+		<!--其实就是一个div 嵌套一个div，内部的div里再有一个段落，给外部的div一个 背景，内部的div设置一下背景颜色，透明度。
+再调整一下位置。就好了-->
+	</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<title>大圣淘金</title>
+		<style>
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: #FF874C;
+			}
+			
+			.content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				font-size: 0;
+				text-align: center;
+			}
+			
+			.contentImg {
+				width: 100%;
+				height: 100%;
+				font-size: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<img class="contentImg" src="" />
+		</div>
+		<script>
+			function empBgPage() {
+				var empBgNum = getTheRequestParams().empBgNum;
+				if(empBgNum == 1) {
+					$(".contentImg").attr("src", "http://qiniuapp.hailangkeji.com/dstjToExamine0923Page01s.png");
+				}else if(empBgNum == 2){
+					$(".contentImg").attr("src", "http://qiniuapp.hailangkeji.com/dstjToExamine0923Page02s.png");
+				}
+			}
+			//获取地址后面参数
+			function getTheRequestParams() {
+				var url = location.search; //获取url中"?"符后的字串 
+				var theRequest = new Object();
+				if(url.indexOf("?") != -1) {
+					var str = url.substr(1);
+					strs = str.split("&");
+					for(var i = 0; i < strs.length; i++) {
+						theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+					}
+				}
+				return theRequest;
+			}
+			empBgPage();
+		</script>
+	</body>
+
+</html>

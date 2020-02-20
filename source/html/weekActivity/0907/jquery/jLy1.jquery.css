@@ -1,0 +1,63 @@
+/*************/
+/** jLy1 CSS **/
+/*************/
+#jLy1 {
+	position:absolute;
+	display:block;
+	z-index:9999;
+	width:55px;
+	height:21px;
+	top:0;
+	left:10px;	
+	background:transparent url('../icons/bg_jLy1.png') 0 0;
+}
+#jLy1[class='jLy1open'] {background-position:0 -21px}
+
+#jLy1Link {
+	position:absolute;
+	z-index:9999;
+	width:105px;
+	height:38px;
+	top:0px;
+	left:10px;	
+	background:transparent url('../icons/bg_jLy1Link.jpg') repeat;
+	display:none;
+	overflow:hidden;
+}
+
+#jLy1Loader {
+	display:none;
+	margin:8px 0 0 13px;
+	width:70px;
+	height:21px;
+	text-align:center;
+}
+
+#jLy1Link #jLy1Send {
+	display:block;
+	float:left;
+	width:70px;
+	height:21px;
+	padding:4px 0 0 20px;
+	color:#FFF;
+	margin:8px 0 0 13px;
+	text-decoration:none;
+	font-size:12px;
+	font-family:Arial;
+	font-style:italic;
+	background:transparent url('../icons/bg_jLy1Send.png') no-repeat left center;
+}
+#jLy1Link input#jLy1Input {
+	background-color:#f2f2f2;
+	border:0;
+	font-weight:bold;
+	font-size:14px;
+	font-family:Arial;
+	color:#494646;
+	width:138px;
+	height:25px;
+	margin:5px 0 0 6px;
+	text-align:center;
+	line-height:24px;
+	display:none;
+}

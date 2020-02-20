@@ -1,0 +1,104 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt">
+					一&nbsp;分&nbsp;钟&nbsp;带&nbsp;你&nbsp;了&nbsp;解&nbsp;K&nbsp;线
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<ul class="knowUlcont">
+						<li  class="contColor">
+							<p>K线图是什么？</p>
+						</li>
+						<li>
+							<p>K线图是一种能够清晰准确表达价格变化信息的神奇图形。K线图将开盘价、收盘价、最高价、最低价，全部融合在一个简洁直观的图形里，让投资者一看就能明白。</p>
+						</li>
+						<li  class="contColor">
+							<p>如何看K线图？</p>
+						</li>
+						<li>
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg01.png" style="width: 100%;" />
+						</li>
+						<li  class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg02.png" style="width: 10%;height: 10%;" />&nbsp;&nbsp;大阳线：
+						</li>
+						<li>
+							<p>开盘价=最低价，收盘价=最高价，市场开盘后，价格一路上扬至最高价处收盘，表示市场买方踊跃，涨势未尽。</p>
+						</li>
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg03.png" style="width: 10%;height: 10%;" />&nbsp;&nbsp;大阴线：
+						</li>
+						<li>
+							<p>开盘价=最高价，收盘价=最低价，表示市场强烈跌势，特别是出现在高价区域，更加危险。</p>
+						</li>
+						
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg04.png" style="width: 10%;height: 10%;" />&nbsp;&nbsp;锤子线：
+						</li>
+						<li>
+							<p>收盘价=最高价，下影线较长，实体较短，若它出现在下跌途中，预示着，下跌行情即将出现。</p>
+						</li>
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg05.png" style="width: 10%;height: 10%;"/>&nbsp;&nbsp;流星线：
+						</li>
+						<li>
+							<p>收盘价=最低价，上影线较长，实体较短，若它出现在上涨途中，预示着，上涨行情即将出现。</p>
+						</li>
+						
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg06.png" style="width: 10%;height: 10%;"/>&nbsp;&nbsp;十字星：
+						</li>
+						<li>
+							<p>开盘价=收盘价，显示买涨买跌双方力量势均力敌，是一个十分危险的行情反转信号。</p>
+						</li>
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg07.png" style="width: 10%;height: 10%;"/>
+						</li>
+						<li>
+							<p>收盘价=最低价，没有下影线，市场处于短期下跌趋势中，做空力量占据上风。</p>
+						</li>
+						<li class="contColor">
+							<img src="http://qiniuapp.mqkji.cn/knowKlineImg08.png" style="width: 10%;height: 10%;" />
+						</li>
+						<li>
+							<p>开盘、收盘、最高、最低之间十分接近，不论颜色红绿，均表示行情波动较小，市场行走势还需进一步观望。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

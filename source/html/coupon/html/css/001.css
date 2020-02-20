@@ -1,0 +1,344 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	/*color: #000000;*/
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+a,
+input,
+button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-appearance: none;
+}
+
+input,
+textarea {
+	outline: none
+}
+
+body,
+body * {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background: #616161;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0
+}
+
+.clearfix {
+	*zoom: 1
+}
+
+.flbig {
+	width: 15rem;
+	margin: 0 auto;
+	background: #fff;
+	background-size: 100% 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.flbig_top {
+	background: #fbfbfb url(http://qiniuapp.hailangkeji.com/couponDstjHeadLogo.png) no-repeat 0.6rem 0.2rem;
+	padding: 0.3rem 0 0.2rem;
+	background-size: 2.8rem;
+	overflow: hidden;
+	height: 2.8rem;
+}
+
+.flbig_top_l {
+	float: left;
+	/*background: url(http://fullydar.xhorns.com/thems/app3/2.png) no-repeat;*/
+	width: 4.48rem;
+	height: 2.2rem;
+	font-size: 15px;
+	text-align: left;
+	background-size: cover;
+	margin: 0.3rem 0 0 4rem;
+}
+.flbig_top_l p:nth-child(2){
+	font-size: 10px;
+	color: #FFBB1D;
+	line-height: 26px;
+}
+.flbig_top_l p:last-child{
+	font-size: 12px;
+	color: #999999;
+}
+.flbig_top_l img{
+	width:60px;
+	height:10px ;
+}
+.flbig_top_r {
+	float: right;
+	margin: 0.3rem 0.9rem 0 0;
+}
+
+.flbig_top_r div{
+	background: url(http://fullydar.xhorns.com/thems/app3/3.png) no-repeat;
+	width: 3.4rem;
+	height: 1.4rem;
+	display: block;
+	background-size: 100%;
+}
+
+.flbig_top_r p {
+	font-size: 0.44rem;
+	color: #7b7b7b;
+	margin-top: 0.35rem;
+}
+
+.flbig_wz {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    color: #999999;
+}
+
+.flbig_wz_2 {
+	/*background: #fbfbfb url(http://fullydar.xhorns.com/thems/app3/center1.png) no-repeat center;*/
+	width: 100%;
+	height: 1.25rem;
+	/*background-size: contain;*/
+	background-color: #E7E7E7;
+	padding: .1rem 0 0;
+	background:rgba(248,248,248,1);
+	box-shadow:0px 1px 0px 0px rgba(231,231,231,1);
+}
+.flbig_wz_2>div{
+	float: left;
+    width: 33%;
+    height: 0.63rem;
+    padding-top: 0.31rem;
+    font-size: 12px;
+    color: #999999;
+}
+.flbig_wz_2>div img{
+	width: 15px;
+	height: 15px;
+}
+.flbig_xx {
+	height: 1px;
+	background: #e3e3e3;
+	width: 14.4rem;
+	margin: .0 auto 0;
+}
+
+.flbig_banner {
+	width: 90%;
+    height: 12.5rem;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+}
+
+.swiper-slide img {
+	width: 15rem;
+}
+
+.flbig_banner_xt {
+	background: url(http://fullydar.xhorns.com/thems/app3/1r_02.png) no-repeat;
+	height: 0.24rem;
+	background-size: contain;
+}
+
+.flbig_gdtit {
+	/*background: url(http://fullydar.xhorns.com/thems/app3/4.png) no-repeat;*/
+	height: 1.64rem;
+	background-size: cover;
+}
+
+.flbig_gdtit2 {
+	/*background: url(http://fullydar.xhorns.com/thems/app3/4_1.png) no-repeat;*/
+	background-size: cover;
+}
+
+.flbig_gdtit_l,
+.flbig_gdtit_r {
+	width: 50%;
+	float: left;
+	font-size: 15px;
+	color: #333333;
+	cursor: pointer;
+	border-bottom: 1px solid #E7E7E7;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.flbig_gdtit_l{
+	height: 1.84rem;
+	line-height: 1.84rem;
+}
+.flbig_gdtit_r{
+	padding-top: 0.4rem;
+	height: 1.44rem;
+	
+}
+.flbig_gdtit_r span:last-child{
+	color: #FF6900;
+	font-size: 10px;
+	line-height: 18px;
+}
+
+.flbig_gdp {
+	margin-top: 0.5rem;
+	padding: .22rem 0.44rem .8rem 0.6rem;
+}
+
+.flbig_gdp p {
+	font-size: 0.56rem;
+	color: #666666;
+	text-align: justify;
+	line-height: 1rem;
+}
+
+.flbig_gdp p span {
+	font-weight: bold;
+	color: #000;
+}
+
+.flbig_fot {
+	position: fixed;
+	bottom: 0;
+	width: 15rem;
+	height: 2.2rem;
+	background: url(http://fullydar.xhorns.com/thems/app3/5.png) repeat-x;
+	background-size: contain;
+	text-align: center;
+}
+
+.flbig_fot p {
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	font-family: simhei;
+	line-height: 2.2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.flbig_pl {
+	text-align: left;
+	padding: 0 .6rem .8rem;
+	display: none;
+}
+
+.flbig_pl_tit {
+	margin: .5rem 0 .5rem 0;
+}
+
+.flbig_pl_tit p {
+	color: #9c9c9c;
+	font-size: 0.5rem;
+}
+
+.flbig_pl_cen p {
+	color: #333;
+	font-size: 0.55rem;
+	line-height: 0.8rem;
+}
+
+.flbig_pl_fot {
+	background: url(http://fullydar.xhorns.com/thems/app3/xx.png) no-repeat left .5rem;
+	background-size: 3.1rem .6rem;
+	height: .6rem;
+	padding: .5rem 0 .4rem 0;
+	border-bottom: 1px solid #dadada;
+}
+
+.flbig_pl_but {
+	background: #007aff;
+	text-align: center;
+	width: 66%;
+	margin: .8rem auto 0;
+	border-radius: .2rem;
+}
+
+.flbig_pl_but p {
+	color: #fff;
+	font-size: .5rem;
+	line-height: 1.2rem;
+	display: block;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.flbig_tip {
+	text-align: center;
+	padding: 0 0 2.6rem;
+}
+
+.flbig_tip p {
+	color: #ccc;
+	font-size: .4rem;
+}
+
+@media screen and (min-width:751px) {}

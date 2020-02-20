@@ -1,0 +1,191 @@
+html {
+	font-size: 100px;
+}
+
+body {
+	background-color: #BC2222;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.conetnt {
+	width: 100%;
+	height: 100%;
+	font-size: 0.14rem;
+}
+
+.conetntHead {
+	width: 100%;
+	/*height: 5.18rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/octDstjNatThirdHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.RechButO {
+	position: relative;
+	width: 94%;
+	height: 1.16rem;
+    /*padding-bottom: 0.1rem;*/
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -0.84rem;
+	font-size: 13px;
+	color: #FEE6A9;
+}
+
+
+.RechButFull{
+	width: 1.8rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #C11B22;
+	font-size: 0.16rem;
+	margin: 0 auto; 
+	margin-top: 0.12rem;
+    background:-webkit-linear-gradient(rgba(255,139,56,1), rgba(254,206,108,1));
+    background:-moz-linear-gradient(rgba(255,139,56,1), rgba(254,206,108,1));
+    background:-o-linear-gradient(rgba(255,139,56,1), rgba(254,206,108,1));
+    background:-webkit-gradient(linear, 0 0, 100% 0, from(rgba(255,139,56,1)), to(rgba(254,206,108,1)));
+    background:linear-gradient(rgba(255,139,56,1), rgba(254,206,108,1));
+    border-radius:20px;
+}
+.RechButAlFull{
+	width: 1.8rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #C11B22;
+	font-size: 0.16rem;
+	margin: 0 auto; 
+	margin-top: 0.12rem;
+    background:rgba(245,159,110,1);
+    border-radius:20px;
+	/*margin-top: 0.1rem;*/
+	/*background-image: url(http://qiniuapp.hailangkeji.com/marFullCouAlBut.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.RechButO>p:last-child {
+	font-size: 0.12rem;
+	/*color: #7B3E32;*/
+	margin-top: 0.04rem;
+}
+
+
+.RechButT {
+	width: 3.3rem;
+	max-width: 92%;
+	height: 1.8rem;
+	margin: 0 auto;
+	background:rgba(253,221,182,1);
+	border:5px solid rgba(242, 149, 66, 1);
+	border-radius:5px;
+	text-align: center;
+	color: #E62D11;
+	font-size: 13px;
+	line-height: 0.2rem;
+	/*margin-top: 0.05rem;*/
+	/*padding: 0.06rem 0;*/
+	/*background-color: #FFEBE3;*/
+	/*background: rgba(246, 91, 83, 0.1);*/
+	/*border-radius: 10px;*/
+}
+.RechButT img{
+	width: 1.03rem;
+	height: 1.04rem;
+	padding-top: 0.16rem;
+}
+
+#RechTxtT {
+	margin-top: 0;
+	font-size: 0.15rem;
+}
+
+#RechTxtO {
+	margin-top: 0.1rem;
+	font-size: 0.15rem;
+}
+
+.RechBut span {
+	color: #FE4B4B
+}
+
+#accuButP {
+	color: #FEFEFE;
+}
+
+.RechTip {
+	width: 100%;
+	color: #F1B269;
+	text-align: center;
+	font-size: 10px;
+	/*background-color: #F84B1C;*/
+	padding-top: 0.3rem;
+	padding-bottom: 0.16rem;
+}
+.RechCard {
+	width: 3.3rem;
+	max-width: 92%;
+	/*height: 1.86rem;*/
+	margin: 0 auto;
+	/*margin-bottom: 0.26rem;*/
+	text-align: left;
+	color: #F1B269;
+	font-size: 13px;
+	margin-top: 0.2rem;
+	line-height: 0.2rem;
+	/*background-image: url(http://qiniuapp.hailangkeji.com/marFullCouTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.RechCard div{
+	width: 1.82rem;
+	max-width: 52%;
+	margin: 0 auto;
+	text-align: center;
+    /*margin-bottom: 0.15rem;*/
+}
+.RechCardP1{
+	/*width: 100%;*/
+    font-size: 16px;
+    /* line-height: 0.3rem; */
+    font-weight: bold;
+    
+}
+.RechCardHr01{
+	position: relative;
+    margin-left: 0;
+    top: 0.16rem;
+    /* float: left; */
+    width: 40px;
+    height: 1px;
+    border: none;
+    color: #F1B269;
+    background-color: #F1B269;
+}
+.RechCardHr02{
+	position: relative;
+    margin-right: 0;
+    top: -0.16rem;
+	/*float: right;*/
+	width: 40px;
+	height: 1px;
+	border: none;
+	color: #F1B269;
+	background-color: #F1B269;
+}
+/*.RechCard img{
+	width: 3.2rem;
+	height: 1.9rem;
+	margin-top: 0.25rem;
+	
+}*/

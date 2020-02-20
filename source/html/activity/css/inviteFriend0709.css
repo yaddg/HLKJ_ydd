@@ -1,0 +1,278 @@
+
+body { 
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	overflow-x: hidden;
+	background-color: #fff;
+	font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.conetnt {
+	position: absolute;
+	margin-left: 16px;
+	margin-right: 16px;
+	height: 30px;
+	color: #ff0000;
+	border: 0px solid #fff;
+}
+
+.rule {
+	position: absolute;
+	bottom: 50px;
+	height: 100px;
+	width: 100%;
+	color: #FFF;
+}
+
+.rule p {
+	font-size: 11px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.ruleTitle {
+	height: 30px;
+	margin: auto;
+	margin-left: 16px;
+	margin-right: 16px;
+	text-align: center;
+}
+
+.hr {
+	display: inline-block;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #fff;
+	width: 40px;
+	vertical-align: middle;
+}
+
+.fxts {
+	margin-top: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 2px;
+	width: 100%;
+	font-size: 9px;
+	color: #fff;
+	z-index: 999;
+	text-align: center;
+}
+
+.bottomTishi {
+	position: absolute;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+}
+
+.bgimg {
+	display: block;
+	width: 100%;
+}
+
+.bgdiv {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.bottomImg {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_invi.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	/*border:1px solid #FFF;*/
+}
+
+.rule_1 {
+	position: absolute;
+	margin-left: 16px;
+	margin-right: 16px;
+	height: 52px;
+	text-align: center;
+	font-size: 11px;
+	color: red;
+	padding: 10px 0px 0px 0px;
+	border: 0px solid #00ff00;
+}
+
+.butLeft {
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 37px;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_but2.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+
+.butRight {
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 37px;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_but1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+
+.Strategy_bg {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Strategy_img {
+	position: relative;
+	width: 300px;
+	height: 190px;
+	margin-top: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_strategy.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	border: 0px solid #fff;
+}
+
+.inviteFriend_strategy_close {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	width: 17px;
+	height: 17px;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_strategy_close.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	border: 0px solid #fff;
+}
+
+.check_record_bg {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.inviteFriend_record_bg {
+	position: relative;
+	width: 300px;
+	height: 283px;
+	margin-top: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_record_bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	border: 0px solid #fff;
+}
+
+.inviteFriend_record_close {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	width: 17px;
+	height: 17px;
+	background-image: url(/hltjmobile/source/images/activity/inviteFriend_strategy_close.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	border: 0px solid #fff;
+}
+
+.record_title {
+	height: 37px;
+	width: 100%;
+	line-height: 37px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	border: 0px solid #f00;
+}
+
+.couponNum {
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+	border: 0px solid #f00;
+}
+
+.record_div {
+	min-height: 170px;
+	max-height: 170px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+	overflow-x: hidden;
+	border: 0px solid #f00;
+}
+
+.record_table {
+	width: 100%;
+	min-height: 30px;
+	border-collapse: collapse;
+	border-bottom: 0px solid #ccc;
+}
+
+.record_table tr {
+	height: 30px;
+}
+
+.record_table td {
+	width: 20%;
+	height: 20px;
+	color: #666;
+	font-size: 10px;
+	text-align: center;
+	padding: 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+.titleDiv {
+	height: 33px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.titleDiv span {
+	display: inline-block;
+	margin: -2px;
+	padding: 0px;
+	width: 20%;
+	height: 100%;
+	line-height: 34px;
+	text-align: center;
+}

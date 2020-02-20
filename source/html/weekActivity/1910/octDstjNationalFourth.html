@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<script src="http://qiniuapp.hailangkeji.com/jquery.liMarquee.js"></script>
+		<link rel="stylesheet" href="http://qiniuapp.hailangkeji.com/liMarquee.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/octDstjNationalFourth.css" />
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="contentHead">
+
+			</div>
+			<div class="contentCard">
+				<div class="contentCard01">
+
+				</div>
+				<div class="contentCard02">
+					<!--<img src="http://qiniuapp.hailangkeji.com/sepDstjMidAutButGo.png"/>-->
+					<div class="contBoxOpen"></div>
+					<div class="contBoxTxt">您当前剩余<span>0次</span>挖宝机会</div>
+					<div class="contBoxMyExc">我的奖励<img src="http://qiniuapp.hailangkeji.com/octDstjNatFourthArrow.png" /></div>
+				</div>
+				<div class="contentCard03">
+
+				</div>
+			</div>
+			<div class="secCardTipNum">
+				<div class="secCardTipNumIcon">
+					<img src="http://qiniuapp.hailangkeji.com/juneSciStoneHorn.png" style="width: 0.18rem;height: 0.14rem;" />
+				</div>
+				<div class="secCardTipNumList">
+					<ul id="ul1">
+					</ul>
+				</div>
+			</div>
+			<div class="contCardTask">
+				<img src="http://qiniuapp.hailangkeji.com/octDstjNatFourthCardBoxTit.png" onclick="return false" />
+				<p style="font-size: 11px;">用户单笔现金投资：</p>
+				<p>1.大于等于40元低于64元，获得<span>1次</span>抽奖机会</p>
+				<p>2.大于等于64元低于120元，获得<span>2次</span>抽奖机会</p>
+				<p>3.大于等于120元，获得<span>4次</span>抽奖机会</p>
+			</div>
+			<img class="contCardTaskLine" src="http://qiniuapp.hailangkeji.com/octDstjNatFourthRope.png" onclick="return false" />
+			<div class="contentMyCard">
+				<img class="contCardTaskBug" src="http://qiniuapp.hailangkeji.com/octDstjNatFourthBoxBubTxt.png" onclick="return false" />
+				<ul>
+					<li>
+						<div class="sepCard01">
+							<div class="sepCardTxt01">
+								<p>单笔现金满40元获得1次机会</p>
+								<p>当前可领取<span>0次</span></p>
+							</div>
+							<div id="sepCardBut01" class="sepCardAlBut">领取</div>
+						</div>
+					</li>
+					<li>
+
+						<div class="sepCard02">
+							<div class="sepCardTxt02">
+								<p>单笔现金满64元获得2次机会</p>
+								<p>当前可领取<span>0次</span></p>
+							</div>
+							<div id="sepCardBut02" class="sepCardAlBut">领取</div>
+						</div>
+					</li>
+					<li>
+
+						<div class="sepCard03">
+							<div class="sepCardTxt03">
+								<p>单笔现金满120元获得4次机会</p>
+								<p>当前可领取<span>0次</span></p>
+							</div>
+							<div id="sepCardBut03" class="sepCardAlBut">领取</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--<div class="secCardTipListBg">
+
+			</div>-->
+			<div class="RechTip">
+				<span>本产品属于高收益、高风险品种</span><br />
+				<span>大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+			</div>
+		</div>
+		<div class="novRule"></div>
+		<!--<div class="RechCardRecord"></div>-->
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<img class="FortuneImg" src="http://qiniuapp.hailangkeji.com/octDstjNatFourthAlertNone.png" onclick="return false" />
+				<div class="FortuneHint">
+					<p id="drawDesc"></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut" onclick="receiveObj.closeObtain()">
+					朕知道了
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="receiveObj.closeTips()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<!--<img src="http://qiniuapp.hailangkeji.com/sepDstjMidAutTip.png" onclick="return false" />-->
+				
+				<p>活动规则</p>
+				<p>1.活动期间，用户投资满足任务区中某一种档位任务可获得相应次数的挖宝机会。 </p>
+				<p>2.此活动只按照用户单笔现金投资进行计算抽奖次数，不可进行累计计算。 </p>
+				<p>3.活动奖励在整个国庆活动结束后的两个工作日内发放<span style="color: #FF4716;">（单个用户奖励上限为1000元）</span>。</p>
+				<p>4.本次活动最终解释权归大圣淘金所有，如有任何疑问请联系在线客服咨询。</p>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<p>获得奖励</p>
+				<ul id="optionBgLi">
+
+				</ul>
+				<!--<p>该板块代金券奖励上限为1000元</p>-->
+			</div>
+		</div>
+		<script src="js/octDstjNationalFourth.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

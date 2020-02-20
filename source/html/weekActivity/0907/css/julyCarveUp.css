@@ -1,0 +1,545 @@
+html {
+	/*font-size: 100px;*/
+}
+
+body {
+	width: 100%;
+	background-color: #F6564F;
+	/*background: -webkit-linear-gradient(#2BABFE, #1C67FF);
+	background: -o-linear-gradient(#2BABFE, #1C67FF);
+	background: -moz-linear-gradient(#2BABFE, #1C67FF);
+	background: linear-gradient(#2BABFE, #1C67FF);*/
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
+/*活动规则*/
+
+/*.novRule { 
+	float: left;
+    width: 0.82rem;
+    height: 0.32rem;
+    margin-top: 0.07rem;
+    margin-left: 0.2rem;
+    background-image: url(https://jpg.hailangkj.cn/marproPourSidesButTip.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}*/
+
+
+/*获奖记录*/
+
+/*.novRecord { 
+	float: right;
+    width: 0.82rem;
+    height: 0.32rem;
+    margin-top: 0.07rem;
+    margin-right: 0.2rem;
+    background-image: url(https://jpg.hailangkj.cn/marproPourSidesButMyPrize.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}*/
+
+.conetnt {
+	/*postion：relative*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	text-align: center;
+}
+
+/*.tossCont {
+	width: 100%;
+	text-align: center;
+	margin-top: -1.3rem;
+}*/
+
+.conetnt>div:first-child {
+	width: 100%;
+	height: 3.3rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/julyCarveUpHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	background-color:none;
+}
+
+.novRuleBg{
+	width: 97.5%;
+    height: 1.58rem;
+    margin: 0 auto;
+    margin-top: -0.55rem;
+    padding-top: 0.24rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/julyCarveUpCard.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    z-index: 88;
+}
+
+.tossContRankBg { 
+    width: 90%;
+    /*height: 1.78rem;*/
+    margin: 0 auto;
+    margin-top: 0.21rem;
+    /*background-image: url(http://qiniuapp.hailangkeji.com/julyCarveUpTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.RechTip {
+	width: 100%;
+	text-align: center;
+	color: #FFD9D7;
+	font-size: 0.12rem;
+	padding-top: 0.18rem;
+	padding-bottom: 0.6rem;
+}
+
+.tossContRankMyRank {
+	width: 100%;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	font-size: 0.16rem;
+	color: #FFFFFF;
+	background-color: #0D5CF6;
+}
+
+.tossContRankMyRank span {
+	color: #FFEC81;
+}
+
+
+
+#actAnimation img{
+	width: 1.2rem;
+    height: 1.45rem;
+    margin-top: 2.5rem;
+}
+
+.marCashCouponButBg{
+	float: left;
+	width: 0.64rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	font-size: 0.18rem;
+	color: #FFA228;
+	text-align: center;
+	
+}
+.marCashCouponCardBot{
+	width: 100%;
+    height: 1.3rem; 
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.3rem;
+    margin-top: 0.12rem;
+    /*padding-bottom: 0.26rem;*/
+    background-image: url(http://qiniuapp.hailangkeji.com/julyCarveUpCardBg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    z-index: 88;
+}
+.marCashCouponCardBot img{
+	width: 0.85rem;
+	height: 0.81rem;
+	
+}
+.marCashCouponCardBot div:first-child{
+	float: left;
+	width: 34.4%;
+    /*height: 1.6rem;*/ 
+    margin: 0 auto;
+    text-align: center;
+    z-index: 88;
+}
+.aprCarveUpTxt{
+	float: left;
+	width: 59.6%;
+    /*height: 1.6rem;*/ 
+    margin: 0 auto;
+    padding-top: 0.12rem;
+    text-align: left; 
+}
+.aprCarveUpTxt p:first-child{
+	font-size: 0.12rem;
+	color: #333333;
+	/*line-height: 0.4rem;*/
+}
+.aprCarveUpTxt p:first-child span{
+	color: #FD3331;
+	font-weight: bold;
+}
+.aprCarveUpTxt p:nth-child(2){
+	font-size: 0.14rem;
+	color: #333333;
+	margin-top: 0.08rem;
+}
+.aprCarveUpTxt p:nth-child(2) span{
+	color: #FD3331;
+	font-weight: bold;
+}
+.aprCarveUpTxt p:nth-child(3){
+	font-size: 0.16rem;
+	color: #333333;
+	margin-top: 0.08rem;
+	font-weight: bold;
+}
+.aprCarveUpTxt p:nth-child(3) span{
+	color: #FF0000; 
+}
+.marCashCouponCardBut{
+	width: 2.06rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 0.18rem;
+    margin-bottom: 0.02rem;
+    text-align: center;
+    background:linear-gradient(3deg,rgba(255,147,42,1),rgba(255,191,80,1));
+	box-shadow:0px 2px 5px 0px rgba(255,139,64,0.3);
+	border-radius:21px;
+}
+
+.marCashCouponCardAlBut{
+	width: 2.06rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 0.18rem;
+    margin-bottom: 0.02rem;
+    text-align: center;
+    background:rgba(255,221,121,1);
+	border-radius:25px;
+}
+
+.marCashCouponCardTxt{
+	color: #681E16;
+	font-size: 0.12rem;
+	text-align: center;
+}
+
+.marCashCouponCardBg{
+	width: 84.2%;
+	/*height: 0.55rem;*/
+	/*line-height: 0.4rem;*/
+	margin: 0 auto;
+	padding: 0.1rem 0;
+	color: #FFF8F7;
+	/*font-size: 0.12rem;*/
+	text-align: left; 
+}
+.marCashCouponCardBg p:first-child{
+	font-size: 0.14rem;
+	color: #333333;
+}
+.marCashCouponCardBg p:last-child{
+	font-size: 0.12rem;
+	color: #FD3331;
+}
+.marCashCouponCardBg span{
+	font-weight: bold;
+	font-size: 0.12rem;
+	color: #FFF286;
+}
+
+
+
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.myObtainImg {
+	position: fixed;
+    left: 14.6%;
+    width: 70.8%;
+    height: 3.3rem;
+    /* padding-bottom: 0.12rem; */
+    font-size: 0.14rem;
+    top: 24%;
+    /* background-image: url(https://jpg.hailangkj.cn/octoberScrWin.png); */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.FortuneHint {
+	/* float: right; */
+    width: 66%;
+    /* left: 5%; */
+    text-align: center;
+    margin: 0 auto;
+    /* margin-right: 8%; */
+    margin-top: 1.51rem;
+    color: #FFFFFF;
+}
+
+.FortuneHint>p:first-child {
+	/*line-height: 0.24rem;*/
+	/*font-weight: bold;*/
+	font-size: 19px;
+	text-align: center;
+}
+
+.FortuneHint>p:nth-child(2) {
+	/*margin-top: 0.1rem;*/
+	font-size: 14px;
+	/*color: #FFE1A5;*/
+	margin-top: 0.14rem;
+}
+#drawDesc img{
+	width: 72.7%;
+	/*height: 0.8rem;*/
+	text-align: center;
+	/*font-size: 0.13rem;*/
+}
+
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+
+.FortuneBut {
+	/*float: left;*/
+	width: 1.96rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0 auto;
+	color: #FFFFFF;
+	margin-top: 0.3rem;
+	font-size: 0.18rem;
+	background:linear-gradient(3deg,rgba(255,122,33,1),rgba(255,180,49,1));
+	box-shadow:0px 3px 9px 2px rgba(246,47,40,0.3), 0px -3px 0px 0px rgba(255,113,4,0.6);
+	border-radius:20px;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#optionBgO {
+	display: none;
+	position: fixed;
+	left: 14%;
+	width: 72%;
+	height: 3.3rem;
+	font-size: 0.14rem;
+	top: 22%;
+	color: #FFFFFF;
+	background-image: url(https://jpg.hailangkj.cn/octoberScrWin.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#optionBgO li {
+	color: #FFE1A5;
+	font-size: 0.12rem;
+}
+
+#optionBgO ul {
+	height: 18%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+.sepAwardRecord {
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+
+.activityStatust {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	margin-bottom: 0.08rem;
+}
+
+#optionBgO span {
+	color: #FFF778;
+}
+
+.sepAwardBut {
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(https://jpg.hailangkj.cn/sepBut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#myRecord {
+	display: none;
+	/*width: 72%;*/
+	height: 86%;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+}
+
+#myRecord li {
+	width: 80%;
+	margin: 0 auto;
+	color: #333333;
+	font-size: 0.12rem;
+	margin-bottom: 0.02rem;
+}
+
+#myRecord li>span {
+	color: #E83E38;
+	font-size: 0.12rem;
+}
+
+#myRecord ul {
+	height: 80%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+
+/*规则悬浮框*/
+
+.mySupernatant {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 155, 60, 1);
+	    z-index: 9999;
+}
+
+.mySupernatantIonic {
+	width: 0.13rem;
+	height: 0.13rem;
+	margin-left: 2%;
+	margin-top: 0.14rem;
+	background-image: url(https://jpg.hailangkj.cn/octoberScrClose.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+.mySupernatantTxt {
+	width: 96%;
+	height: 86%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+.mySupernatantTxt p {
+	width: 88%;
+	margin: 0 auto;
+	line-height: 0.24rem;
+}
+
+.mySupernatantTxt>p:first-child {
+	/*margin-top: 0.24rem;*/
+	font-size: 0.18rem;
+	/*color: #E83E38;*/
+	color: #FF9B3C;
+	line-height: 0.6rem;
+	text-align: center;
+}
+
+.mySupernatant>div:first-child {
+	width: 100%;
+	height: 0.28rem;
+}
+
+#myTip {
+	display: none;
+}
+
+#myRecord {
+	display: none;
+}
+
+.octoberBot {
+	width: 100%;
+	height: 2px;
+}
+
+.mySupTip {
+	color: #A0A0A0;
+	font-size: 0.12rem;
+	text-align: center;
+}
+
+#myRecord li>div {
+	float: left;
+	font-size: 0.14rem;
+	padding: 0.05rem 0;
+}
+.option01 {
+	width: 70%;
+}
+
+.option02 {
+	width: 30%;
+	color: #FF8910;
+}
+.noviceWelfareDstjBut {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    color: #DA3336;
+    font-size: 0.18rem;
+    /*margin-top: 0.16rem;*/
+    font-weight: bold;
+    z-index: 99;
+	background: -webkit-linear-gradient(#F8D276, #F4B140);
+	background: -o-linear-gradient(#F8D276, #F4B140);
+	background: -moz-linear-gradient(#F8D276, #F4B140);
+	background: linear-gradient(#F8D276, #F4B140);
+}

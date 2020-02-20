@@ -1,0 +1,259 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>新手学堂</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../css/common.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="../../js/ionic-config.js"></script>
+
+		<link href="css/index.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<!--<div class="bar bar-header">
+			<div class="h1 title">新手学堂</div>
+		</div>-->
+
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+
+			<div class="tipHead">
+				<img src="http://qiniuapp.hailangkeji.com/zhijtSchoolBanner.png" style="width: 100%;height: 1.3rem;" />
+			</div>
+
+			<div class="apptip">
+				<div ng-class='{{indTrades}}' ng-click="indTrade()">
+					<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolTrade.png" class="imgLogo" /><br/>
+					<span>交易规则</span>
+				</div>
+				<div>
+					<div ng-class='{{indGuides}}' ng-click="indGuide()">
+						<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolGuide.png" class="imgLogo" /><br/>
+						<span>使用指南</span>
+					</div>
+					<div ng-class='{{indKnows}}' ng-click="indKnow()">
+						<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolKnow.png" class="imgLogo" /><br/>
+						<span>投资知识</span>
+					</div>
+				</div>
+			</div>
+			<div class="contentAll" ng-hide="myVar">
+				<ul>
+					<li>
+						<p>交易规则</p>
+					</li>
+					<li ng-click="tradeTradtime()">
+						<p>交易时间</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradePresent()">
+						<p>充值提现时间</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeBuyfall()">
+						<p>什么是买涨买跌</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradePosition()">
+						<p>什么是建仓、持仓、平仓</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeSercharge()">
+						<p>手续费如何收取</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeNight()">
+						<p>什么是持仓过夜</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+				</ul>
+				<div class="emth"></div>
+				<ul>
+					<li>
+						<p>使用指南</p>
+					</li>
+					<li ng-click="guideLoss()">
+						<p>什么是止盈止亏</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="guideVouchers()">
+						<p>什么是代金券</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<!--<li ng-click="">
+						<p>如何查看盈亏及资金信息</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>如何体现</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>充值说明</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>体现手续费、到账日期说明</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li> -->
+				</ul>
+				<div class="emth"></div>
+				<ul>
+					<li>
+						<p>投资知识</p>
+					</li>
+					<li ng-click="knowKline()">
+						<p>一分钟了解K线</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowVarieties()">
+						<p>品种介绍</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowSMA()">
+						<p>SMA使用技巧</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowEMA()">
+						<p>EMA使用技巧</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowUSdata()">
+						<p>美国经济指标对行情的影响</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowKDJ()">
+						<p>KDJ指标</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowMACD()">
+						<p>MACD指标</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowTrendsup()">
+						<p>趋势与支撑阻力</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowCopnic()">
+						<p>铜镍影响因素</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+				</ul>
+			</div>
+			<div class="contentTrades" ng-hide="myVar1">
+				<ul>
+					<li>
+						<p>交易规则</p>
+					</li>
+					<li ng-click="tradeTradtime()">
+						<p>交易时间</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradePresent()">
+						<p>充值提现时间</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeBuyfall()">
+						<p>什么是买涨买跌</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradePosition()">
+						<p>什么是建仓、持仓、平仓</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeSercharge()">
+						<p>手续费如何收取</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="tradeNight()">
+						<p>什么是持仓过夜</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+				</ul>
+			</div>
+			<div class="contentKnows" ng-hide="myVar3">
+				<ul>
+					<li>
+						<p>使用指南</p>
+					</li>
+					<li ng-click="guideVouchers()">
+						<p>什么是代金券</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="guideLoss()">
+						<p>什么是止盈止亏</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<!--<li ng-click="">
+						<p>如何查看盈亏及资金信息</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>如何体现</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>充值说明</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="">
+						<p>体现手续费、到账日期说明</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>  -->
+				</ul>
+			</div>
+
+			<div class="contentGuides" ng-hide="myVar2">
+				<ul>
+					<li>
+						<p>投资知识</p>
+					</li>
+					<li ng-click="knowKline()">
+						<p>一分钟了解K线</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowVarieties()">
+						<p>品种介绍</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowSMA()">
+						<p>SMA使用技巧</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowEMA()">
+						<p>EMA使用技巧</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowUSdata()">
+						<p>美国经济指标对行情的影响</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowKDJ()">
+						<p>KDJ指标</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowMACD()">
+						<p>MACD指标</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowTrendsup()">
+						<p>趋势与支撑阻力</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+					<li ng-click="knowCopnic()">
+						<p>铜镍影响因素</p>
+						<p><i class="icon ion-ios-arrow-right"></i></p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+
+</html>

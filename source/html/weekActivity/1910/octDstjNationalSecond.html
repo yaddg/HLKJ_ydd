@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<!--<script src="http://qiniuapp.mqkji.cn/jquery.liMarquee.js"></script>-->
+		<script src="/dstjmobile/source/js/common.js"></script>
+
+		<!--<link rel="stylesheet" href="http://qiniuapp.mqkji.cn/liMarquee.css">-->
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/octDstjNationalSecond.css" />
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="contentHead">
+				<!--<div class="headTips">活动规则</div>-->
+				<!--<div class="contentTime">
+
+				</div>
+				<div class="contentCard">
+					<p>盈利挑战赛开始啦，冲击榜单拿<span>丰厚奖励，前五名大奖</span>等你来挑战，最高享<span>6888元~~~~~</span></p>
+				</div>-->
+			</div>
+			<div class="contentCard">
+				<img style="height: 0.35rem;" src="http://qiniuapp.hailangkeji.com/octDstjNatSecFraUp.png" onclick="return false" />
+				<div>
+					<p class="contentCardP01">您在<label>2019年10月10日17:00 </label>已累计盈利<span>0元</span></p>
+					<p class="contentCardP02">
+						<img style="height: 0.14rem;width: 0.38rem;position: relative;top: 0.02rem;" src="http://qiniuapp.hailangkeji.com/octDstjNatSecLoss.png" onclick="return false" />
+						 您当前名次：<span>0名</span>
+					</p>
+					<p class="contentCardP03">距离上一名次还差：<span>0元</span></p>
+					<!--<p class="contentCardP04">距离前200名还差：<span>0元</span></p>-->
+				</div>
+				<img style="height: 0.18rem;margin-top: -0.04rem;" src="http://qiniuapp.hailangkeji.com/octDstjNatSecFraDown.png" onclick="return false" />
+			</div>
+			<div class="RechBut">
+				<div class="RechCardUp" id="RechCardUp">
+
+					<div class="RechCardImg01">
+						<img src="http://qiniuapp.hailangkeji.com/octDstjNatSecWin02s.png" />
+					</div>
+					<!--<div class="RechCardIcon01">
+
+					</div>-->
+					<p class="RechCardIpO01">暂无数据</p>
+					<p class="RechCardMonO02"></p>
+					<p class="RechCardTxtO03"></p>
+					<!--<div class="RechCardImgIcon01">
+
+					</div>-->
+				</div>
+				<div class="RechCardLeft" id="RechCardLeft">
+					<div class="RechCardImg02">
+						<img src="http://qiniuapp.hailangkeji.com/octDstjNatSecWin01s.png" />
+					</div>
+					<!--<div class="RechCardIcon02">
+
+					</div>-->
+					<p class="RechCardIpT01">暂无数据</p>
+					<p class="RechCardMonT02"></p>
+					<p class="RechCardTxtT03"></p>
+					<!--<div class="RechCardImgIcon02">
+
+					</div>-->
+				</div>
+				<div class="RechCardRight" id="RechCardRight">
+					<div class="RechCardImg03">
+						<img src="http://qiniuapp.hailangkeji.com/octDstjNatSecWin03s.png" />
+					</div>
+					<!--<div class="RechCardIcon03">
+
+					</div>-->
+					<p class="RechCardIpTh01">暂无数据</p>
+					<p class="RechCardMonTh02"></p>
+					<p class="RechCardTxtTh03"></p>
+					<!--<div class="RechCardImgIcon03">
+
+					</div>-->
+				</div>
+			</div>
+			<div class="tossContRankBg">
+				<div class="tossContRankTitle">
+					<div>名次</div>
+					<div>手机号</div>
+					<div>盈利金额</div>
+					<!--<div>奖励(券)</div>-->
+				</div>
+				<ul id="tossContRankUl">
+					<li>
+						<img class="emptyImg" src="http://qiniuapp.hailangkeji.com/octDstjNatSecEmp.png" onclick="return false" />
+						<p>暂无数据，快来冲击榜单哦~</p>
+					</li>
+
+					<!--<li>
+							<div><img class="bgimg" src="http://qiniuapp.mqkji.cn/novemberTossWin01.png" /></div>
+							<div>132****4427</div>
+							<div>16局</div>
+							<div>8888元现金礼 </div>
+						</li>-->
+				</ul>
+
+			</div>
+			<!--<div class="tossContRankMyRank">
+						<p class="tossContRankBot">排行榜每10分钟更新一次 </p>
+					</div>-->
+			<div class="RechTip">
+				<span>本产品属于高收益、高风险品种</span><br />
+				<span>大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+			</div> 
+		</div>
+		<div class="novRule"></div>
+		<div class="novListRule"></div>
+		<div class="myObtain" id="myObtain" onclick="receiveObj.closeObtain()">
+			<div class="myObtainImg">
+				<div class="FortuneHint">
+					<img class="FortuneImg" src="http://qiniuapp.mqkji.cn/sprFesThAlert200.png" onclick="return false" />
+					<p id="drawDesc"></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut">
+					朕知道了
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="receiveObj.closeTips()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<!--<p>活动规则</p>-->
+				<div class="myRoundTip">
+					<div>活动规则</div>
+					<p>1、盈利排行榜在活动结束时以最终的前200名用户可获得相应奖励;</p>
+					<p>2、此活动只计算单笔现金投资满80元及以上，且投资盈利的用户;</p>
+					<p>3、此活动只计算用户盈利的单子，不计算亏损单子;</p>
+					<p>4、活动期间，若两个用户盈利金额都相同时，会以盈利最早日期的用户名次排榜单<span style="color: #842AFF;font-weight: bold;">（如用户A盈利在上午10点5分2秒累计盈利500元，用户B在上午11点3分2秒累计盈利500元，用户A会排在B的前一名次）</span>;</p>
+					<p>5、此活动奖励在整个国庆活动结束后的两个工作日内发放; </p>
+					<p>6、活动最终解释权归大圣淘金所有。</p>
+				</div>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<div class="myTabList">
+					<img src="http://qiniuapp.hailangkeji.com/octDstjNatSecFraTabList.png" onclick="return false" />
+				</div>
+			</div>
+		</div>
+		<script src="js/octDstjNationalSecond.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

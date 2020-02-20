@@ -1,0 +1,94 @@
+body { 
+	background-color: #FFFFFF; 
+}
+input select{
+	background-clip: #fff;
+} 
+.apptip {
+	width: 100%;
+    height: 1.2rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.12rem;
+    padding: 0.15rem 0;
+    color: #333333;
+    margin-bottom: 0.1rem;
+}
+
+.apptip div:first-child {
+	width: 33.3%;
+	/*height: 0.8rem;*/
+	float: left;
+	/*padding-top: 0.4rem;*/
+	/*border-right: 1px solid #e1e3e8;*/
+}
+
+.apptip div:nth-child(2) {
+	width: 66.6%;
+	/*height: 0.8rem; */
+	float: right;
+}
+.apptip div:nth-child(2) div:first-child{
+	width: 50%;
+	/*height: 0.8rem;*/
+	float: left;
+	/*padding-top: 0.4rem;*/
+	/*border-right: 1px solid #e1e3e8;*/
+}
+.apptip div:nth-child(2) div:nth-child(2){
+	width: 50%;
+	/*height: 0.8rem;*/
+	float: right; 
+}
+.emth{
+	width: 100%;
+	height: 0.28rem;
+}
+.imgLogo{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.mycol{
+	color: #c7000b;
+}
+
+.othcol{
+	color: #333333;
+}
+/*.mycols{
+	border-bottom: 4px solid #c7000b;
+}  */
+ul{
+	padding: 0 0.16rem;
+	color: #333333;
+}
+li{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-bottom: 1px solid #F9F9F9;
+	font-size: 0.14rem;
+}
+li:first-child{
+	height: 0.2rem;
+	line-height: 0.2rem; 
+	border-left: 4px solid #3573FA;
+	padding-left: 0.06rem;
+	font-size: 0.15rem;
+	border-bottom: 0;
+	font-weight:bold;
+}
+p{
+	margin: 0;
+}
+li p:first-child{
+	float: left;
+	width: 85%;
+	text-align: left;
+}
+
+li p:nth-child(2){  
+	float: right;
+	width: 12%;
+	text-align: right; 
+	padding-top: 0.18rem;
+}

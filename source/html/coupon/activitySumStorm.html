@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>夏日风暴</title>
+
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/md5.js"></script>
+		<script src="../../js/common.js"></script>
+		<link rel="stylesheet" href="../../css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/activitySumStorm.css" />
+	</head>
+
+	<body>
+		<div id="receiveBox" class="receiveBox" onclick="receiveObj.downloadKnow()">
+			<div class="boxbg" onclick="receiveObj.downloadKnow()"></div>
+			<div id="optionBg" class="optionBg">
+				<span class="activityStatus">活动未开始</span><br /> 
+				<span class="activityDate">开始时间:&nbsp;7月2日06:00 </span>
+				<div class="optionBut" onclick="receiveObj.downloadKnow()">
+					我知道了
+				</div>
+			</div>
+			<div id="optionBgO" class="optionBg">
+				<span class="activityStatust">我的兑换</span>
+				<ul id="optionBgLi">  
+				</ul>
+			</div>
+		</div>
+		<div class="conetnt">
+			<div class="redenv">
+				<div id="receiveButImg" class="receiveButImg">
+					<ul id="ul1"> 
+					</ul>
+					<ul id="ul2"></ul>
+				</div>
+			</div>
+			<div class="conetntTxt">
+				<p id="conetntTxtP1">您当前现金累投金额金额为<span class="digitAmount">0000元</span></p>
+				<p id="conetntTxtP2">剩余可兑换额为<span class="digitAmount">0000元</span></p>
+				<div class="conetntImgs">
+					<img src="images/SumStorm8.png" style="width: 32%;" />
+					<img src="images/SumStorm80.png" style="width: 32%;" />
+					<img src="images/SumStorm100.png" style="width: 32%;" />
+					<div style="width: 100%;height: 0.2rem;">
+						<div class="conetntIon1">
+							
+							<div class="conetntIon2" onclick="receiveObj.txtMin(1)">
+								<img src="images/SumStormMin.png" class="conetntAdd" />
+							</div>
+							<div class="conetntIon2" id="digitNum8">
+								0
+							</div>
+							<div class="conetntIon2" onclick="receiveObj.txtAdd(1)">
+								<img src="images/SumStormAdd.png" class="conetntAdd" />
+							</div> 
+							
+						</div>
+						<div class="conetntIon1">
+							<div class="conetntIon2" onclick="receiveObj.txtMin(2)">
+								<img src="images/SumStormMin.png" class="conetntAdd" />
+							</div>
+							<div class="conetntIon2" id="digitNum80">
+								0
+							</div>
+							<div class="conetntIon2" onclick="receiveObj.txtAdd(2)">
+								<img src="images/SumStormAdd.png" class="conetntAdd" />
+							</div> 
+						</div>
+						<div class="conetntIon1">
+							<div class="conetntIon2" onclick="receiveObj.txtMin(3)">
+								<img src="images/SumStormMin.png" class="conetntAdd" />
+							</div>
+							<div class="conetntIon2" id="digitNum100">
+								0
+							</div>
+							<div class="conetntIon2" onclick="receiveObj.txtAdd(3)">
+								<img src="images/SumStormAdd.png" class="conetntAdd" />
+							</div> 
+						</div>
+					</div>
+					<div style="width: 100%;height: 0.2rem;">
+						<div class="conetntIon3" onclick="receiveObj.scrambleBut(1)"> 
+							兑换
+						</div>
+						<div class="conetntIon3" onclick="receiveObj.scrambleBut(2)"> 
+							兑换
+						</div>
+						<div class="conetntIon3" onclick="receiveObj.scrambleBut(3)"> 
+							兑换
+						</div>
+					</div>
+				</div>
+				<div class="conetntExch" onclick="receiveObj.scrambleList()">
+					我的兑换&nbsp;>
+				</div>
+				<div style="width: 100%;margin-top: 0.1rem;"> 
+				</div>
+			</div>
+			<div style="width: 100%;margin-top: 0.4rem;">
+				<img src="images/SumStormRule.png" style="width: 100%;" />
+			</div>
+			<div style="width: 100%;margin-top: 0.2rem;">
+				<img src="images/SumStormTip.png" style="width: 100%;" />
+			</div>
+
+			<!--<div class="proIntroduceTop">
+				<p>本产品属于高收益、高风险品种</p>
+				<p>海浪淘金温馨提示：市场有风险，投资需谨慎</p>
+			</div>-->
+		</div>
+		<!--<div onclick="receiveObj.downloadApp()" class="proIntroduceDown">
+				下载海浪淘金APP
+			</div>-->
+
+		<script src="js/activitySumStorm.js"></script> 
+		<script src="js/txtMess.js"></script>
+	</body>
+
+</html>

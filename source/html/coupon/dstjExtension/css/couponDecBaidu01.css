@@ -1,0 +1,133 @@
+html{
+	font-size: 100px;
+}
+body {
+	background:rgba(255,255,255,1);
+}
+.conetnt{
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+/*
+    height: 14.35rem;
+    background-image: url(http://qiniuapp.hailangtaojin.com/couponAd01Bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;*/
+}
+.conetnt img{
+	width: 100%;
+}
+/*蒙版*/
+.receiveBox {
+	display: none;
+	position: absolute;
+	height: 14.35rem;
+	width: 100%;
+	z-index: 100;
+}
+.boxbg {
+	position: absolute;
+	height: 14.35rem;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+.optionBgs {
+    position: absolute;
+    top: -0.52rem;
+    /* left: 5px; */
+    height: 140px;
+    width: 100%;
+    /* border-radius: 5px; */
+    /*background-color: #FFF;*/
+    text-align: center;
+    display: none;
+}
+.receiveButImgs {
+	position: absolute;
+	bottom: 15%;
+	height: 50px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.optionBg {
+     position: absolute;
+    top: 0px;
+    /* left: 5px; */
+    height: 140px;
+    width: 100%;
+    /* border-radius: 5px; */
+    /*background-color: #FFF;*/
+    text-align: center;
+}
+#optionTitle {
+	height: 0.35rem;
+    position: absolute;
+    left: 0.48rem;
+    top: 0.05rem;
+    position: absolute;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+}
+/*主页*/
+.RegisterThBut{
+    width: 84%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin: 0 auto;
+    margin-top: 0.16rem;
+    background:rgba(232,53,49,1);
+	border-radius:30px;
+	font-size: 0.22rem;
+	color: #F4F4F4;
+}
+.RegisterTxt{
+	width: 100%;
+	text-align: center;
+	color: #E83531;
+	font-size: 0.14rem;
+}
+.RegisterAdBut{
+	position: absolute;
+    top: 12.76rem;
+    left: 6%;
+	width: 88%;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.17rem;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius:21px;
+	background: -webkit-linear-gradient(#FECC7F, #FFA320);
+	background: -o-linear-gradient(#FECC7F, #FFA320);
+	background: -moz-linear-gradient(#FECC7F, #FFA320);
+	background: linear-gradient(#FECC7F, #FFA320);
+}
+.RegisterAdTip{
+	/* position: absolute; */
+    width: 100%;
+    /* bottom: 1%; */
+    padding: 0.16rem 0;
+    line-height: 0.16rem;
+    text-align: center;
+    font-size: 0.08rem;
+    color: rgba(102,102,102,1);
+    opacity: 0.8;
+	
+}

@@ -1,0 +1,110 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt"> 
+					MACD&nbsp;指&nbsp;标&nbsp;使&nbsp;用&nbsp;技&nbsp;巧
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<ul class="knowUlmeth"> 
+    					<li>
+							<img src="http://qiniuapp.mqkji.cn/knowMACDImg.png" style="width: 100%;" />
+						</li>
+						<li>
+							<p>心法口诀</p>
+						</li>
+						<li>
+							<p>死叉看跌，金叉看涨；</p>
+						</li>
+						<li>
+							<p>绿柱看跌，红柱看涨；</p>
+						</li>
+						<li>
+							<p>抓住趋势，最怕震荡；</p>
+						</li>
+						<li>
+							<p>指标配合，决胜战场。</p>
+						</li> 
+					</ul>
+					<ul class="knowUlcont">
+						<li>
+							<p>MACD指标使用技巧</p>
+						</li>
+						<li>
+							<p>MACD全称为指数平滑移动平均线，指标拥有两根线：快线（DIF）和慢线（DEA），MACD指标数值有两种动能柱：红色和绿色。</p>
+						</li> 
+						<li class="contColor">
+							<p>基本用法：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一、MACD金叉：快线（DIFF）由下向上突破慢线（DEA），为买入信号。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二、MACD死叉：快线（DIFF）由上向下突破慢线（DEA），为卖出信号。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三、MACD 绿转红：MACD 值由负变正，市场由空头转为多头。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四、MACD 红转绿：MACD 值由正变负，市场由多头转为空头。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五、快线（DIF）和慢线（DEA）均为正值,即都在零轴线以上时，大势属多头市场，MACD金叉，可作买入信号。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;六、快线（DIF）和慢线（DEA）均为负值,即都在零轴线以下时，大势属空头市场，MACD死叉，可作卖出信号。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;七、当慢线（DEA）与 K 线趋势发生背离时为反转信号，包括两种情况：顶背离和底背离。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①顶背离，K线价格创出新高而慢线（DEA）数值减少向下走，视为顶背离，价格极有可能开始下跌；</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②底背离，K线价格创出新低而慢线（DEA）数值增加向上走，视为底背离，价格极有可能开始上涨。</p>
+						</li>
+						<li class="contColor">
+							<p>指标优劣势：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MACD是一项中、长线指标，擅长把握趋势性，行情判断非常稳健。但是当行情涨跌幅度特别大时，MACD可能来不及反应，因为MACD的移动相对缓和。震荡行情指标容易失灵，但如果配合RSI 及KDj指标可适当弥补这些缺点。</p>
+						</li> 
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

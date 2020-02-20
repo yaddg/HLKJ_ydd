@@ -1,0 +1,668 @@
+/*html {
+	font-size: 100px;
+}*/
+
+body {
+	background-color: #FD5432;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.conetnt {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.14rem;
+}
+
+.conetntHead {
+	width: 100%;
+	height: 2.34rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjAcFlopBanner.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.conetntCardBg {
+	width: 100%;
+	height: 0.4rem;
+	/*padding: 0.12rem 0;*/
+	margin: 0 auto;
+	background:rgba(235,55,19,1);
+	/*margin-top: -1.2rem;*/
+	/*background-image: url(http://qiniuapp.mqkji.cn/octoberFlopCard.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.conetntCardBg>div{
+	float: left;
+    width: 20%;
+    height: 0.32rem;
+    color: #FBB4AF;
+    padding-top: 0.08rem;
+}
+.conetntCardBg>div p{
+	text-align: center;
+	font-size: 0.08rem;
+}
+.conetntCardBg>div p:first-child{
+	font-size: 0.12rem;
+}
+/*.conetimeBg02{ 
+	background-color: #FD5730;
+}
+.conetimeBg02 p{
+	font-weight: bold;
+	color: #FBE741;
+}*/
+.conetimeBg04 img{
+	width: 0.46rem;
+    height: 0.14rem;
+    position: relative;
+    top: -0.44rem;
+    right: -0.26rem;
+}
+.conetntCardTxt{
+	color: #333333;
+}
+.conetntCardTxt p:first-child{
+	font-size: 0.14rem;
+	font-weight: bold;
+	line-height: 0.36rem;
+}
+.conetntCardTxt p:last-child{
+	font-size: 0.1rem;
+	
+}
+.conetntCardTxt span{
+	/*display: block;*/
+	font-size: 0.12rem;
+	padding: 0.04rem;
+	color: #FFFFFF;
+	background:rgba(35,35,37,1);
+	border-radius:3px;
+}
+.dstjAcFlopTip{
+	width: 100%;
+	height: 3.64rem;
+	margin-top: 0.2rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjAcFlopTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.dstjAcFlopTip>img{
+	position: relative; 
+    /* right: 0; */
+    /* top: 0; */
+    width: 0.8rem;
+    /* height: 0.25rem; */
+    float: right;
+    margin-top: 0.18rem;
+}
+.dstjMask{
+	 display: block; 
+    position: relative;
+    width: 94%;
+    /* top: -3.94rem; */
+    margin: 0 auto;
+    padding-top: 1.28rem;
+    height: 2.66rem;
+    /* line-height: 3.88rem; */
+    margin-top: -3.94rem;
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 0.38rem;
+    margin-bottom: 0.2rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+}
+.dstjMask img{
+	/*display: block;*/
+    width: 1.3rem;
+    height: 1.55rem;
+    /*position: relative;
+    left: -5%;*/
+}
+
+.dstjMaskAl{
+	display: none; 
+    position: relative;
+    width: 94%;
+    /* top: -3.94rem; */
+    margin: 0 auto;
+    /*padding-top: 1.28rem;*/
+    height: 3.94rem;
+    /* line-height: 3.88rem; */
+    margin-top: -3.94rem;
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 0.38rem;
+    margin-bottom: 0.2rem;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+.dstjMaskAl01{
+	width: 2.48rem;
+	height: 0.68rem;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjAcFlopTurnOverCon.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.dstjMaskAl02{
+	width: 1.76rem;
+    height: 0.72rem;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    padding-top: 0.4rem;
+    text-align: center;
+    color: #333333;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjAcFlopSucRec.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.dstjMaskAl02 p{
+	/*position: relative;*/
+    font-size: 0.24rem;
+    color: #333333;
+    /*top: 0.32rem;*/
+}
+.dstjMaskAl02 span{
+	display: block;
+	font-size: 0.1rem;
+}
+.dstjMaskAl03{
+	font-size: 0.14rem;
+    color: #333333;
+    margin-top: 0.22rem;
+}
+.dstjMaskAl03 span{
+	font-weight: bold;
+	color: #EB3713;
+}
+/*翻牌*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a,
+img {
+	border: 0;
+	text-decoration: none;
+}
+
+.conetntCardHead {
+	width: 60%;
+	height: 0.38rem;
+	line-height: 0.36rem;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	/*margin-top: 0.12rem;*/
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjActFlopTxtBg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+
+.conetntCardHead span {
+	font-size: 0.2rem;
+	color: #FBE741;
+	/*font-weight: bold;*/
+}
+.flopSuc{
+	display: none;
+	width: 100%;
+	height: 1rem;
+	text-align: center;
+}
+.flopSuc img{
+	width: 2.48rem;
+	height: 0.68rem;
+}
+.flopSuc p{
+	font-size: 0.14rem;
+	color: #333333;
+}
+.flopSuc span{ 
+	color: #EB3713;
+	font-weight: bold;
+}
+.conetntCard {
+	width: 92%;
+	margin: 0 auto; 
+	height: 3.88rem;
+	margin-top: 0.1rem;
+	/*color: #FEE5B8;*/
+	text-align: center;
+	font-size: 0.16rem;
+	/*margin-bottom: 0.2rem;*/
+	/*overflow: hidden;*/
+	background-color: #FFDBA9;
+	border:3px solid rgba(255, 219, 169, 1);
+	border-radius:12px;
+}
+
+.conetntCards {
+	width: 100%;
+	height: 1.12rem;
+	margin-top: 0.2rem;
+}
+#vertical0{
+	top: 0;
+	left: 8.4%;
+}
+#vertical1{
+	top: -1.12rem;
+	left: 36.4%;
+}
+#vertical2{
+	top: -2.24rem;
+	left: 64.4%;
+}
+#vertical3{
+	top: 0;
+	left: 8.4%;
+}
+#vertical4{
+	top: -1.12rem;
+	left: 36.4%;
+}
+#vertical5{
+	top: -2.24rem;
+	left: 64.4%;
+}
+/*.conetntCards div:first-child {
+	margin-left: 8.4%;
+}*/
+
+.vertical {
+	/*float: left;*/
+	position: relative;
+	
+	width: 26%;
+	height: 1.12rem;
+	/*margin-left: 2%;*/
+}
+
+.vertical img {
+	width: 100%;
+	height: 1.12rem;
+}
+
+.brand .info {
+	display: none;
+	/*background-color: #f0f0f0;*/
+	color: #369242;
+	line-height: 240px;
+}
+
+.vertical .info {
+	width: 0;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.conetntCardNum {
+	width: 100%;
+	padding: 0.12rem 0;
+}
+
+.cardNumO {
+	width: 1.92rem;
+	height: 0.29rem;
+	line-height: 0.29rem;
+	margin: 0 auto;
+	margin-top: 1.88rem;
+	color: #FFFFFF;
+	font-size: 0.16rem;
+	background: rgba(246, 64, 59, 1);
+	border-radius: 14px;
+}
+
+.cardNumT {
+	margin-top: 0.08rem;
+	color: #FEFEFF;
+	font-size: 0.13rem;
+	text-align: center;
+}
+
+.cardNumT img {
+	vertical-align: -0.01rem;
+	width: 0.12rem;
+	height: 0.12rem;
+}
+
+
+/*.conetntCard div{
+	float: left;
+	width: 26%;
+	height: 1.19rem;
+	margin-top: 0.42rem;
+	margin-right: 5.5%;
+	background-image: url(http://qiniuapp.mqkji.cn/octoberEggsGoegg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.conetntCard div:first-child{
+	margin-left: 5.4%;
+}*/
+
+.RechTip {
+	/* width: 90%; */
+    padding: 0.24rem 0;
+    text-align: center;
+    font-size: 0.1rem;
+    line-height: 0.18rem;
+    color: #FFFFFF;
+    font-family: SourceHanSansCN-Normal;
+    background-color: #FE7520;
+}
+
+.eggObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.myObtainImg {
+	position: absolute;
+	left: 14%;
+	width: 72%;
+	height: 3rem;
+	top: 22%;
+	/*background-image: url(http://qiniuapp.mqkji.cn/octoberTigSuc.png);*/
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.FortuneHint { 
+    width: 72%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.66rem;
+    font-size: 0.16rem;
+    color: #FFFFFF;
+}
+.FortuneHintOth{
+	color: #333333;
+	font-size: 0.16rem;
+	margin-top: 1.56rem;
+}
+.FortuneHint>p:first-child {
+	/*line-height: 0.3rem;*/
+	/*margin-top:0.1rem;*/
+	font-size: 0.14rem;
+	/*color: #FFE1A5;*/
+	margin-bottom: 0.1rem;
+}
+
+.FortuneHint>p:nth-child(2) {
+	/*line-height: 0.3rem;*/
+	/*font-size: 0.14rem;*/
+	/*color: #FFFFFF;*/
+}
+
+.FortuneHint>p:nth-child(2) span {
+	/*line-height: 0.3rem;*/
+	font-weight: bold;
+	color: #F0FF4C;
+}
+.FortuneHint>p:nth-child(2) label {
+	/*line-height: 0.3rem;*/
+	font-weight: bold;
+	font-size: 0.16rem;
+	color: #FF480B;
+}
+
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+
+.FortuneBut {
+	width: 80%;
+	height: 0.52rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	font-size: 0.18rem;
+	color: #333333;
+	line-height: 0.48rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjAcFlopAlertButBg.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+.FortuneButOth{
+	width: 1.5rem;
+	height: 0.4rem;
+	margin-top: 0.24rem; 
+	line-height: 0.36rem;
+}
+canvas {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+
+/*ul{
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;  
+    }
+ul li{
+    list-style-type:none;
+    width: 0.91rem;
+    height: 1.14rem;
+    margin-bottom: 0.1rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    }*/
+
+.sepAwardRecord {
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+
+.activityStatust {
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	margin-bottom: 0.08rem;
+}
+
+.sepAwardBut {
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#myRecord {
+	display: none;
+	/*width: 72%;*/
+	height: 3.3rem;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+}
+
+#myRecord li {
+	width: 80%;
+	height: 0.62rem;
+	margin: 0 auto;
+	/*line-height: 0.28rem;*/
+	
+	border-bottom: 1px solid #E7E7E7;
+	margin-bottom: 0.02rem;
+}
+
+.option01 {
+	float: left;
+	width: 68%;
+	height: 0.62rem;
+	/*line-height: 0.62rem;*/
+}
+.option01 div:first-child{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.48rem;
+	color: #333333;
+	font-size: 0.15rem;
+	font-weight: bold;
+}
+.option01 div:last-child{
+	width: 100%;
+	height: 0.22rem;
+	/*line-height: 0.22rem;*/
+	color: #9A9A9A;
+	font-size: 0.12rem;
+}
+.option02 {
+	width: 68%;
+	height: 0.22rem;
+	line-height: 0.22rem;
+}
+
+.option03 {
+	float: left;
+	width: 30%;
+	height: 0.62rem;
+	line-height: 0.62rem;
+	color: #FE5444;
+	font-size: 0.14rem;
+}
+
+#myRecord li>span {
+	color: #E83E38;
+	font-size: 0.12rem;
+}
+
+#myRecord ul {
+	height: 80%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+
+
+/*规则悬浮框*/
+
+.mySupernatant {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(232, 62, 56, 1);
+}
+
+.mySupernatantIonic {
+	width: 0.13rem;
+	height: 0.13rem;
+	margin-left: 2%;
+	margin-top: 0.14rem;
+	background-image: url(http://qiniuapp.mqkji.cn/octoberScrClose.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+.mySupernatantTxt {
+	width: 92%;
+	margin: 0 auto;
+	max-height: 570px;
+	font-size: 0.14rem;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+.mySupernatantTxt p {
+	/*width: 88%;*/
+	margin: 0 auto;
+	line-height: 0.24rem;
+}
+
+.mySupernatantTxt>p:first-child {
+	/*margin-top: 0.24rem;*/
+	font-size: 0.18rem;
+	color: #E83E38;
+	line-height: 0.6rem;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+.mySupernatant>div:first-child {
+	width: 100%;
+	height: 0.28rem;
+}
+
+#myTip {
+	display: none;
+}
+
+#myRecord {
+	display: none;
+}
+
+.octoberBot {
+	width: 100%;
+	height: 2px;
+}

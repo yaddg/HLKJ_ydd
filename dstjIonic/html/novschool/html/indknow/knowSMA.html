@@ -1,0 +1,89 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt"> 
+					SMA&nbsp;使&nbsp;用&nbsp;技&nbsp;巧
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<ul class="knowUlmeth">
+						<li>
+							<p>SMA使用口诀</p>
+						</li>
+						<li>
+							<p>均线向上，价格上涨；</p>
+						</li>
+						<li>
+							<p>均线向下，价格下跌；</p>
+						</li>
+						<li>
+							<p>金叉看涨，死叉看跌；</p>
+						</li>
+						<li>
+							<p>指标配合，把握一切。</p>
+						</li> 
+					</ul>
+					<ul class="knowUlcont">
+						<li>
+							<p>SMA，中文全称是：算术移动平均线。是将过去某特定时间内的价格取其平均值。SMA是简单而普遍的移动平均线，具有跟随价格平滑移动的特征。一般使用三条均线来判断行情。</p>
+						</li>
+						<li class="contColor">
+							<p>基本用法：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一、向上看涨：移动平均线从下降趋势转为上升趋势，价格从移动平均线下方向上突破平均线为买入信号。价格向下跌破或不跌破均线，但很快又回到均线之上，仍然保持上升趋势，为买入信号。反过来就是看跌信号。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二、金叉、死叉：短期均线上穿长期均线，后期行情看涨；短期均线下穿长期均线，后期行情看跌。</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三、与MACD指标的配合使用；</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MACD指标在较低位置金叉看涨，三条均线同时排列向上，为买入信号；MACD指标在较高位置死叉看跌，三条均线同时排列向下，为卖出信号。</p>
+						</li>
+						<li class="contColor">
+							<p>指标优势与劣势：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SMA指标容易看懂，非常好用。能较好的反映出未来价格走势，在不同的时间周期都可使用，中短线操作都适用。所有指标都存在滞后和失灵情况，结合其他指标一起使用可以避免一些错误信号出现。</p>
+						</li> 
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

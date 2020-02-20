@@ -1,0 +1,835 @@
+/*html {
+	font-size: 100px;
+}*/
+
+body {
+	width: 100%;
+	height: 100%;
+	/*overflow-x: hidden;*/
+	background-color: #BC2C2C;
+	font-size: 0.14rem;
+	font-family:DINCond-Bold;
+	/*font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+.headTop{
+	width: 100%;
+	height: 1.4rem;
+	margin: 0 auto;
+	margin-bottom: -0.1rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/newDstjTaskBanner.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.conetnt {
+	width: 100%;
+	height: 6rem;
+	/*background: -webkit-linear-gradient(#F86440, #EE3F27); 
+    background: -o-linear-gradient(#F86440, #EE3F27); 
+    background: -moz-linear-gradient(#F86440, #EE3F27); 
+    background: linear-gradient(#F86440, #EE3F27); */
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.headKline{
+	padding: 0.15rem 0;
+	margin-left: 4.8%;
+	text-align: left;
+}
+.headKline p{
+	color: #333333;
+	font-size: 0.15rem;
+	font-weight: bold;
+}
+.headKline code{
+	color: #666666;
+	font-size: 0.11rem;
+	font-weight: 400;
+}
+
+.headKline span{
+	color: #FF451F;
+	font-size: 0.11rem;
+	font-weight: 400;
+}
+.headKnow{
+	width: 100%;
+	height: 0.62rem;
+	/*padding: 0.1rem 0;*/
+}
+.headComChar{
+	width: 96%;
+	height: 2.62rem;
+	margin: 0 auto;
+	margin-top: -0.2rem;
+	background:rgba(255,255,255,1);
+	box-shadow:0px 1px 5px 0px rgba(177,182,190,0.38);
+	border-radius:12px;
+}
+.headComCharCard{
+	width: 96%;
+	height: 2.28rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	text-align: center;
+	background:rgba(255,255,255,1);
+	box-shadow:0px 4px 9px 0px rgba(255,221,142,0.54);
+	border-radius:12px;
+}
+.headComCharCardImg01{
+	width: 93%;
+	height: 0.8rem;
+	/*margin-top: 0.06rem;*/
+}
+.headComCharCardImg02{
+	width: 93%;
+	height: 0.8rem;
+	margin-top: 0.02rem;
+}
+.dailyTasks{
+	width: 96%;
+    height: 3.6rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	text-align: center;
+	background:rgba(255,255,255,1);
+	box-shadow:0px 4px 9px 0px rgba(255,221,142,0.54);
+	border-radius:12px;
+}
+.dailyTasksHead{
+	width: 60%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	color: #FF4620;
+	font-size: 0.17rem;
+	font-weight: bold;
+	margin: 0 auto;
+}
+.dailyTasksHead hr:first-child{
+	float: left;
+	width: 0.4rem;
+	height:1px;
+	border:none;
+	margin-top: 0.24rem;
+	border-top:1px solid #BFBFBF;
+}
+.dailyTasksHead hr:last-child{
+	float: right;
+	width: 0.4rem;
+	height:1px;
+	border:none;
+	margin-top: 0.24rem;
+	border-top:1px solid #BFBFBF;
+}
+.newbieTaskModHead{
+	float: left;
+	width: 11.6%;
+	text-align: center;
+	margin-left: 4.8%;
+	/*height: 0.4rem;*/
+	
+}
+.newbieTaskModHead img{
+	width: 100%;
+	/*height: 0.4rem;*/
+}
+.newbieTaskModHead span{
+	color: #333333;
+	font-size: 10px;
+	
+}
+
+.newbieTaskModNick{
+	float: left;
+	width: 11.6%;
+	text-align: center;
+	margin-left: 7.8%;
+	/*height: 0.4rem;*/
+	
+}
+.newbieTaskModNick img{
+	width: 100%;
+	/*height: 0.4rem;*/
+}
+.newbieTaskModNick span{
+	color: #333333;
+	font-size: 10px;
+	
+}
+
+.newbieTaskRealNameAuth{
+	float: left;
+	width: 11.6%;
+	text-align: center;
+	margin-left: 7.8%;
+	/*height: 0.4rem;*/
+	
+}
+.newbieTaskRealNameAuth img{
+	width: 100%;
+	/*height: 0.4rem;*/
+}
+.newbieTaskRealNameAuth span{
+	color: #333333;
+	font-size: 10px;
+	
+}
+
+.newbieTaskFocuPeo{
+	float: left;
+	width: 11.6%;
+	text-align: center;
+	margin-left: 7.8%;
+	/*height: 0.4rem;*/
+	
+}
+.newbieTaskFocuPeo img{
+	width: 100%;
+	/*height: 0.4rem;*/
+}
+.newbieTaskFocuPeo span{
+	color: #333333;
+	font-size: 10px;
+	
+}
+
+.newbieTaskContLand{
+	float: left;
+	width: 11.6%;
+	text-align: center;
+	margin-left: 7.8%;
+	/*height: 0.4rem;*/
+	
+}
+.newbieTaskContLand img{
+	width: 100%;
+	/*height: 0.4rem;*/
+}
+.newbieTaskContLand span{
+	color: #333333;
+	font-size: 10px;
+	
+}
+.proBubbleBg{
+	width: 92%;
+	height: 0.26rem;
+	margin: 0 auto;
+	/*margin-top: 0.42rem;*/
+	margin-top: 0.12rem;
+}
+.proBubble{
+	width: 0.68rem;
+	height: 0.26rem;
+	line-height: 0.2rem;
+	/*margin-left: 15%;*/
+	font-size: 0.11rem;
+	color: #ffffff;
+	text-align: center;
+	background-image: url(http://qiniuapp.hailangkeji.com/newDstjTaskBubble.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.proCashCouponBg{
+	float: left;
+	width: 63%;
+	height: 0.8rem;
+	margin-top: 0.1rem;
+	margin-left: 4%;
+	color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/newDstjTaskCardLeft.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.proCashCouponBg div:first-child{
+	float: left;
+	width: 31.8%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	/*margin-left: 4.8%;*/
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	font-weight: bold;
+	/*background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskCardLeft.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.proCashCouNum01{
+	font-size: 0.28rem;
+}
+.proCashCouponBg div:nth-child(2){
+	float: left;
+	width: 68.2%;
+	height: 0.8rem;
+	/*margin-left: 4.8%;*/
+	/*background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskCardRight.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.proCashCouponBgRight{
+	float: left;
+	width: 28.5%;
+	height: 0.8rem;
+	margin-top: 0.1rem;
+	/*margin-left: 4%;*/
+	color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/newDstjTaskCardRight.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.proCashCouponDayBg{
+	float: left;
+	width: 63%;
+	height: 0.8rem;
+	/*margin-top: 0.2rem;*/
+	margin-left: 4%;
+	color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/newDstjTaskCardLeft.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+
+}
+.proCashCouponDayBg div:first-child{
+	float: left;
+	width: 31.8%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	/*margin-left: 4.8%;*/
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	font-weight: bold;
+	/*background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskCardLeft.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.proCashCouNum02{
+	font-size: 0.28rem;
+}
+
+.proCashCouponDayBg div:nth-child(2){
+	float: left;
+	width: 68.2%;
+	height: 0.8rem;
+	text-align: left;
+	/*margin-left: 4.8%;*/
+	/*background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskCardRight.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.proCashCouponDayBg01{
+	float: left;
+	width: 67.5%;
+	height: 0.7rem;
+	/*margin-top: 0.2rem;*/
+	margin-left: 4%;
+	/*margin-top: 0.2rem;*/
+}
+.proCashCouponDayBg01 div:first-child{
+	float: left;
+	/*width: 31.8%;*/
+	height: 0.7rem; 
+	text-align: left;
+	color: #FFFFFF; 
+}
+.proCashCouponDayBg01 div:nth-child(2){
+	float: left;
+	/*width: 68.2%;*/
+	height: 0.7rem;
+	text-align: left;
+}
+.proCashCouponDayImg01{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin-top: 0.2rem;
+}
+.proCashCouponDayBg02{
+	float: left;
+	width: 67.5%;
+	height: 0.7rem;
+	/*margin-top: 0.2rem;*/
+	margin-left: 4%;
+	/*margin-top: 0.1rem;*/
+}
+.proCashCouponDayBg02 div:first-child{
+	float: left;
+	/*width: 31.8%;*/
+	height: 0.7rem;
+	/*line-height: 0.7rem;*/
+	/*margin-left: 4.8%;*/
+	text-align: center;
+	color: #FFFFFF; 
+}
+.proCashCouponDayBg02 div:nth-child(2){
+	float: left;
+	/*width: 68.2%;*/
+	height: 0.7rem;
+	text-align: left;
+	border-bottom: 1px solid #f3f3f3;
+}
+.proCashCouponDayImg02{
+	width: 0.42rem;
+	height: 0.57rem;
+	margin-top: 0.06rem;
+}
+
+.proCashCouponDayBg03{
+	float: left;
+	width: 67.5%;
+	height: 0.7rem;
+	/*margin-top: 0.2rem;*/
+	margin-left: 4%;
+	/*margin-top: 0.2rem;*/
+}
+.proCashCouponDayBg03 div:first-child{
+	float: left;
+	/*width: 31.8%;*/
+	height: 0.7rem;
+	/*line-height: 0.7rem;*/
+	/*margin-left: 4.8%;*/
+	text-align: center;
+	color: #FFFFFF; 
+}
+.proCashCouponDayBg03 div:nth-child(2){
+	float: left;
+	/*width: 68.2%;*/
+	height: 0.7rem;
+	text-align: left; 
+}
+.proCashCouponDayImg03{
+	width: 0.3rem;
+	height: 0.3rem;
+	margin-top: 0.2rem;
+}
+
+#proCashCouponDayBut01{
+	margin-top: 0.3rem;
+}
+#proCashCouponDayBut02{
+	margin-top: 0.3rem;
+}
+#proCashCouponDayBut03{
+	margin-top: 0.3rem;
+}
+
+.cashCouponTxt{
+	/*color: #FE8B21;*/
+	font-size: 0.14rem;
+	margin-left: 0.14rem;
+    margin-top: 0.24rem;
+    font-weight: bold;
+}
+.cashComTxt{
+	/*color: #666666;*/
+	font-size: 0.11rem;
+	margin-left: 0.14rem;
+}
+
+.cashCouponTxt01{
+	color: #333333;
+	font-size: 0.14rem;
+	font-weight:600;
+	margin-left: 0.18rem;
+    margin-top: 0.2rem;
+}
+.cashComTxt01{
+	color: #999999;
+	font-size: 0.12rem;
+	margin-left: 0.18rem;
+}
+.cashComTxt01>span{
+	color: #3573FA;
+}
+.cashCouponTxt02{
+	color: #333333;
+	font-size: 0.14rem;
+	font-weight:600;
+	margin-left: 0.06rem;
+    margin-top: 0.2rem;
+}
+.cashComTxt02{
+	color: #999999;
+	font-size: 0.12rem;
+	margin-left: 0.06rem;
+}
+.cashComTxt02>span{
+	color: #3573FA;
+}
+.cashCouponTxt03{
+	color: #333333;
+	font-size: 0.14rem;
+	font-weight:600;
+	margin-left: 0.18rem;
+    margin-top: 0.2rem;
+}
+.cashComTxt03{
+	color: #999999;
+	font-size: 0.12rem;
+	margin-left: 0.18rem;
+}
+.cashComTxt03>span{
+	color: #3573FA;
+}
+
+.headKnowIcon01{
+	position: absolute;
+	display: none;
+    left: 15%;
+    width: 0.17rem;
+    height: 0.17rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.headKnowIcon02{
+	position: absolute;
+	display: none;
+    left: 34%;
+    width: 0.17rem;
+    height: 0.17rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.headKnowIcon03{
+	position: absolute;
+	display: none;
+    left: 53%;
+    width: 0.17rem;
+    height: 0.17rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.headKnowIcon04{
+	position: absolute;
+	display: none;
+    left: 72%;
+    width: 0.17rem;
+    height: 0.17rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.headKnowIcon05{
+	position: absolute;
+	display: none;
+    left: 84%;
+    width: 0.42rem;
+    height: 16px;
+    line-height: 18px;
+    text-align: center;
+    /*padding: 0.01rem;*/
+    color: #333333;
+    font-size: 9px;
+    /*background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;*/
+   	/*background:rgba(53,115,250,1);*/
+   	background:linear-gradient(0deg,rgba(255,219,20,1),rgba(255,194,11,1));
+	border-radius:9px;
+}
+.headKnowIcon06{
+	position: absolute;
+	display: none;
+    left: 88%;
+    width: 0.17rem;
+    height: 0.17rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskComplete.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+/*新手任务代金券*/
+.proCashCouponBut{
+	/*float: right;*/
+    width: 64%;
+    height: 0.32rem;
+    line-height: 0.36rem;
+    margin: 0 auto;
+    margin-top: 0.24rem;
+    /*margin-right: 6%;*/ 
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.13rem;
+    background:linear-gradient(180deg,rgba(254,131,28,1),rgba(254,177,61,1));
+	box-shadow:0px 1px 4px 0px rgba(254,135,31,0.38);
+	border-radius:17px;
+}
+.proCashCouponAlBut{
+	/*float: right;*/
+	width: 64%;
+    height: 0.32rem;
+    line-height: 0.36rem;
+    margin: 0 auto;
+    margin-top: 0.24rem;
+    /*margin-right: 6%;*/ 
+    text-align: center;
+    color: #333333;
+    font-size: 0.13rem;
+    background:linear-gradient(0deg,rgba(255,219,20,1),rgba(255,194,11,1));
+	box-shadow:0px 2px 5px 0px rgba(255,205,15,0.2);
+	border-radius:15px;
+}
+/*每日任务代金券*/
+.proCashCouponDayBut{
+	float: right;
+	width: 18.8%;
+	/*padding: 0 0.14rem;*/
+	height: 0.24rem;
+	line-height: 0.26rem;
+	margin-top: 0.16rem;
+	margin-right: 6%;
+	background:rgba(253,203,156,1);
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.13rem;
+	box-shadow:0px 1px 4px 0px rgba(253,203,156,0.38);
+	border-radius:18px;
+}
+.proCashCouponDayAlBut{
+	float: right;
+	width: 18.8%;
+	/*padding: 0 0.14rem;*/
+	height: 0.24rem;
+	line-height: 0.26rem;
+	margin-top: 0.16rem;
+	margin-right: 6%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.13rem;
+	background:linear-gradient(90deg,rgba(254,131,28,1),rgba(254,177,61,1));
+	box-shadow:0px 1px 4px 0px rgba(254,135,31,0.38);
+	border-radius:12px;
+}
+
+.proCashCouponTaskBut{
+	float: right;
+	width: 18.8%;
+	/*padding: 0 0.14rem;*/
+	height: 0.24rem;
+	line-height: 0.26rem;
+	margin-top: 0.16rem;
+	margin-right: 6%; 
+	text-align: center;
+	color: #333333;
+	font-size: 0.13rem; 
+	/*background:rgba(53,115,250,1);*/
+	background:linear-gradient(0deg,rgba(255,219,20,1),rgba(255,194,11,1));
+	/*box-shadow:0px 2px 5px 0px rgba(53,115,250,0.2);*/
+	border-radius:18px;
+}
+.proCashCouponTaskAlBut{
+	float: right;
+	width: 18.8%;
+	/*padding: 0 0.14rem;*/
+	height: 0.24rem;
+	line-height: 0.26rem;
+	margin-top: 0.16rem;
+	margin-right: 6%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.13rem;
+	background:rgba(212,213,215,1);
+	box-shadow:0px 2px 5px 0px rgba(207,208,209,0.2);
+	border-radius:12px;
+}
+
+
+.progressBar{
+	width: 92%;
+	height: 0.06rem;
+	margin: 0 auto;
+	background:rgba(255,239,224,1);
+	border-radius:3px;
+}
+.progressSpe{
+	float: left;
+	width: 0%;
+	height: 0.06rem;
+	background: -webkit-linear-gradient(#FE831C, #FEB13D); 
+    background: -o-linear-gradient(#FE831C, #FEB13D); 
+    background: -moz-linear-gradient(#FE831C, #FEB13D); 
+    background: linear-gradient(#FE831C, #FEB13D); 
+	border-radius:3px;
+}
+.knowTip {
+	color: #666666;
+	font-size: 0.1rem;
+	line-height: 0.26rem;
+}
+
+.indexKnowCard02 {
+	margin-top: 0.06rem;
+	/*background-image: url(http://qiniuapp.hailangkeji.com/zjtTraCamp02.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCard03 {
+	/*background-image: url(http://qiniuapp.hailangkeji.com/zjtTraCamp03.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCard04 {
+	/*background-image: url(http://qiniuapp.hailangkeji.com/zjtTraCamp04.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCard05 {
+	/*background-image: url(http://qiniuapp.hailangkeji.com/zjtTraCamp05.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCard06 {
+	/*background-image: url(http://qiniuapp.hailangkeji.com/zjtTraCamp06.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowTip{
+	width: 100%;
+	padding: 0.2rem 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+	line-height: 0.2rem;
+}
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.myObtainImg {
+	position: fixed;
+    left: 14%;
+    width: 72%;
+    height: 3rem;
+    /* padding-bottom: 0.12rem; */
+    /*font-size: 0.15rem;*/
+    color: #ED1B08;
+    top: 24%;
+    background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskAlertBg.png); 
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.FortuneHint {
+	float: right;
+    width: 74%;
+    /* left: 5%; */
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 13%;
+    margin-top: 0.36rem;
+    /*font-size: 0.15rem;*/ 
+    /*color: #FFFFFF;*/
+}
+
+.FortuneHint>p:first-child {
+	/*line-height: 0.24rem;*/
+	font-size: 0.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.FortuneHint>p:nth-child(2) {
+	/*margin-top: 0.1rem;*/
+	font-size: 0.12rem;
+	/*color: #FFE1A5;*/
+}
+#drawDesc img{
+	width: 72.7%;
+	/*height: 0.8rem;*/
+	text-align: center;
+	/*font-size: 0.13rem;*/
+}
+
+.newAlertCard{
+	width: 1.9rem;
+	height: 0.92rem;
+	line-height: 0.92rem;
+	margin: 0 auto;
+	font-weight:bold;
+	font-size: 0.18rem;
+	margin-top: 0.86rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/newbieTaskAlertCard.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.newAlertCard span{
+	font-size: 0.56rem; 
+}
+.FortuneBut {
+	/*float: left;*/
+	width: 1.5rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	/*margin-left: 11.4%;*/
+	margin: 0 auto;
+	/*color: #FFFFFF;*/
+	margin-top: 0.52rem;
+	font-size: 0.15rem;
+	font-weight: bold;
+	letter-spacing:2px;
+	background: -webkit-linear-gradient(#FEE8A6, #FDB255);
+	background: -o-linear-gradient(#FEE8A6, #FDB255);
+	background: -moz-linear-gradient(#FEE8A6, #FDB255);
+	background: linear-gradient(#FEE8A6, #FDB255);
+	border-radius:20px;
+	text-align: center;
+}
+.RegisterAdTip {
+	/* position: absolute; */
+	width: 100%;
+	/* bottom: 1%; */
+	padding: 0.1rem 0;
+	line-height: 0.16rem;
+	text-align: center;
+	font-size: 0.08rem;
+	color: rgba(255,255,255, 0.54);
+	opacity: 0.8;
+}

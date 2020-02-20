@@ -1,0 +1,155 @@
+html{
+	font-size: 100px;
+}
+/*body {
+	background-image: url(../images/newUser03.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	overflow: hidden;
+	text-align: center;
+}*/
+ul{
+	list-style:none;
+	display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0rem;
+}
+li{
+	list-style:none;
+	padding: 0 0.2rem;
+	font-size: 0.13rem;
+	text-align: left;
+}
+ul li:first-child{
+	font-size: 0.18rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+ul li:nth-child(2){
+	font-size: 0.13rem;
+	text-align: center;
+	margin-top: 0.02rem;
+	color: #999999;
+}
+ul li:nth-child(3){ 
+	margin-top: 0.1rem;
+}
+ul li:nth-child(4){ 
+	margin-top: 0.1rem;
+	color: #EB4450;
+} 
+.backimg{ 
+		width: 100%;
+		z-index: -100; 
+	} 
+.conetnt{
+	width: 100%;
+	/*height: 100%;*/
+	background-color: #EB4350;
+	font-size: 0.14rem;
+}
+.proIntroduce{
+	margin: 0 5%;
+	padding:0.1rem 0;
+	width: 90%;
+	/*height:2.8rem;*/
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+.proIntroduceBut{
+	margin:0 5%;
+	width: 90%;
+	height:0.5rem;
+	line-height:0.5rem;
+	border-radius: 50px;
+	background-color: #FF5534;
+	color: #FFFFFF;
+	text-align:center;
+	font-size: 0.22rem;
+}
+.proIntroduceDown{
+	position: fixed;
+	/*-webkit-transform: translateZ(0);*/
+    margin: 5% 10%;
+    /*bottom: 5%;*/
+    bottom: 0.05rem;
+    width: 80%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 50px;
+    background-color: #FFD130;
+    text-align: center;
+    font-size: 0.22rem;
+    z-index: 10;
+}
+
+
+.receiveBox {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	font-size: 0.14rem;
+}
+
+.boxbg {
+	position: absolute;
+	height: 120%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBg {
+	position: absolute;
+	top: 40%;
+	left: 0.05rem;
+	height: 1.4rem;
+	width: 2.6rem;
+	border-radius: 5px;
+	background-color: #FFF;
+	text-align: center;
+}
+
+#optionTitle {
+	height: 0.35rem;
+    position: absolute;
+    left: 0.48rem;
+    top: 0.1rem;
+    position: absolute;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+}
+.proAlert{
+	height: 0.54rem;
+	line-height: 0.54rem;
+}
+.optionBgs {
+    position: absolute;
+    top: 0px;
+    /* left: 5px; */
+    height: 140px;
+    width: 100%;
+    /* border-radius: 5px; */
+    /*background-color: #FFF;*/
+    text-align: center;
+    display: none;
+}

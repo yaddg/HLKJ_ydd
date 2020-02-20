@@ -1,0 +1,340 @@
+html{
+	font-size: 100px;
+}
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-color: #FF995F ;
+	font-size: 0.14rem;
+	font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+.sepHead {
+	width: 100%;
+	height: 2.88rem;
+	text-align: center;
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvHead.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+
+.sepCont{
+	width: 95%;
+    /* height: 3.98rem; */
+    margin: 0 auto;
+    /* padding: 0.2rem 0; */
+    padding-bottom: 0.2rem;
+    background:rgba(255,251,249,1);
+	border-radius:5px;
+	margin-top: -0.5rem;
+    /*background-image: url(http://qiniuapp.mqkji.cn/nwGibagLopart.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;*/
+    z-index: -1000;
+    font-size: 0.15rem;
+    color: #FFFFFF;
+}
+.sepEmpty{
+	width: 2.64rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    padding-top: 0.08rem;
+    text-align: center;
+    background-image: url(http://qiniuapp.mqkji.cn/noviceAdvBeg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepEmpty p{
+	font-size: 0.12rem;
+	color: #FFFFFF;
+}
+.sepEmpty span{
+	font-size: 0.14rem;
+	color: #FF661B;
+	font-weight: bold;
+}
+.sepCont8{
+	width: 94%;
+    height: 0.92rem;
+    margin: 0 auto;
+    margin-top: 0.06rem;
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvCard200.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont100{
+	width: 94%;
+    height: 0.92rem;
+    margin: 0 auto;
+	margin-top: 0.2rem;
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvCard800.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont1000{
+	width: 94%;
+    height: 0.92rem;
+    margin: 0 auto;
+	margin-top: 0.2rem;
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvCard2000.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepCont>p{
+	width: 100%;
+	text-align: center;
+	font-size: 0.12rem;
+	margin-top: 0.14rem;
+	color: #FF8F27;
+}
+.sepContButLe{
+	float: left;
+	width: 25%;
+	height: 0.96rem;
+}
+.sepContButCe{
+	float: left;
+    width: 50%;
+    color: #FFF9F6;
+    font-size: 0.11rem;
+    padding-top: 0.34rem;
+    height: 0.62rem;
+    text-align: center;
+}
+.sepContButRig{
+	float: left;
+	width: 25%;
+	height: 0.96rem;
+}
+/*按钮状态*/
+/*领取*/
+.novAdvUncollected{
+	    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+	margin-top: 0.1rem;
+	text-align: center;
+	color: #CE2D00;
+	font-size: 0.16rem;
+	font-weight: 600;
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvRec.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+/*去投资*/
+.novAdvToinvest{
+	    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+	margin-top: 0.16rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.14rem;
+	/*font-weight: 600;*/
+	background-image: url(http://qiniuapp.mqkji.cn/noviceAdvInvest.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+/*已领取*/
+.novAdvHavrece{
+	    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+	margin-top: 0.15rem;
+	margin-left: 0.05rem;
+	text-align: center;
+	color: #FEE28A;
+	font-size: 0.16rem;
+	border:1px solid rgba(254,226,138,1);
+	border-radius:50%;
+}
+/*不可享*/
+.novAdvNoenjoyed{
+	    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+	margin-top: 0.15rem;
+	margin-left: 0.05rem;
+	text-align: center;
+	color: #DEDEDE;
+	font-size: 0.16rem;
+	border:1px solid rgba(222,222,222,1);
+	border-radius:50%;
+}
+
+
+.sepContBut{
+	float: right;
+    width: 22%;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    margin-right: 4.2%;
+    margin-top: 0.36rem;
+    /*background-color: #C0C0C0;*/
+    border-radius: 15px;
+    font-size: 0.13rem;
+    color: #AC2C0A;
+    text-align: center;
+    background: -webkit-linear-gradient(#FFB21E , #FFF07E);
+ 	background: -o-linear-gradient(#FFB21E , #FFF07E);
+    background: -moz-linear-gradient(#FFB21E , #FFF07E);
+    background: linear-gradient(#FFB21E , #FFF07E);
+}
+.sepTip{
+	width: 92%;
+	height: 1.68rem;
+    margin: 0 auto;
+    margin-top: 0.24rem;
+    margin-bottom: 0.22rem;
+    background-image: url(http://qiniuapp.mqkji.cn/noviceAdvTip.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.sepTips{
+	width: 100%;
+	padding: 0.16rem 0;
+	color: #FFF0ED;
+	font-size: 0.12rem;
+	text-align: center;
+	background:rgba(255,137,70,1);
+	font-family:SourceHanSansCN-Normal;
+}
+
+/*提示框*/
+.myObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.myObtainImg {
+	position: fixed;
+	left: 14%;
+    width: 72%;
+    height: 3.3rem;
+    font-size: 0.14rem;
+    top: 22%;
+    background-image: url(http://qiniuapp.mqkji.cn/sepReden.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.FortuneHint{
+	float: right;
+    width: 84%;
+    /* left: 5%; */
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 8%;
+    margin-top: 1.4rem;
+    font-size: 0.19rem;
+    color: #FFFFFF;
+}
+.FortuneHint>p:first-child{
+	line-height: 0.3rem;
+	/*font-weight: bold;*/
+}
+.FortuneHint>p:nth-child(2){
+	font-size: 0.15rem;
+}
+/*.myObtainImg>div:first-child { 
+	float: right;
+	width: 15%;
+	height: 0.4rem;
+}*/
+.FortuneBut{
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.25rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#optionBgO{
+	display: none;
+	position: fixed;
+	left: 14%;
+    width: 72%;
+    height: 3.3rem;
+    font-size: 0.14rem;
+    top: 22%;
+    color: #FFFFFF;
+    background-image: url(http://qiniuapp.mqkji.cn/sepReden.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+#optionBgO li{
+	color: #FFE1A5;
+	font-size: 0.12rem;
+}
+#optionBgO ul{
+	height: 22%;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0rem;
+	overflow: scroll;
+}
+.sepAwardRecord{
+	margin-top: 1.26rem;
+	font-size: 0.17rem;
+}
+.activityStatust{
+	font-size: 0.14rem;
+    line-height: 0.2rem;
+    margin-bottom: 0.08rem;
+}
+.activityStatust span{
+	color: #FFF778;
+}
+.sepAwardBut{
+	float: left;
+	width: 80%;
+	height: 0.56rem;
+	margin-left: 10%;
+	color: #FEFEFF;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	line-height: 0.56rem;
+	border-radius: 2px;
+	background-image: url(http://qiniuapp.mqkji.cn/sepBut.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+}

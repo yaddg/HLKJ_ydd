@@ -1,0 +1,327 @@
+body{
+	background-color: #FFFFFF;
+	display: none;
+}
+.ion-ios-arrow-right:before {
+    content: "";
+}
+p{
+	margin: 0;
+}
+.icon { 
+     font-size: 0.13rem; 
+}
+
+.headIcon{
+	/* position: initial; */
+    /* top: 0.2rem; */
+    /* right: 5%; */
+    width: 0.2rem;
+    height: 0.2rem;
+    float: right;
+    margin-right: 5%;
+    margin-top: 0.2rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralIcon.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+
+.headCenter{
+	/*position: absolute;*/
+    width: 100%;
+    height: 1.65rem;
+    /*margin-left: 5%;*/
+    /*margin-top: -1.45rem;*/
+    /*border-radius: 5px;*/
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallHead.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.emptyLine{
+	position: relative;
+    top: 1.05rem;
+    left: 50%;
+    width: 1px;
+    height: 0.12rem;
+    background: rgba(51,51,51,1);
+    /*margin-left: 5%;*/
+    /*margin-top: -1.45rem;*/
+    /*border-radius: 5px;*/
+}
+.headBot{
+	width: 100%;
+	/*height: 1.3rem;*/
+	height: 0.7rem;
+	background-color: #FFFFFF;
+	padding-top: 0.56rem;
+}
+.headBotImg{
+	width: 33%;
+	height: 0.85rem;
+	float: left;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #333333;
+}
+.headCenterO{
+	width: 100%;
+	height: 1.2rem;
+	/*padding-left: 6%;*/
+	padding-top: 0.1rem;
+}
+.headCenterT{
+	/*width: 100%;
+	height: 0.45rem;
+	line-height:0.45rem;
+	color: #AB7138;
+	font-size: 0.13rem;
+	text-align: right;
+	padding-right: 0.12rem;*/
+}
+.headCenterO>div:first-child{
+
+	width: 0.68rem;
+	height: 0.68rem;
+	margin: 0 auto;
+	/*float: left;*/
+}
+.headCenterO>div:nth-child(2){
+	/*height: 0.6rem;*/
+	float: left;
+	width: 50%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #333333;
+	font-size: 0.15rem;
+	text-align: right;
+	/*padding: 0.14rem 0;*/
+	padding-right: 0.14rem;
+	
+}
+.headCenterO>div:nth-child(3){
+	/*height: 0.6rem;*/
+    float: right;
+    width: 50%;
+    height: 0.4rem;
+	line-height: 0.4rem;
+    color: #333333;
+    font-size: 0.15rem;
+    text-align: left;
+    /*padding: 0.14rem 0;*/
+    padding-left: 0.14rem;
+}
+.headCenterT span{
+	color: #333333;
+	font-size: 0.2rem;
+}
+/*代金券*/
+.integVoucher{
+	width: 100%;
+	/*height: 3.7rem;*/
+	/*padding-left: 6%;*/
+	background-color: #FFFFFF;
+	padding-bottom: 0.12rem;
+}
+.voucher8{
+	width: 95%;
+	height: 0.72rem; 
+	margin: 0 auto;
+	border-bottom: 1px solid #f0f0f0;
+}
+#voucher8{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg8.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+#voucher100{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg100.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+#voucher120{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg120.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+#voucher200{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg200.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+#voucher400{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg400.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+#voucher500{
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralMallBg500.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.integFetch{
+	width: 100%;
+    /* height: 0.78rem; */
+    margin-top: 0.16rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.12rem;
+    color: #666666;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.integFetch>div:first-child{
+	width: 100%;
+	height: 0.2rem;
+}
+.integFetch>div:nth-child(2){
+	width: 100%;
+	padding-left: 6%;
+	font-size: 0.14rem;
+	padding-top: 0.05rem;
+}
+.voucherTxt{
+    width: 100%;
+    height: 0.58rem;
+    /* padding: 0.16rem 0; */
+    font-size: 0.16rem;
+    line-height: 0.68rem;
+    /* margin-top: 0.35rem; */
+    color: #333333;
+    background-color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+.voucherTxt img{
+    width: 0.7rem;
+    height: 0.04rem;
+    vertical-align: middle;
+}
+.voucherTxt span{
+    padding: 0 0.1rem;
+}
+.voucherExch{
+	width: 0.8rem;
+	height: 0.22rem;
+	border-radius: 50px;
+	margin: 0 auto;
+	color: #333333;
+	font-size: 0.12rem;
+	line-height: 0.24rem;
+	/*background:linear-gradient(90deg,rgba(255,219,20,1),rgba(255,194,11,1));*/
+	box-shadow:0px 4px 8px 0px rgba(255,194,11,0.2);
+	/*border-radius:11px;*/
+    background: -webkit-linear-gradient(left, #FFC20B,#FFDB14); 
+ 	background: -o-linear-gradient(right, #FFC20B,#FFDB14); 
+    background: -moz-linear-gradient(right, #FFC20B,#FFDB14); 
+    background: linear-gradient(to right, #FFC20B,#FFDB14); 
+}
+.voucherRig{
+	height: 100%;
+    width: 32%;
+    float: right;
+    text-align: center;
+    padding-top: 0.16rem;
+    /* padding-left: 0.15rem; */
+}
+.voucherRig p:first-child{
+    color: #666666;
+    font-size: 0.1rem; 
+}
+.voucherRig span{
+	color: #CE9A61;
+}
+.voucherCen{
+	height: 100%;
+	width: 36%;
+	float: right;
+	/*text-align: center;*/
+	padding-top: 0.16rem;
+	padding-left: 3%;
+}
+.voucherCen p:first-child{
+	color: #333333;
+	font-size: 0.16rem; 
+}
+.voucherCen p:last-child{ 
+	color: #666666;
+	font-size: 0.1rem; 
+}
+
+.voucherOne{
+	height: 100%;
+	width: 28%;
+	float: right;
+	color: #FFFFFF;
+	font-size: 0.25rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.68rem;
+}
+.voucherOne span{
+	font-size: 0.18rem; 
+}
+.headCenterOt{
+	width: 0.8rem;
+    height: 0.22rem;
+    margin: 0 auto;
+    line-height: 0.26rem;
+    background: rgba(255,255,255,1);
+    border-radius: 11px;
+    color: #333333;
+    font-size: 0.12rem;
+    text-align: center;
+}
+.integFetchO{
+	float: left;
+	width: 62%;
+	height: 100%;
+}
+.integFetchT{
+	float: right;
+	width: 38%;
+	height: 100%;
+	text-align: center;
+	padding-top: 0.06rem;
+}
+.integFetchTo{
+	width: 0.8rem;
+	height: 0.22rem;
+	line-height:0.22rem;
+	color:#333333;
+	border-radius: 12px;
+	background: -webkit-linear-gradient(left, #FFC20B,#FFDB14); 
+ 	background: -o-linear-gradient(right, #FFC20B,#FFDB14); 
+    background: -moz-linear-gradient(right, #FFC20B,#FFDB14); 
+    background: linear-gradient(to right, #FFC20B,#FFDB14); 
+	margin: 0 auto;
+}
+.integFetchTt{
+	width: 0.8rem;
+	height: 0.22rem;
+	line-height:0.22rem;
+	color:#FFFFFF;
+	border-radius: 12px;
+	background-color: #CCCCCC;
+	margin: 0 auto;
+}
+.boxbg {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 120%;
+	width: 100%;
+	text-align: center;
+	z-index: 100; 
+	background-image: url(../images/socperEmpty.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}

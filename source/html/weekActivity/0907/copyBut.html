@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--//html部分-->
+		<!--<div class="btn">点我复制</div>-->
+		<input id="title1" type="text" value="我爱北京天安门" readonly="readonly" />
+		<div class="btn" style="width: 200px;height: 64px;background-color: red;">
+			点我复制
+		</div>
+		<script>
+			//js部分
+			function copymsg() {
+				var Url2 = document.getElementById("title1"); //要复制文字的节点
+				if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) { //区分iPhone设备
+					window.getSelection().removeAllRanges(); //这段代码必须放在前面否则无效
+					var range = document.createRange();
+					// 选中需要复制的节点
+					range.selectNode(Url2);
+					// 执行选中元素
+					window.getSelection().addRange(range);
+					// 执行 copy 操作
+					var successful = document.execCommand('copy');
+
+					// 移除选中的元素
+					window.getSelection().removeAllRanges();
+				} else {
+					Url2.select(); // 选择对象
+					document.execCommand("Copy"); // 执行浏览器复制命令
+				}
+			}
+			$(".btn").click(function() {
+				copymsg();
+			});
+		</script>
+	</body>
+
+</html>

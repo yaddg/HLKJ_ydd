@@ -1,0 +1,175 @@
+/*html{
+	font-size: 100px;
+}*/
+body{
+	background:rgba(253,95,47,1);
+}
+p {
+    display: block;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.conetnt{
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+}
+.inviteFriendHeadt{
+	width: 100%;
+	height: 2.4rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendPeoHead.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.inviteFriendPeoCon{
+	width: 90%;
+    /* height: 4.8rem; */
+    margin: 0 auto;
+    margin-top: -0.4rem;
+    padding-bottom: 0.26rem;
+    background: rgba(255,241,228,1);
+    border-radius: 5px;
+}
+ul li{
+	width: 100%;
+}
+.receiveBox {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+.boxbg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBg {
+    position: absolute;
+    top: 0px;
+    /* left: 5px; */
+    height: 140px;
+    width: 100%;
+    /* border-radius: 5px; */
+    /*background-color: #FFF;*/
+    text-align: center;
+    background-image: url(http://qiniuapp.hailangtaojin.com/weixinOff.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+#optionTitle {
+	height: 35px;
+    position: absolute;
+    left: 48px;
+    top: 10px;
+    position: absolute;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 16px;
+	left: 70px;
+	height: 30px;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	height: 30px;
+}
+.inviteFriendGift{
+	width: 96%;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 0.13rem;
+    text-align: center;
+    letter-spacing: 0.01rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendPeoBot.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+.inviteFriendGift span{
+	font-weight: bold;
+}
+.inviteFriendBut{
+	
+	width: 3rem;
+	max-width: 90%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	text-align: center; 
+	letter-spacing: 0.01rem; 
+	font-size:0.18rem;
+	font-weight: bold;
+	color: #702E18;
+	background:linear-gradient(0deg,rgba(255,184,59,1),rgba(255,226,92,1));
+	box-shadow:1px 2px 6px 0px rgba(255,176,36,0.4);
+	border-radius:21px;
+}
+.inviteFriendTip{
+	/*position: absolute;
+	bottom: 10px;*/
+	margin-top: 0.34rem;
+	margin-bottom: 0.2rem;
+	width: 100%;
+	font-size: 0.12rem;
+	color: #FFF0ED;
+	text-align: center;
+}
+.inviteFriendInp{
+	width: 3rem;
+	max-width: 90%;
+	margin: 0 auto; 
+	height: 0.42rem;
+	margin-top: 0.24rem;
+	font-size: 0.14rem;
+	color: #BD0606;
+	background: rgba(255,255,255,1);
+	border-radius:21px; 
+}
+.inviteFriendInp input{
+	float: left;
+    display: block;
+    width: 2.6rem;
+    max-width: 82%;
+    height: 0.4rem;
+    /*border-radius: 5px;*/
+    border: 0;
+    outline:none;
+    /*padding-left: 0.1rem;*/
+    /* margin-left: 0.05rem; */
+	
+}
+.inviteFriendInp img{
+	float: left;
+    width: 0.14rem;
+    height: 0.14rem;
+    /* margin: 0 2.5%; */
+    margin-top: 0.14rem;
+    margin-left: 5%;
+    margin-right: 3%;
+	
+}
+#importMobileTxt{
+	width: 100%;
+	text-align: center;
+	color: #BD0606;
+	font-size: 0.12rem;
+	margin-top: 0.05rem;
+}

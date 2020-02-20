@@ -1,0 +1,359 @@
+body{
+	background-color: #FFFFFF;
+	display: none;
+}
+p{
+	margin: 0;
+}
+.icon { 
+     font-size: 0.16rem; 
+}
+.exchgeTop{
+	width: 100%;
+	height: 1.15rem;
+	margin-top: 0.15rem;
+	background-color: #F9F9F9;
+}
+.exchgeTop>div:first-child{
+	float: left;
+    width: 45%;
+    height: 100%;
+    font-size: 0.26rem;
+    color: #ffffff;
+}
+.exchgeTop>div:first-child span{
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+.exchgeTop>div:nth-child(2){
+	float: right;
+	width: 54%;
+	height: 100%;
+	font-size: 0.14rem;
+}
+.exchgeTopO-8{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers8.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopO-100{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers100.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopO-120{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers120.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopO-200{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers200.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopO-400{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers400.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopO-500{
+	width: 1.22rem;
+	height: 0.91rem;
+	margin-left: 0.15rem;
+	margin-top: 0.12rem;
+	text-align: center;
+    line-height: 0.91rem;
+	background-color: #FFFFFF;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjSocpers500.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.exchgeTopT{
+	width: 100%;
+	height: 82%;
+	padding-top: 0.15rem;
+	
+}
+.exchgeTopTh{
+	width: 100%;
+	height: 16%;
+	text-align: right;
+	padding-right: 0.15rem;
+}
+.exchgeTopTh>p{
+	line-height: 0;
+}
+.exchgeTopT>p:first-child{
+	font-size: 0.15rem;
+	color: #333333;
+}
+.exchgeTopT>p:nth-child(2){
+	
+	color: #CE9A61;
+}
+li{
+	width: 100%;
+	height: 0.68rem;
+	padding: 0 0.15rem;
+	font-size: 0.14rem;
+	border-bottom: 1px solid #F9F9F9;
+	color: #333333;
+}
+li>div:first-child{
+	float: left;
+	height:0.68rem;
+	line-height:0.68rem;
+}
+li>div:nth-child(2){
+	float: right;
+	height:0.68rem;
+	padding-top: 0.26rem;
+}
+li>div>span{
+	font-size: 0.16rem;
+	color:#FF424A ;
+	font-weight: bold;
+}
+.exchgeCount>div:first-child{
+	float: left;
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: #F5F5F5;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.exchgeCount>div:nth-child(2){
+	float: left;
+	width: 0.3rem;
+	height: 0.2rem;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.exchgeCount>div:nth-child(3){
+	float: left;
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: #F5F5F5;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.exchgeBot{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	line-height: 0.45rem;
+	border-top: 1px solid #F9F9F9;
+}
+.exchgeBot>div:first-child{
+	float: left;
+	width: 56%;
+	height: 0.45rem;
+	padding-left: 0.15rem;
+}
+.exchgeBot>div:nth-child(2){
+	float: right;
+	width: 43%;
+	height: 0.45rem;
+	text-align: center;
+	font-size: 0.15rem;
+	color: #333333;
+	background: -webkit-linear-gradient(left, #FFC20B , #FFDB14); 
+    background: -o-linear-gradient(right, #FFC20B , #FFDB14);
+    background: -moz-linear-gradient(right, #FFC20B , #FFDB14); 
+    background: linear-gradient(to right, #FFC20B , #FFDB14); 
+}
+.exchgeBot>div:first-child span{
+	font-size: 0.16rem;
+    color: #FF424A;
+    font-weight: bold;
+}
+/*弹框*/
+.receiveBox {
+	position: fixed;
+	display: none;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	font-size: 0.14rem;
+}
+
+.boxbg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.optionBg {
+	position: fixed;
+    top: 28%;
+    height: 2.6rem;
+    width: 74%;
+    left: 13%;
+    color: #333333;
+    font-size: 0.13rem;
+    text-align: center; 
+    background-color: #FFFFFF;
+    border-radius:10px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.optionBgOmpty{
+	height: 1.05rem;
+    width: 1.22rem;
+    margin: 0 auto;
+    margin-top: 0.12rem;
+    text-align: center;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralSuc.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.optionBgOmptyLos{
+	height: 1.05rem;
+    width: 1.22rem;
+    margin: 0 auto;
+    margin-top: 0.12rem;
+    text-align: center;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjIntegralLos.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.optionBgTxt{
+	width: 90%;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+}
+.optionBgTxt>span:first-child{
+	font-size: 0.17rem;
+	font-weight: bold;
+}
+.optionBut{
+	width: 100%;
+	margin-top: 0.34rem;
+	color: #FFFFFF;
+	font-size: 0.15rem;
+}
+.optionBut>div:first-child{
+	float: left;
+	width: 40%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	margin-left: 8%;
+	border-radius:25px; 
+	color: #333333;
+	border: 1px solid #CCCCCC;
+	text-align: center; 
+}
+.optionBut>div:nth-child(2){
+	float: right;
+	width: 40%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	border-radius:25px; 
+	text-align: center;
+	margin-right: 8%;
+	background: -webkit-linear-gradient(left, #FFC20B , #FFDB14); 
+    background: -o-linear-gradient(right, #FFC20B , #FFDB14);
+    background: -moz-linear-gradient(right, #FFC20B , #FFDB14); 
+    background: linear-gradient(to right, #FFC20B , #FFDB14); 
+}
+.optionButs{
+	width: 100%;
+	margin-top: 0.14rem;
+	color: #FFFFFF;
+	font-size: 0.15rem;
+}
+.optionButs>div{
+	width: 60%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	border-radius:25px; 
+	text-align: center;
+	margin-left: 20%;
+	background: -webkit-linear-gradient(left, #FFC20B , #FFDB14); 
+    background: -o-linear-gradient(right, #FFC20B , #FFDB14);
+    background: -moz-linear-gradient(right, #FFC20B , #FFDB14); 
+    background: linear-gradient(to right, #FFC20B , #FFDB14); 
+}
+
+/*#optionTitle {
+	height: 0.35rem;
+    position: absolute;
+    left: 0.48rem;
+    top: 0.1rem; 
+}*/
+
+/*#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}*/
+
+/*#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+} */
+/*.proAlert{
+	height: 0.54rem;
+	line-height: 0.54rem;
+}*/
+
+#optionBgO{
+	display: none;
+	
+}
+#optionBgO li{
+	color: #FFE1A5;
+}
+#optionBgO ul{
+	height: 0.6rem;
+	overflow: scroll;
+}

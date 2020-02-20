@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+		<script src="http://qiniuapp.hailangtaojin.com/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<a href="javascript:window.location.href='weixin://'">javascript:window.location.href='weixin://' </a>
+
+		<a href="weixin://">weixin:// </a>
+		<p>
+			<a href="weixin://dl/businessWebview/link/?appid=wx707c5fa91ef0a58c&url=baidu.com">test </a>
+		</p>
+		<p>
+			<a href="weixin://dl/businessWebview/link/?appid=wx707c5fa91ef0a58c&url=http://baidu.com">http </a>
+		</p>
+		<div class="abc" style="width: 200px;height: 64px;background-color: red;">
+
+		</div>
+		<script>
+			$(".abc").on("click", function() {
+				window.location.href = "javascript:window.location.href='weixin://'";
+
+			});
+		</script>
+	</body>
+
+</html>

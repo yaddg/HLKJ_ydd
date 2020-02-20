@@ -1,0 +1,86 @@
+* {
+	margin: 0px;
+	padding: 0px;
+} 
+html{
+	font-size: 100px;
+	width:100%;
+	height: 100%;
+	max-width:100%;
+	max-height:100%;
+	padding:0px;
+}
+body{ 
+	width:100%;
+	height:100%;
+	max-height:100%;
+	max-width:100%;
+	padding:0px;
+	margin:0px;
+	background-color:#eee;
+	overflow:scroll;
+	font-family: "Microsoft YaHei","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul li {
+	list-style: none;
+}
+/*//图标*/
+.icon {
+	font-size: 0;
+   /*font-size: 0.26rem; */
+}
+.ion-ios-arrow-left{
+	padding-top: 0.04rem;
+    padding-left: 0.15rem;
+    /* line-height: 3.44rem; */
+    width: 0.3rem;
+    height: 0.3rem;
+}
+/*底部*/
+.voucherBottomDiv{
+	position: absolute;
+	width: 100%;
+	bottom: 1px;
+	z-index: 100;
+	margin-top: 0.1rem;
+	padding-top: 0.1rem;
+	background-color: #FFFFFF;
+}
+.voucherBottom{
+	
+	
+	width: 100%; 
+	height: 0.44rem; 
+	/*border: 1px solid red;*/
+	margin-top: 0.01rem;
+	background-color: #FFFFFF;
+	font-size: 0.15rem;
+}
+.voucherBottom div:first-child{
+	float: left;
+	width: 60%;
+	height: 0.44rem; 
+	line-height: 0.44rem;
+	padding-left: 6%;
+	text-align: left;
+}
+.voucherBottom div:nth-child(2){
+	float: right;
+	width: 40%;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.voucherDown{
+	/*width: 200%;
+	margin-top: 0.1rem;
+	height: 0.4rem;*/
+	height: 0.4rem;
+    /* margin-bottom: 0.2rem; */
+   /* margin-top: 0.2rem;*/
+    margin-left: 6%;
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}

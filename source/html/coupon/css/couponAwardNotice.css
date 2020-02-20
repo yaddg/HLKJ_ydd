@@ -1,0 +1,162 @@
+html{
+	font-size: 100px;
+}
+body {
+	background-color: #FFFFFF;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    
+    margin-top: 0.2rem;
+}
+ul {
+    list-style: none;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0rem;
+}
+.conetnt{
+    height: 100%;
+    color: #2E2E2E;
+    font-size: 0.14rem;
+}
+.awardNotice{
+	width: 100%;
+	height: 0.67rem;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.awardNotices{
+	float: left;
+	width: 20%;
+	height: 0.4rem;
+	margin-top: 0.1rem;
+	padding: 0;
+}
+.awardNotices>div:first-child{
+	font-size: 0.13rem;
+	color: #666666;
+}
+.awardNotices>div:nth-child(2){
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	margin: 0 auto;
+	border-radius: 50px;
+	font-size: 0.15rem;
+	
+	margin-top:0.04rem;
+	font-family:DIN-Medium;
+}
+.awardNotice>div:nth-child(5)>div:nth-child(2){
+	background-color: #FFF2EB;
+	color: #FF6500;
+	/*background: -webkit-linear-gradient(#FF9000, #FF5B00);
+ 	background: -o-linear-gradient(#FF9000, #FF5B00);
+    background: -moz-linear-gradient(#FF9000, #FF5B00);
+    background: linear-gradient(#FF9000, #FF5B00);*/
+}
+.awardNoticeImg{
+	width: 92%;
+	margin: 0 auto;
+}
+.awardNoticeImg>img{
+	width: 100%;
+}
+.integVoucherE{
+	width: 100%;
+	display: none;
+}
+.integVoucherE>div{
+	width: 1.3rem;
+	height: 1.11rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	background-image: url(../images/socpersEmpty.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+.integVoucherE>p{
+	text-align: center;
+	color: #666666;
+	font-size: 0.15rem;
+	line-height: 0.4rem;
+}
+#loading{  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgb(0,0,0,0.5);
+   
+    text-align: center;
+    /* padding: 50% 0 0 0; */
+    font: bold 11px Arial, Helvetica, sans-serif;
+    z-index: 100;
+}  
+#loading img{  
+margin-top: 50%;
+width: 1.2rem;
+}  
+.awar01{
+	width: 33%;
+	float: left;
+	margin-left: 0.03%;
+	font-size: 0.08rem;
+}
+.awarName{
+	width: 35%;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-weight: bold;
+}
+.awarTele{
+	width: 64%;
+	float: left;
+	text-align: center;
+}
+li{
+	width: 90%;
+	margin: 0 auto;
+	height: 0.14rem;
+	padding: 0.01rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.awardImg{
+	width: 100%;
+	/*height: 0.62rem;*/
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	text-align: center;
+	padding: 0.1rem 0;
+	background-image: url(../images/awarHeadbg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+	
+}
+.awardNoticeTip{
+	width: 100%;
+	/*height: 0.4rem;*/
+	line-height: 0.4rem;
+	color: #FD413F;
+	font-size: 0.14rem;
+	font-weight: bold;
+	text-align: center;
+}

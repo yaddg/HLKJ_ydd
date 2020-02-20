@@ -1,0 +1,89 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>投资知识</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="../../../../css/common.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script> 
+		
+		<link href="css/know.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--<div class="bar bar-header">
+			<i class="icon ion-ios-arrow-left"></i>
+			<div class="h1 title">投资知识</div>
+		</div>-->
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+			<div class="tipHead"> 
+				<div class="voucherTxt">
+					铜&nbsp;镍&nbsp;的&nbsp;影&nbsp;响&nbsp;因&nbsp;素
+				</div>
+				
+				<!--<div class="voucherHome">
+					<img src="images/guideVouImg.png" style="width: 100%;height: 100%;" />
+				</div>-->
+				<div class="voucherHome">
+    				<ul class="knowUlmeth">
+						<li>
+							<p>铜镍影响因素</p>
+						</li>
+						<li>
+							<p>最根本的影响是：供应和需求，供求关系决定价格。主要有以下因素：</p>
+						</li>
+						<li>
+							<img src="http://qiniuapp.mqkji.cn/knowCopnicImg.png" style="width: 100%;" />
+						</li> 
+					</ul>
+					<ul class="knowUlcont">
+						<li class="contColor">
+							<p>库存数据</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伦敦LME在每天16:00公布铜镍库存，影响巨大；</p>
+						</li> 
+						<li class="contColor">
+							<p>生产供应：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产矿国家和企业报告：产量的变化和对未来的预期。理论上产量和预期增加看跌铜，减少则看涨铜。</p>
+						</li> 
+						<li class="contColor">
+							<p>需求消费：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要经济体的需求消耗。国际经济状况、贸易条件、行业政策等。铜的需求集中在中国、西欧地区和美国。镍的需求集中在日本、中国、美欧等，有关事件的影响会导致铜镍价格变化。</p>
+						</li>
+						<li class="contColor">
+							<p>罢工停产：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;劳资纠纷不好办，倒闭停产供应难。罢工或者矿企停产都会导致短期供应减少，看涨价格。</p>
+						</li>
+						<li class="contColor">
+							<p>美元：</p>
+						</li>
+						<li>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国际矿产交易多是以美元计价，而且美国又是全球经济强国，美元的波动从需求和价格两方面影响铜镍走势。一般短时间内的方向走势是相反的，美元上涨，铜镍价格下跌；美元下跌，铜镍上涨。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="voucherBottomDiv">
+				<div class="voucherDown">
+					<div ng-repeat="x in recordArr" ng-click='{{x.clickId}}' class="voucherItem">{{x.name}}</div>
+				</div>
+				<div class="voucherBottom">
+					<div>学完了快去试试身手吧！</div>
+					<div>去投资</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/ionic-config.js"></script>
+		<script src="js/know.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,414 @@
+body {
+	background-color: #EC3C3D;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	/*overflow-x:hidden;*/
+	font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul {
+	list-style-type: disc;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	padding: 0;
+	margin: 0;
+}
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.fromDiv {
+	/*position:absolute;
+		bottom:0;
+		left:0;*/
+	width: 100%;
+	padding: 10px 0;
+	background-image: url(http://qiniuapp.mqkji.cn/couponDecMobBotBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	font-family: STKaiti;
+}
+
+.formItemDiv {
+	position: relative;
+	height: 39px;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-bottom: 5px;
+	font-size: 0px;
+	line-height: 39px;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	/*border:1px solid red;*/
+}
+
+.formItemDiv img {
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	margin: 0px;
+	width: 15px;
+}
+
+#imgVerCode {
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	margin: 0px;
+	width: 20px;
+}
+
+.formItemInput {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	color: #666;
+	border: 0px solid #fff;
+	background-color: rgba(0, 0, 0, 0);
+	outline: medium;
+}
+
+#imgVerCodeObj {
+	position: absolute;
+	top: 5px;
+	height: 35px;
+}
+
+#getVerCodeBut {
+	position: absolute;
+	top: 5px;
+	/*background-color: #ff2323;*/
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #FEFEFE;
+	border-radius: 16px;
+	cursor: pointer;
+	background: linear-gradient(0deg, rgba(226, 71, 60, 1), rgba(236, 106, 74, 1));
+	border-radius: 17px;
+}
+
+.registerBut {
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 35px;
+	margin-right: 35px;
+	/*background-color: #ffc600;*/
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #E53D38;
+	font-weight: bold;
+	cursor: pointer;
+	background: linear-gradient(0deg, rgba(245, 186, 61, 1), rgba(246, 216, 132, 1));
+	border-radius: 22px;
+}
+
+.registerCard {
+	height: 100px;
+	margin-top: 24px;
+	margin-left: 35px;
+	margin-right: 35px;
+	padding-top: 42px;
+	/* line-height: 40px; */
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	/* font-weight: bold; */
+	/*cursor: pointer;*/
+	background-image: url(http://qiniuapp.mqkji.cn/couponDecMobCard.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.dowebokUl {
+	position: relative;
+	width: 100%;
+	height: 74px;
+	background: none;
+	/*margin-top: 42px;
+	margin-bottom: 25px;*/
+	/*overflow: hidden;*/
+}
+
+.dowebokUl ul {
+	width: 100%;
+	/*height: 3.88rem;*/
+	/*overflow: hidden;*/
+}
+
+.dowebokUl li {
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dowebokUl li>span {
+	color: #E67373;
+}
+
+.cvrpBg {
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+}
+
+.cvrpContent {
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #000;
+	font-size: 15px;
+	overflow-x: auto;
+}
+
+.closeBut {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	font-size: 30px;
+	width: 40px;
+	height: 30px;
+	line-height: 25px;
+	opacity: 0.5;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.fxts {
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 2px;
+	width: 100%;
+	height: 15px;
+	font-size: 9px;
+	color: #fff;
+	text-align: center;
+}
+
+.cvrpBut {
+	position: relative;
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 35px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	/*border:1px solid #FFF;*/
+	cursor: pointer;
+	font-size: 0px;
+}
+
+.checkbox {
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	display: block;
+	width: 17px;
+	height: 17px;
+	bolder: 1px solid #FFF;
+	margin-right: 10px;
+}
+
+.readTextLabel {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	display: block;
+	align-items: center;
+	font-size: 13px;
+	line-height: 5px;
+	letter-spacing: 1px;
+}
+
+.readTextLabelLeft {
+	position: absolute;
+	top: 10px;
+	left: 200px;
+	display: block;
+	align-items: center;
+	font-size: 13px;
+	line-height: 5px;
+	letter-spacing: 1px;
+}
+
+.fromTopDiv {
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	/*border:1px solid #fff;*/
+}
+
+.hr {
+	display: inline-block;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #fff;
+	width: 40px;
+	vertical-align: middle;
+}
+
+.mobPeoNum {
+	color: #FFD751;
+}
+
+.registerBotTxt {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 16px;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.registerBotBg {
+	height: 102px;
+	margin-left: 20px;
+	margin-right: 20px;
+	/*padding-top: 42px;*/
+	text-align: center;
+	background-image: url(http://qiniuapp.mqkji.cn/couponDecMobBotTxt.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.registerBotDownload {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	background: rgba(255, 202, 81, 1);
+	font-size: 16px;
+	font-family: SourceHanSansCN-Bold;
+	font-weight: bold;
+	color: rgba(220, 52, 52, 1);
+}
+
+.registerEmpty {
+	width: 100%;
+	height: 56px;
+}
+
+
+/*提示框*/
+
+.myObtain {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.myObtainImg {
+	position: fixed;
+	left: 15%;
+	width: 70%;
+	height: 200px;
+	padding-top: 22px;
+	font-size: 0.14rem;
+	top: 32%;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	/*background-image: url(http://qiniuapp.mqkji.cn/decPcAdFloAlert.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;*/
+	text-align: center;
+	z-index: 999;
+}
+.myObtainImgOff{
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+}
+
+.myObtainImgIcon {
+	width: 52px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-image: url(http://qiniuapp.mqkji.cn/couponDecMobIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	/*margin-top: 20px;*/
+}
+
+.myObtainImgTxt {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.myObtainImgTxt>p:first-child {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(227, 66, 57, 1);
+}
+
+.myObtainImgTxt>p:last-child {
+	font-size: 12px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+}
+
+.myObtainImgButton {
+	width: 192px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	margin-top: 18px;
+	background: linear-gradient(0deg, rgba(226, 71, 60, 1), rgba(236, 106, 74, 1));
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+}

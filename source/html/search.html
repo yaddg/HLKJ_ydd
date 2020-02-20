@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>海浪淘金</title>
+		<script src="../../dstjIonic/js/jquery.min.js"></script>
+		<!--私有-->
+		<!--<link rel="stylesheet" href="/hltjmobile/source/css/hltj.css" />-->
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background-color: #FFFFFF;
+			}
+			
+			.contTitle {
+				width: 100%;
+				/*height: 100px;*/
+				padding: 80px 0;
+				text-align: center;
+				font-size: 0;
+			}
+			.contTitle p{
+				width: 60%;
+				margin: 0 auto; 
+				height: 40px; 
+				margin-bottom: 40px;
+				line-height: 40px;
+				font-size: 28px;
+				color: blueviolet;
+				font: "微软雅黑";
+			}
+			
+			input {
+				width: 60%;
+				height: 40px;
+				border: 0;
+				font-size: 24px;
+				border: 1px solid #b6b6b6;
+			}
+			
+			.contIframe iframe {
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+			
+			.contIframe div {
+				float: left;
+				width: 50%;
+				height: 600px;
+				border: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="contTitle">
+			<p>海浪搜索</p>
+			<input type="text" id="titleText" maxlength="100" />
+		</div>
+		<div class="contIframe">
+			<div id="contBaidu"></div>
+			<div id="contSougou"></div>
+			<div id="contGoogle"></div>
+			<div id="cont360"></div>
+		</div>
+		<script>
+			function search() {
+				var searchTxt = $("#titleText").val();
+				var searchBaidu = "https://www.baidu.com/s?ie=UTF-8&wd=" + searchTxt;
+				var searchSougou = "https://www.sogou.com/web?query=" + searchTxt;
+				var searchGoogle = "https://www.google.com/search?source=hp&ei=KqWoW8DGBIH-8gX7sZCgDQ&q="+searchTxt;
+				var search360 = "https://www.so.com/s?ie=utf-8&q=" + searchTxt;
+				console.log(searchBaidu)
+				$("#contBaidu").html("<iframe seamless frameborder='0' src=" + searchBaidu + "><p>您的浏览器不支持  iframe 标签。</p></iframe>");
+				$("#contSougou").html("<iframe seamless frameborder='0' src=" + searchSougou + "><p>您的浏览器不支持  iframe 标签。</p></iframe>")
+				$("#contGoogle").html("<iframe seamless frameborder='0' src=" + searchGoogle + "><p>您的浏览器不支持  iframe 标签。</p></iframe>")
+				$("#cont360").html("<iframe seamless frameborder='0' src=" + search360 + "><p>您的浏览器不支持  iframe 标签。</p></iframe>")
+			}
+			$("input").change(search);
+		</script>
+	</body>
+
+</html>

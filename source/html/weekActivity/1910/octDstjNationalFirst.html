@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/jquery.liMarquee.js"></script>
+		<link rel="stylesheet" href="http://qiniuapp.mqkji.cn/liMarquee.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/octDstjNationalFirst.css" />
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+		</script>
+	</head>
+
+	<body>
+		<div class="conetnt">
+			<div class="conetntHead">
+				<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstHead.png" onclick="return false" /><br />
+			</div>
+			<!--<div class="conetntList">
+				<div>
+					<ul id="ul1"> 
+					</ul>
+				</div>
+
+			</div>-->
+			<div class="conetntCard">
+				<div id="lottery">
+					<table border="0" cellpadding="10" cellspacing="11">
+						<tr class="lottery-group">
+							<td class="lottery-unit td_1">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCardIntegral.png" /><br />
+								<span>100积分</span>
+							</td>
+							<td class="lottery-unit td_2">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCard120.png" /><br />
+								<span>120元代金券</span>
+							</td>
+							<td class="lottery-unit td_3">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCardIntegral.png" /><br />
+								<span>25积分</span>
+							</td>
+						</tr>
+						<tr class="lottery-group">
+							<td class="lottery-unit td_4">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCard16.png" /><br />
+								<span>16元代金券</span>
+							</td>
+							<td class="td_5">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstGo.png" />
+							</td>
+							<td class="lottery-unit td_6">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCardIntegral.png" /><br />
+								<span>200积分</span>
+							</td>
+						</tr>
+						<tr class="lottery-group">
+							<td class="lottery-unit td_7">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCardIntegral.png" /><br />
+								<span>50积分</span>
+							</td>
+							<td class="lottery-unit td_8">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCard40.png" /><br />
+								<span>40元代金券</span>
+							</td>
+							<td class="lottery-unit td_9">
+								<img src="http://qiniuapp.hailangkeji.com/octDstjNationalFirstCardIntegral.png" /><br />
+								<span>800积分</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="conetntDialNum">
+				<p>每天登录可抽奖<span>1</span>次</p>
+			</div>
+			<div class="RechTip">
+				<p>本产品属于高收益、高风险品种</p>
+				<p>大圣淘金温馨提示：市场有风险，投资需谨慎 </p>
+			</div>
+		</div>
+		<div class="RechCardRecord"></div>
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<div class="FortuneHint">
+					<p id="drawDesc"></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut">
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="receiveObj.closeTips()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<p>活动规则</p>
+				<p>1、</p>
+				<p>2、活动奖励代金券以积分的形式实时发放到账户</p>
+				<p>3、活动最终解释权归海浪淘金所有</p>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<p>获奖记录</p>
+				<ul id="optionBgLi">
+				</ul>
+				<p class="mySupTip">该活动奖励实时到账</p>
+			</div>
+		</div>
+		<script src="js/octDstjNationalFirst.js"></script>
+		<script src="js/lottery.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

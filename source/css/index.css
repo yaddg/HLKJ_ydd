@@ -1,0 +1,89 @@
+.receive_div{
+		display:none;
+		position:fixed;
+		top:0px;
+		left:0px;
+		height:100%;
+		width:100%;
+		background-color:#000000;
+		opacity:0.7;
+		z-index:99px;
+	}
+	.hongbao_div{
+	  display:none;
+	  position: relative;
+      top: 45%;
+      transform: translateY(-50%);
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:200px;
+	  height:200px;
+	  background-image:url(../images/hongbaoBg.png);
+	  background-repeat:no-repeat;
+	  background-position:0px 0px;
+	  background-size:100%;
+	  z-index:999px;
+	}
+	.hongbaoBut{
+		position: absolute;
+        left:0px;
+		bottom:0px;
+		width:100%;
+		font-size:0px;
+		margin-bottom:10px;
+		text-align:center;
+	}
+	.hongbaoBut img{
+		width:80%;
+	}
+	.hongbaoDesc{
+	  position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:100px;
+	  font-size:20px;
+	  line-height:20px;
+	  height:20px;
+	  color:rgb(255,224,0);
+	  text-align:center;
+	}
+	
+	
+	.hongbaoBgDiv{
+	  display:none;
+	  position: relative;
+	  width:60%;
+	  z-index:99px;
+	  font-size:0px;
+	}
+	.hongbaoBgDiv img{
+		width:100%;
+	}
+	
+	
+	
+	.hongbaoText{
+		display:none;
+		position: absolute;
+		width:60%;
+		z-index:100px;
+	}
+	.hongbaoText_top{
+	    text-align:center;
+		width:100%;
+		height:50px;
+		font-size:30px;
+		line-height:50px;
+		color:#FFF;
+		
+	}
+	.hongbaoText_bottom{
+	    text-align:center;
+		width:100%;
+		height:16px;
+		font-size:16px;
+		line-height:16px;
+		color:#FFF;
+	}

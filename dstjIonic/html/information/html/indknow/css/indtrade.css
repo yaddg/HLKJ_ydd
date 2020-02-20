@@ -1,0 +1,69 @@
+body { 
+	background-color: #FFFFFF; 
+}
+.tipHead{
+	width: 100%;
+	/*height: 100%;*/
+	/*background-image: url(http://qiniuapp.maoqiankeji.cn/zhijtSchoolTradeHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 1.3rem;*/
+	overflow: hidden;
+	/*text-align: center;*/
+}
+.voucherTitle{
+	/* width: 100%; */
+    /* height: 0.75rem; */
+    padding: 0.2rem;
+    line-height: 0.32rem;
+    /* padding-top: 0.25rem; */
+    /* text-align: center; */
+    color: #000000;
+    font-size: 0.20rem;
+}
+.voucherTime{
+	font-size: 0.12rem;
+	color: #999999;
+	padding-left: 0.2rem;
+}
+.voucherHome{
+	padding: 0 0.2rem;
+    height: 1.96rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.22rem;
+}
+.voucherHome img{
+	width: 100%;
+    height: 1.96rem;
+}
+.voucherTxt{
+	/* width: 100%; */
+    /* height: 0.75rem; */
+    padding: 0.2rem;
+    line-height: 0.26rem;
+    font-size: 0.14rem;
+    color: #555555;
+}
+
+.voucherItem{
+	/*width: 0.8rem;*/
+    height: 0.3rem;
+    border: 1px solid #F2F2F2;
+    margin-right: 0.1rem;
+    border-radius: 50px;
+    line-height: 0.3rem;
+    box-shadow: 2px 4px 5px #F2F2F2;
+    color: #4E4E4E;
+    font-size: 0.12rem;
+    padding: 0 0.1rem;
+}
+.scroll{
+	border-radius: 5px;
+}
+.voucherBottom div:nth-child(2) { 
+    background-color: #3573FA;
+}
+.voucherDown>div:first-child{
+	color: #FFFFFF;
+	background-color: #3573FA;
+}

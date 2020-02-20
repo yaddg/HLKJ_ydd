@@ -1,0 +1,84 @@
+body {
+	x-overflow: hidden;
+	text-align: center;
+	position: receive;
+}
+
+.receiveBut {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	overflow: hidden;
+	background-image: url(../../images/coupon/receiveBut.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	border: 1px solid red;
+}
+
+.receiveButImg {
+	position: absolute;
+	bottom: 10%;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.receiveBox {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+.boxbg {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBg {
+	position: fixed;
+	top: 40%;
+	left: 5px;
+	height: 140px;
+	width: 260px;
+	border-radius: 5px;
+	background-color: #FFF;
+	text-align: center;
+}
+
+#optionTitle {
+	margin-top: 20px;
+	height: 35px;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	height: 30px;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	height: 30px;
+}
+
+#bbsBG {
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,196 @@
+body {
+	background-color: #FFFFFF;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.conetnt {
+	width: 100%;
+	height: 0.45rem;
+	font-size: 0.14rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjToExamine0923Head.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/*background-color: #5A9DF6;*/
+}
+.conetntImgBg{
+	position: relative;
+    top: 3.5px;
+	width: 1.56rem;
+	max-width: 44%;
+	height: 0.36rem;
+	margin: 0 auto;
+	text-align: center;
+	font-size:16px;
+	/*background-color: #FFFFFF;*/
+	border:1px solid rgba(255,255,255,1);
+	border-radius:4px;
+}
+.conetntHead {
+	/*display: none;*/
+	width: 100%;
+	/*height: 5.18rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/octDstjNatThirdHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.RechButLine{
+	position: absolute;
+    top: 0;
+    left: 67%;
+    width: 1px;
+    height: 0.36rem;
+    background-color: #FFFFFF;
+}
+.RechButO {
+	float: left;
+	width: 33%;
+	height: 100%;
+	line-height: 0.36rem;
+    /*padding-bottom: 0.1rem;*/
+	text-align: center;
+	color: #FFFFFF;
+	/*margin-left: -2px;*/
+	/*background:rgba(255,255,255,1);*/
+	/*border-right: 1px solid #FFFFFF;*/
+	border-radius:4px 0px 0px 4px;
+}
+ 
+.RechButT {
+	float: left;
+	width: 33%;
+	height: 100%;
+	line-height: 0.36rem;
+	margin-left: 0.5%;
+    /*padding-bottom: 0.1rem;*/
+	text-align: center;
+	color: #FFFFFF;
+	/*border-right: 1px solid #FFFFFF;*/
+	/*background-color: #5A9DF6;*/
+	/*border-radius:4px 0px 0px 4px;*/
+} 
+.RechButTh{
+	float: left;
+	width: 33%;
+	height: 100%;
+	line-height: 0.36rem;
+	margin-left: 0.5%;
+    /*padding-bottom: 0.1rem;*/
+	text-align: center;
+	color: #FFFFFF;
+	/*border-left: 1px solid #FFFFFF;*/
+	/*background-color: #5A9DF6;*/
+	/*background:rgba(255,255,255,1);*/
+	/*border-radius:4px 0px 0px 4px;*/
+}
+
+.RechButFull{
+	color: #FFFFFF;
+	background: none;
+	
+}
+.RechButAlFull{
+	color: #5A9DF6;
+	background: rgba(255,255,255,1);
+}
+
+.RechButEmpBg{
+	position: absolute;
+    top: 1.2rem;
+    width: 100%;
+    height: 1rem;
+    /*background: rgba(255,255,255,1);*/
+}
+#RechTxtT {
+	margin-top: 0;
+	font-size: 0.15rem;
+}
+
+#RechTxtO {
+	margin-top: 0.1rem;
+	font-size: 0.15rem;
+}
+
+.RechBut span {
+	color: #FE4B4B
+}
+
+#accuButP {
+	color: #FEFEFE;
+}
+
+.RechTip {
+	width: 100%;
+	color: #F1B269;
+	text-align: center;
+	font-size: 10px;
+	/*background-color: #F84B1C;*/
+	padding-top: 0.3rem;
+	padding-bottom: 0.16rem;
+}
+.RechCard {
+	width: 3.3rem;
+	max-width: 92%;
+	/*height: 1.86rem;*/
+	margin: 0 auto;
+	/*margin-bottom: 0.26rem;*/
+	text-align: left;
+	color: #F1B269;
+	font-size: 13px;
+	margin-top: 0.2rem;
+	line-height: 0.2rem;
+	/*background-image: url(http://qiniuapp.hailangkeji.com/marFullCouTip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+.RechCard div{
+	width: 1.82rem;
+	max-width: 52%;
+	margin: 0 auto;
+	text-align: center;
+    /*margin-bottom: 0.15rem;*/
+}
+.RechCardP1{
+	/*width: 100%;*/
+    font-size: 16px;
+    /* line-height: 0.3rem; */
+    font-weight: bold;
+    
+}
+.RechCardHr01{
+	position: relative;
+    margin-left: 0;
+    top: 0.16rem;
+    /* float: left; */
+    width: 40px;
+    height: 1px;
+    border: none;
+    color: #F1B269;
+    background-color: #F1B269;
+}
+.RechCardHr02{
+	position: relative;
+    margin-right: 0;
+    top: -0.16rem;
+	/*float: right;*/
+	width: 40px;
+	height: 1px;
+	border: none;
+	color: #F1B269;
+	background-color: #F1B269;
+}
+/*.RechCard img{
+	width: 3.2rem;
+	height: 1.9rem;
+	margin-top: 0.25rem;
+	
+}*/

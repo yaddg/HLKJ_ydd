@@ -1,0 +1,628 @@
+html {
+	font-size: 100px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/*overflow-x: hidden;*/
+	background-color: #251D52;
+	font-size: 0.14rem;
+	font-family: "Microsoft YaHei", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.headTop {
+	width: 100%;
+	height: 2.5rem;
+	/*background-color: #1C1C1C;*/
+	/*background-image: url(http://qiniuapp.mqkji.cn/indexKnowHead.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.headTopTit {
+	/*width: 100%;*/
+	height: 0.32rem;
+	padding: 0 0.1rem;
+	padding-top: 0.16rem;
+}
+
+.headTopTit>div:first-child {
+	float: left;
+	width: 0.06rem;
+	height: 0.16rem;
+	margin-right: 0.1rem;
+	background: linear-gradient(0deg, rgba(237, 86, 52, 1), rgba(255, 120, 39, 1));
+	border-radius: 3px;
+}
+
+.headTopTit>p {
+	font-size: 0.18rem;
+	font-weight: bold;
+	line-height: 0.15rem;
+	color: rgba(255, 255, 255, 1);
+}
+
+.headTop>div:nth-child(2) {
+	margin: 0 0.1rem;
+	height: 1.1rem;
+	background-image: url(http://qiniuapp.mqkji.cn/novTraCanBanner.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.headTop>div:nth-child(3) {
+	margin: 0 0.1rem;
+	height: 0.75rem;
+	margin-top: 0.1rem;
+	background-image: url(http://qiniuapp.mqkji.cn/novTraCanPrize.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.headTopTitSec {
+	/*width: 100%;*/
+	height: 0.32rem;
+	padding: 0 0.1rem;
+	padding-top: 0.16rem;
+}
+
+.headTopTitSec>div:first-child {
+	float: left;
+	width: 0.06rem;
+	height: 0.16rem;
+	margin-right: 0.1rem;
+	background: linear-gradient(0deg, rgba(237, 86, 52, 1), rgba(255, 120, 39, 1));
+	border-radius: 3px;
+}
+
+.headTopTitSec>p {
+	font-size: 0.18rem;
+	font-weight: bold;
+	line-height: 0.15rem;
+	color: rgba(255, 255, 255, 1);
+}
+
+.ConsFloat {
+	position: fixed;
+	top: 2.62rem;
+	right: 0;
+	width: 1.11rem;
+	height: 0.27rem;
+	background-image: url(http://qiniuapp.mqkji.cn/novTraCanConsult.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	z-index: 99;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.conetnt {
+	width: 100%;
+}
+
+.indexKnowCardbg {
+	width: 94%;
+	margin: 0 auto;
+	/*padding-top: 0.14rem;*/
+	margin-bottom: 0.15rem;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 4px 10px 0px rgba(63, 166, 108, 0.45);
+	border-radius: 5px;
+	position: relative;
+	max-height: 0.5rem;
+	overflow: hidden;
+}
+
+.indexKnowCardbg span {
+	color: #FF4200;
+}
+
+.indexKnowCard01 {}
+
+.indexKnowCard01Img {
+	width: 100%;
+	margin-top: 0.16rem;
+}
+
+.indexKnowCard01 span {
+	color: #333333;
+}
+.indexKnowCard02 span {
+	color: #333333;
+}
+.indexKnowCard03 span {
+	color: #333333;
+}
+.indexKnowCard04 span {
+	color: #333333;
+}
+.indexKnowCard05 span {
+	color: #333333;
+}
+.indexKnowCard06 span {
+	color: #333333;
+}
+
+.indexKnowCardTit {
+	/*width: 2.6rem;*/
+	height: 0.5rem;
+	padding-left: 0.16rem;
+	padding-right: 0.2rem;
+	/*margin: 0 auto;*/
+	/*display: table;*/
+	/*background-image: url(http://qiniuapp.mqkji.cn/indexKnowTit01.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCardTit>div:first-child {
+	float: left;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	vertical-align: middle;
+	color: #333333;
+	font-weight: bold;
+	font-size: 0.14rem;
+}
+
+.indexKnowCardTit>div:first-child img {
+	width: 0.37rem;
+	height: 0.34rem;
+	vertical-align: middle;
+}
+
+.indexKnowCardTit>div:last-child {
+	float: right;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.11rem;
+	vertical-align: middle;
+}
+
+.indexKnowCardTit>div:last-child img {
+	width: 0.09rem;
+	height: 0.05rem;
+	vertical-align: middle;
+}
+
+.indexKnowTxt {
+	color: #FF3F0C;
+}
+
+
+/*.indexKnowCard01>div:nth-child(2) {
+	width: 2.22rem;
+	height: 0.29rem;
+	line-height: 0.29rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	margin-bottom: 0.14rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.14rem;
+	border-radius: 15px;
+	background: -webkit-linear-gradient(#FDB481, #FE795D);
+	background: -o-linear-gradient(#FDB481, #FE795D);
+	background: -moz-linear-gradient(#FDB481, #FE795D);
+	background: linear-gradient(#FDB481, #FE795D);
+}*/
+
+.indexKnowCard01>div:nth-child(2) {
+	width: 91%;
+	line-height: 0.22rem;
+	padding: 0 4.5%;
+	margin-top: 0.12rem;
+}
+
+.knowTip {
+	color: #666666;
+	font-size: 0.1rem;
+	line-height: 0.26rem;
+}
+
+.knowSwitch01 {
+	position: absolute;
+	top: 1.34rem;
+	width: 100%;
+	height: 0.6rem;
+	margin: 0 auto;
+	color: #7285FD;
+	font-size: 0.14rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	/* background: rgba(255, 255, 255, 0.8); */
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/* z-index: 99999; */
+}
+
+.knowSwitch03 {
+	position: absolute;
+	top: 1.34rem;
+	width: 100%;
+	height: 0.6rem;
+	margin: 0 auto;
+	color: #7285FD;
+	font-size: 0.14rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	/* background: rgba(255, 255, 255, 0.8); */
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/* z-index: 99999; */
+}
+
+.knowSwitch04 {
+	position: absolute;
+	top: 1.34rem;
+	width: 100%;
+	height: 0.6rem;
+	margin: 0 auto;
+	color: #7285FD;
+	font-size: 0.14rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	/* background: rgba(255, 255, 255, 0.8); */
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/* z-index: 99999; */
+}
+
+.knowSwitch05 {
+	position: absolute;
+	top: 1.34rem;
+	width: 100%;
+	height: 0.6rem;
+	margin: 0 auto;
+	color: #7285FD;
+	font-size: 0.14rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	/* background: rgba(255, 255, 255, 0.8); */
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/* z-index: 99999; */
+}
+
+.knowSwitch06 {
+	position: absolute;
+	top: 1.34rem;
+	width: 100%;
+	height: 0.6rem;
+	margin: 0 auto;
+	color: #7285FD;
+	font-size: 0.14rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	/* background: rgba(255, 255, 255, 0.8); */
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	/* z-index: 99999; */
+}
+
+.knowSwitch01 img {
+	width: 1.5rem;
+	height: 0.44rem;
+}
+
+.knowSwitch03 img {
+	width: 1.5rem;
+	height: 0.44rem;
+}
+
+.knowSwitch04 img {
+	width: 1.5rem;
+	height: 0.44rem;
+}
+
+.knowSwitch05 img {
+	width: 1.5rem;
+	height: 0.44rem;
+}
+
+.knowSwitch06 img {
+	width: 1.5rem;
+	height: 0.44rem;
+}
+
+.indexKnowCard02 {}
+
+.indexKnowCard02 img {
+	width: 100%;
+	/*margin-top: 0.06rem;*/
+}
+
+.indexKnowCard02>div:nth-child(2) {
+	width: 91%;
+	line-height: 0.22rem;
+	padding: 0 4.5%;
+	margin-top: 0.12rem;
+	padding-bottom: 0.16rem;
+	/*background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg02.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+.indexKnowCard03 {}
+
+
+/*.indexKnowCard03>div:first-child {
+	width: 2.6rem;
+	height: 0.42rem;
+	margin: 0 auto;
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowTit03.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}*/
+
+.indexKnowCard03>div:nth-child(2) {
+	width: 91%;
+	line-height: 0.22rem;
+	padding: 0 4.5%;
+	margin-top: 0.12rem;
+	margin-bottom: 0.15rem;
+}
+
+.indexKnowCard03Cen {
+	/*width: 100%;
+	height: 5.61rem;*/
+}
+
+.indexKnowCard03Cen>div {
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: 0.12rem;
+}
+
+.indexKnowCard03Cen>div:first-child div {
+	width: 80%;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	margin: 0 auto;
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(#FDB481, #FE795D);
+	background: -o-linear-gradient(#FDB481, #FE795D);
+	background: -moz-linear-gradient(#FDB481, #FE795D);
+	background: linear-gradient(#FDB481, #FE795D);
+	border-radius: 13px;
+}
+
+.indexKnowCard03Cen>div:first-child p {
+	color: #FE7B5E;
+}
+
+.indexKnowCard03Cen>div:nth-child(2) div {
+	width: 80%;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	margin: 0 auto;
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(#5CCEFD, #379DED);
+	background: -o-linear-gradient(#5CCEFD, #379DED);
+	background: -moz-linear-gradient(#5CCEFD, #379DED);
+	background: linear-gradient(#5CCEFD, #379DED);
+	border-radius: 13px;
+}
+
+.indexKnowCard03Cen>div:nth-child(2) p {
+	color: #3AA1EE;
+}
+
+.indexKnowCard03>div:nth-child(3) {
+	width: 91%;
+	line-height: 0.22rem;
+	padding: 0 4.5%;
+	margin-top: 0.8rem;
+}
+
+.indexKnowCard04 {}
+
+
+/*.indexKnowCard04>div:first-child {
+	width: 2.6rem;
+	height: 0.42rem;
+	margin: 0 auto;
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowTit04.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}*/
+
+.indexKnowCard04Cen {
+	width: 91%;
+	/* height: 0.4rem; */
+	/* line-height: 0.22rem; */
+	padding: 0 4.5%;
+	margin-top: 0.2rem;
+	margin-bottom: 0.15rem;
+}
+
+.indexKnowCard05 {}
+
+.indexKnowCard05O {
+	width: 91%;
+	/*margin: 0 auto;*/
+	/*height: 2.43rem;*/
+	/*font-size: 0.13rem;*/
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+
+.indexKnowCard05O>div {
+	width: 1.12rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #FF5701;
+	/*border-radius: 12px;*/
+	margin-bottom: 0.1rem;
+	padding-left: 0.1rem;
+	font-size: 0.12rem;
+	/*text-align: center;*/
+	background: -webkit-linear-gradient(left, #ffc7aa, #FFFFFF);
+	background: -o-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: -moz-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: linear-gradient(to right, #ffc7aa, #FFFFFF);
+}
+
+.indexKnowCard05T {
+	width: 91%;
+	/*margin: 0 auto;*/
+	/*height: 2.63rem;*/
+	/*font-size: 0.13rem;*/
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+
+.indexKnowCard05T>div {
+	width: 1.5rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #FF5701;
+	margin-bottom: 0.1rem;
+	padding-left: 0.1rem;
+	font-size: 0.12rem; 
+	background: -webkit-linear-gradient(left, #ffc7aa, #FFFFFF);
+	background: -o-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: -moz-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: linear-gradient(to right, #ffc7aa, #FFFFFF);
+}
+
+.indexKnowCard05Th {
+	width: 91%;
+	/*margin: 0 auto;*/
+	/*height: 1.5rem;*/
+	/*font-size: 0.14rem;*/
+	margin: 0.2rem auto;
+	/*margin-top: 0.2rem;
+	margin-bottom: 0.2rem;*/
+}
+
+.indexKnowCard05Th span {
+	color: #FF4200;
+}
+
+.indexKnowCard05Th>div {
+	width: 1.12rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #FF5701;
+	margin-bottom: 0.1rem;
+	padding-left: 0.1rem;
+	font-size: 0.12rem; 
+	background: -webkit-linear-gradient(left, #ffc7aa, #FFFFFF);
+	background: -o-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: -moz-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: linear-gradient(to right, #ffc7aa, #FFFFFF);
+}
+
+.indexKnowCard05O img {
+	width: 100%;
+}
+
+.indexKnowCard05T img {
+	width: 100%;
+}
+
+.indexKnowCard05O p {
+	margin-bottom: 0.1rem;
+}
+
+.indexKnowCard05T p {
+	margin-bottom: 0.1rem;
+}
+
+.indexKnowCard06 {
+	/*position: relative;
+	height: 2rem;
+	overflow: hidden;*/
+}
+
+
+/*.indexKnowCard06>img{
+	width: 100%;
+}*/
+
+/*.indexKnowCard06>div:first-child {
+	width: 2.6rem;
+	height: 0.42rem;
+	margin: 0 auto;
+	background-image: url(http://qiniuapp.mqkji.cn/indexKnowTit06.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}*/
+
+.indexKnowCard06>div:nth-child(2) {
+	width: 91%;
+	line-height: 0.22rem;
+	padding: 0 4.5%;
+	margin-top: 0.16rem;
+	/*background-image: url(http://qiniuapp.mqkji.cn/indexKnowBg02.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;*/
+}
+
+
+.indexKnowCard06Th {
+	width: 100%;
+	/*margin: 0 auto;*/
+	/*height: 1.5rem;*/
+	/*font-size: 0.14rem;*/
+	margin: 0.2rem auto;
+	text-align: center;
+	/*margin-top: 0.2rem;
+	margin-bottom: 0.2rem;*/
+}
+
+.indexKnowCard06Th>div {
+	width: 2rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #FF5701;
+	margin-left: 4.5%;
+	margin-bottom: 0.1rem;
+	padding-left: 0.1rem;
+	font-size: 0.12rem; 
+	background: -webkit-linear-gradient(left, #ffc7aa, #FFFFFF);
+	background: -o-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: -moz-linear-gradient(right, #ffc7aa, #FFFFFF);
+	background: linear-gradient(to right, #ffc7aa, #FFFFFF);
+}
+.indexKnowCard06Th img{
+	width: 96%;
+	margin-bottom: 0.1rem;
+}
+.indexKnowTip{
+	width: 100%;
+	padding: 0.2rem 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+	line-height: 0.2rem;
+}

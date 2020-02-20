@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>海浪淘金 </title>
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/md5.js"></script>
+		<script src="../../js/jQueryRotate.js"></script>
+		<link rel="stylesheet" href="../../css/common.css">
+		<!--私有-->
+		<link rel="stylesheet" href="css/luckDraw.css">
+
+	</head>
+
+	<body>
+
+		<img class="bgimg" id="bgimg" disabled="disabled" src="../../images/activity/luckdraw_bg.png" />
+		<div class="bgdiv" id="bgdiv"></div>
+		<div class="bottomImg" id="bottomImg" onclick="drawObj.myRecord();"> </div>
+		<!--<div class="conetnt" id="conetnt" ></div>-->
+		<div class="g-content" id="g-content">
+			<div class="g-lottery-case">
+				<div class="g-left">
+					<div class="g-lottery-box">
+						<div class="g-lottery-img">
+						</div>
+						<a class="playbtn" href="javascript:;" rel="external nofollow" rel="external nofollow" title="开始抽奖"></a>
+
+					</div>
+					<div style="text-align:center; color:#FFF; margin-top:5px;"><label>您还有</label><span class="playnum"></span><label>次抽奖机会！</label></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rule_1" id="rule_1">
+			<p style="margin-bottom:-5px; ">活动期间累计充值金额每满500元即可获得一次抽奖机会</p>
+			<p style="font-weight:bold; font-size:12px;">累计充值金额&nbsp;=&nbsp;活动期间充值金额&nbsp;-&nbsp;活动期间提现金额</p>
+		</div>
+		<div class="rule" id="rule">
+			<p style="margin-bottom:5px;">活动规则：</p>
+
+			<p>1、本次活动新老用户均可参与，活动时间2018年5月29日~6月10日；</p>
+			<p>2、活动期间累计充值金额每满500元即可获得一次抽奖机会，每人抽奖机会上限为20次；</p>
+			<p>3、累计充值金额=活动期间充值金额-活动期间提现金额；</p>
+			<p>4、奖品说明：实物奖品、流量、话费、代金券将统一在活动结束后的后三个工作日内为您采购、发放，请您保持电话畅通，若5个工作日内还无法与您取得联系，将视为您自动放弃奖品；</p>
+			<p>5、本活动最终解释权归海浪淘金所有。</p>
+		</div>
+		<div class="bottomTishi" id="bottomTishi">
+			<div class="fxts">本产品属于高效益，高风险品种</div>
+			<div class="fxts">海浪淘金温馨提示：入市有风险，投资需谨慎</div>
+		</div>
+		<div class="myRecordDiv" id="myRecordDiv" onclick="drawObj.myRecordClose();">
+			<div class="myRecordImg">
+				<div class="myRecordTitle">我的奖品记录</div>
+				<div class="myRecordContent" id="myRecordContent">
+					<!--<div class="myRecordItem">成功开启宝箱：获得100元代金券</div>-->
+
+				</div>
+			</div>
+		</div>
+
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<div style="width:100px; height:5px;"></div>
+				<div id="heci">恭喜您！</div>
+				<div id="drawDesc">获得100元代金券！</div>
+				<div id="closeBut" onclick="drawObj.closeObtain()"></div>
+			</div>
+		</div>
+
+		<div class="noObtain" id="noObtain">
+			<div class="noObtainImg">
+				<div style="width:100px; height:5px;"></div>
+				<div>您暂无抽奖机会！</div>
+				<div style="margin-top:5px;">请先充值获得机会<br/>（500元=1次）！</div>
+				<div id="closeNoBut1" onclick="drawObj.closeRecharge()"></div>
+				<div id="closeNoBut" onclick="drawObj.appRechargeUrl()"></div>
+			</div>
+		</div>
+		<script src="js/luckDraw.js"></script>
+	</body>
+
+</html>

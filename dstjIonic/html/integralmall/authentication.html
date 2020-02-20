@@ -1,0 +1,120 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>实名认证</title>
+		<link href="../../css/ionic.min.css" rel="stylesheet" />
+		<link href="../../css/common.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script src="../../js/ionic.min.js"></script>
+		<script type="text/javascript" src="../../js/ionic.bundle.js"></script>
+		<script type="text/javascript" src="../../js/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="../../js/md5.js"></script>
+		<script src="http://api.map.baidu.com/api?v=1.2" type="text/javascript"></script>
+		<!--<script type="text/javascript" src="../../js/common.js"></script>-->
+		
+		<script type="text/javascript" src="../../js/ionic-config.js"></script>
+		<link href="css/authentication.css" rel="stylesheet" />
+	</head>
+
+	<body ng-controller="claimReportPersonCtrl">
+
+			<!--<div id="receiveButImg" class="receiveButImg"> 
+				<ul id="ul1">
+        		<li>131****5434  &nbsp; 领取88元代金券</li>
+       		    <li>158****3556  &nbsp; 领取88元代金券</li>
+        		<li>136****6576  &nbsp; 领取88元代金券</li>
+        		<li>139****8785  &nbsp; 领取88元代金券</li>
+        		<li>142****9879  &nbsp; 领取88元代金券</li>
+        		<li>188****4342  &nbsp; 领取88元代金券</li>
+        		<li>158****2347  &nbsp; 领取88元代金券</li>
+        		<li>138****8769  &nbsp; 领取88元代金券</li>
+       			<li>156****6679  &nbsp; 领取88元代金券</li>
+        		<li>139****8768  &nbsp; 领取88元代金券</li>
+        		<li>133****9558  &nbsp; 领取88元代金券</li>
+        		<li>156****3678  &nbsp; 领取88元代金券</li>
+    			</ul>
+    			<ul id="ul2"></ul>
+			</div>-->
+			<div>
+				<img src="images/auth-heade.png" style="width: 100%;height: 2.4rem;" />
+			</div>
+			<div class="import" ng-hide="import">
+				<ul>
+        			<li>
+        				<span class="importline"></span>
+        				<span class="importTxt">&nbsp;完善实名信息&nbsp;</span>
+        				<span class="importline"></span>
+        			</li>
+       		    	<li>
+       		    		<div>
+       		    			<img src="images/authName.png"/>
+       		    		</div>
+       		    		<div>
+       		    			<input type="text" ng-change="chanFinish()" placeholder="请输入姓名" id="importName" ng-model="importName"/>
+       		    		</div> 
+       		    	</li>
+        			<li>
+        				<div>
+       		    			<img src="images/authNum.png"/>
+       		    		</div>
+       		    		<div>
+       		    			<input type="tel" ng-change="chanFinish()" placeholder="请输入本人身份证号码" id="importNum" min="4" maxlength="20" ng-model="importNum"/>
+       		    		</div>
+        			</li>
+        			<li>
+        				<div>
+       		    			<img src="images/authBankNum.png" />
+       		    		</div>
+       		    		<div>
+       		    			<input type="tel" ng-change="chanBankNum()" placeholder="请输入银行卡号" id="importBankNum" maxlength="30" ng-model="importBankNum"/>
+       		    		</div>
+        			</li>
+        			<li ng-hide="myVar">
+        				<div>
+       		    			<img src="images/authPhone.png" />
+       		    		</div>
+       		    		<div>
+       		    			<input type="tel" ng-change="chanFinish()" placeholder="请输入银行预留手机号" id="importBankIMobile" maxlength="11" ng-model="importBankIMobile">
+       		    		</div>
+        			</li>
+    			</ul>
+    			<ul>
+        			<li ng-hide="myVar">
+        				<div class="authCode"> 
+       		    			<div>
+       		    				<img src="images/authCode.png" />
+       		    			</div>
+       		    			<div>
+       		    				<input type="tel" ng-change="chanFinish()" id="importCode" placeholder="请输入验证码" ng-model="importCode">
+       		    			</div>
+       		    		</div>
+       		    		<div class="authCodeBut">
+       		    			<!--<a href="javascript:"  ng-class="paraclass" ng-bind="paracont">获取验证码</a>-->
+       		    			<button ng-disabled="myCode" ng-click="loadVerCode()" ng-class="paraclass" ng-bind="paracont">获取验证码></button>
+       		    			<!--<p ng-class="paraclass" ng-bind="paracont">获取验证码</p>-->
+       		    		</div>
+        			</li>
+        			<li>
+        				<button ng-disabled="myFinish" ng-click="loadFinish()" class="button button-light">完成</button>
+        			</li>
+        		</ul>
+			</div>
+			<div class="importSuc" ng-hide="importSuc">
+				<div class="importImg" style="background-image: url({{importImg}});">
+					
+				</div> 
+				<p>{{nickName}}</p>
+				<p>您已成功实名认证，八元代金券将于下个工作日发放至您的账户中，请注意查收</p>
+			</div>
+			<div class="proIntroduceTop"> 
+				<p>本产品属于高收益、高风险品种</p>
+				<p>指尖淘温馨提示：市场有风险，投资需谨慎</p>
+			</div> 
+		<script src="js/authentication.js"></script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,307 @@
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>资讯</title>
+		<link href="http://qiniuapp.mqkji.cn/ionic.min.css" rel="stylesheet" />
+		<link href="/dstjmobile/dstjIonic/css/common.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script type="text/javascript" src="http://qiniuapp.mqkji.cn/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="/dstjmobile/dstjIonic/js/ionic-config.js"></script>
+
+		<link href="css/index.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div ng-controller="claimReportPersonCtrl" class="content scroll scroll-content" style="overflow-y:auto">
+
+			<!--<div class="tipHead">
+				<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolBanner.png" style="width: 100%;height: 1.3rem;" />
+			</div>-->
+
+			<div class="apptip">
+				<div ng-class='{{indTrades}}' ng-click="indTrade()">
+					<!--<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolTrade.png" class="imgLogo" /><br/>-->
+					<span>首页推荐</span>
+				</div>
+				<div ng-class='{{indGuides}}' ng-click="indGuide()">
+					<!--<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolGuide.png" class="imgLogo" /><br/>-->
+					<span>行业百科</span>
+				</div>
+				<div ng-class='{{indKnows}}' ng-click="indKnow()">
+					<!--<img src="http://qiniuapp.maoqiankeji.cn/zhijtSchoolKnow.png" class="imgLogo" /><br/>-->
+					<span>实战与市场</span>
+				</div>
+			</div>
+
+			<div class="contentTrades dstjInfo" ng-hide="myVar1">
+				<div class="infoHead">
+					<div class="infoHeadLeft" ng-click="dstjInfo01()">
+						<img src="http://qiniuapp.hailangkeji.com/dstjRec01.png" />
+						<p>市场营销丨营销策划方案</p>
+					</div>
+					<div class="infoHeadRight" ng-click="dstjInfo02()">
+						<img src="http://qiniuapp.hailangkeji.com/dstjRec02.png" />
+						<p>世界上最伟大的商业模 式</p>
+					</div>
+				</div>
+				<div class="infoHeadEmpty"></div>
+				<ul>
+					<li ng-click="dstjInfo03()">
+						<div>
+							<div class="infoLiTxt01">增长第一难：如何找到撬动 目标的大因子</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec03.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo04()">
+						<div>
+							<div class="infoLiTxt01">成熟公司的体系是什么样的？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec04.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo05()">
+						<div>
+							<div class="infoLiTxt01">穷游网、蚂蜂窝等旅游社区前景如何？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec05.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo06()">
+						<div>
+							<div class="infoLiTxt01">如何做好营销管理？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec06.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo07()">
+						<div>
+							<div class="infoLiTxt01">一夜暴富身价千亿的煤老板们，现在都怎么样了？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec07.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo08()">
+						<div>
+							<div class="infoLiTxt01">2019市场营销的5个趋势</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec08.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo09()">
+						<div>
+							<div class="infoLiTxt01">电商下半场，如何掘金万亿二手闲置商品市场？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec09.png" />
+						</div>
+					</li>
+					<li ng-click="dstjInfo10()">
+						<div>
+							<div class="infoLiTxt01">关于市场营销，一位CEO希望能早知道的5件事</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjRec10.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="contentKnows dstjEncy" ng-hide="myVar3">
+				<div class="encyHead" ng-click="dstjEncy01()">
+					<p>心锚建立法：利用心锚构建与客户的良好关系，并完成销售的过程</p>
+				</div>
+				<div class="encyCont">
+					<div class="encyContLeft" ng-click="dstjEncy02()">
+						<p>确定性效应</p>
+					</div>
+					<div class="encyContRight" ng-click="dstjEncy03()">
+						<p>框架效应</p>
+					</div>
+				</div>
+				<ul>
+					<li ng-click="dstjEncy04()">
+						<div>
+							<div class="">产品升级</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy04.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy05()">
+						<div>
+							<div class="">叫卖式广告</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy05.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy06()">
+						<div>
+							<div class="">社会化媒体</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy06.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy07()">
+						<div>
+							<div class="">销售周期</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy07.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy08()">
+						<div>
+							<div class="">闭环营销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy08.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy09()">
+						<div>
+							<div class="">自产自销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy09.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy10()">
+						<div>
+							<div class="">整合营销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy10.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy11()">
+						<div>
+							<div class="">营销投资回报率</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy11.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy12()">
+						<div>
+							<div class="">市场和营销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy12.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy13()">
+						<div>
+							<div class="">价格机制</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy13.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy14()">
+						<div>
+							<div class="">体验营销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy14.png" />
+						</div>
+					</li>
+					<li ng-click="dstjEncy15()">
+						<div>
+							<div class="">移动营销</div>
+
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjEncy15.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="contentGuides dstjMark" ng-hide="myVar2">
+				<div class="markHead" ng-click="dstjMark01()">
+					<p>怎样把100元的产品卖出300元的感觉？</p>
+				</div>
+				<ul>
+					<li ng-click="dstjMark02()">
+						<div>
+							<div class="infoLiTxt01">拼多多会终结淘宝和京东,还是会昙花一现?</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjMark02.png" />
+						</div>
+					</li>
+					<li ng-click="dstjMark03()">
+						<div>
+							<div class="infoLiTxt01">如何消除消费者购买时的顾虑？</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjMark03.png" />
+						</div>
+					</li>
+					<li ng-click="dstjMark04()">
+						<div>
+							<div class="infoLiTxt01">为什么那些广告很low，却是爆款</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjMark04.png" />
+						</div>
+					</li>
+					<li ng-click="dstjMark05()">
+						<div>
+							<div class="infoLiTxt01">如何借力别人的客户拥有自己的海量客户</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjMark05.png" />
+						</div>
+					</li>
+					<li ng-click="dstjMark06()">
+						<div>
+							<div class="infoLiTxt01">饭店的杠杆借力营销案例</div>
+							<div class="infoLiTxt02">{{infoData}}</div>
+						</div>
+						<div>
+							<img src="http://qiniuapp.hailangkeji.com/dstjMark06.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+
+</html>

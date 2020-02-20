@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>海浪淘金 </title>
+<script src="../../js/jquery.min.js"></script>
+<style>
+	html{
+		width:100%;
+		height:100%;
+		max-height:100%;
+		max-width:100%;
+		padding:0px;
+	}
+	body{
+		width:100%;
+		height:100%;
+		max-height:100%;
+		max-width:100%;
+		padding:0px;
+		margin:0px;
+		background-color:#eee;
+		font-family: "Microsoft YaHei","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+	.fromDiv{
+		padding-top:15px;
+		width:100%;
+	}
+	.formItemDiv{	
+		position:relative;
+		height:45px;
+		margin-left:20px;
+		margin-right:20px;
+		margin-bottom:15px;
+		font-size:0px;
+		line-height:45px;
+		vertical-align: middle;
+		background-color:#fff;
+		/*border:1px solid red;*/
+	}
+	.formItemDiv img{
+		position:absolute;
+		top:11px;
+		left:10px;
+		margin:0px;
+		width:15px;
+	}
+	#imgVerCode{
+		position:absolute;
+		top:13px;
+		left:10px;
+		margin:0px;
+		width:20px;
+	}
+	
+	.formItemInput{
+		position:absolute;
+		top:0px;
+		left:50px;
+		height:43px;
+		line-height:43px;
+		margin:0px;
+		padding:0px;
+		font-size:16px;
+		color:#333;
+		border:1px solid #fff;
+		outline:medium;
+	}
+	
+	#imgVerCodeObj{
+		position:absolute;
+		top:5px;
+		height:35px;
+	}
+	
+	#getVerCodeBut{
+		position:absolute;
+		top:5px;
+		background-color:#f2463A;
+		width:100px;
+		height:34px;
+		line-height:34px;
+		text-align:center;
+		font-size:16px;
+		color:#FFF;
+		border-radius:4px;
+		cursor:pointer;
+	}
+	
+	.registerBut{
+		height:40px;
+		margin-top:30px;
+		margin-left:20px;
+		margin-right:20px;
+		background-color:#f2463A;
+		line-height:40px;
+		text-align:center;
+		font-size:16px;
+		color:#FFF;
+		border-radius:4px;
+		cursor:pointer;
+	}
+	
+	.cvrpBut{
+		height:30px;
+		margin-top:10px;
+		width:100%;
+		height:20px;
+		line-height:20px;
+		color:#0685fc;
+		text-align:center;
+		border:0px solid red;
+		cursor:pointer;
+	}
+	.cvrpBg{
+		display:none;
+		position:fixed;
+		top:0px;
+		width:100%;
+		height:100%;
+		background-color:#FFF;
+	}
+	.cvrpContent{
+		display:none;
+		position:fixed;
+		top:0px;
+		width:100%;
+		height:100%;
+		padding-left:5px;
+		padding-right:5px;
+		color:#000;
+		overflow-x:auto;
+	}
+	.closeBut{
+		position:fixed;
+		top:10px;
+		left:10px;
+		font-size:30px;
+		width:40px;
+		height:30px;
+		line-height:25px;
+		opacity:0.5;
+		color:#fff;
+		text-align:center;
+		background-color:#000;
+		cursor:pointer;
+		z-index:999;
+	}
+</style>
+<script  type="text/javascript">
+
+	var domainUrl = 'https://www.aitaoec.com'; //生产环境 邀请码：68042 41378 69332
+	var hlApi = 'http://d.lcc8.com/hltj-api';  //生产环境
+	//var domainUrl = 'https://sim.aitaoec.com/';  //测试环境 邀请码：58923
+	//var hlApi = 'http://47.98.216.230:8886/hltj-api'; //测试环境
+	var rqstObj = null;  //参数
+	var channel = null;  //参数 渠道
+	var set_cookie = null;
+	var registerObj = {
+		loadImgVerCodeUrl:domainUrl+'/api/v1/captcha',
+		loadVerCodeUrl:domainUrl+'/api/v1/smscode',
+		registerUrl:domainUrl+'/api/v1/user/register',
+		hlapiloadImgVerCodeUrl:hlApi+'/api/aitaoec/captcha',
+		hlapiloadVerCodeUrl:hlApi+'/api/aitaoec/verCodeUrl',
+		hlapiregister:hlApi+'/api/aitaoec/register',
+		downloadUrl:null,
+		loadImgVerCode:function(){
+			$.ajax({
+                url: registerObj.hlapiloadImgVerCodeUrl,
+                data:{url:registerObj.loadImgVerCodeUrl},
+                type: "GET",
+                dataType:'json',
+                success:function(data,status, xhr){
+					//alert(cookietoSet);
+					console.log(data);
+					if(data.code == 0){
+						data = data.data;//hl参数值
+						if(data.code == 0){ //爱淘参数
+							set_cookie = data.set_cookie.split(";")[0];
+							var imgsrc = data.data.src;
+							$("#imgVerCodeObj").attr("src",imgsrc);
+						}else{
+							alert(data.desc);
+						}
+					}else{
+						alert("获取图片验证码出错1");
+					}
+                },
+                error:function(er){
+                    alert("获取图片验证码出错" + er);
+                }
+			});
+		},
+		loadVerCode:function(){
+			var userid = $("#userid").val();
+			var captcha = $("#imgVerCodeInput").val();
+			var reg = /^0?1[2|3|4|5|6|7|8|9][0-9]\d{8}$/; //手机号
+			var reg2 = /^[0-9a-zA-Z]+$/;  //字母数字
+			if (!reg.test(userid)) {
+				  alert("请填写正确的手机号码");
+				  return false;
+			}
+			if (!reg2.test(captcha)) {
+				  alert("验证码格式有误");
+				  return false;
+			}
+			$.ajax({
+                url: registerObj.hlapiloadVerCodeUrl,
+                data:{url:registerObj.loadVerCodeUrl,mobile:userid,imgVerCode:captcha,'set_cookie':set_cookie},
+                type: "POST",
+                dataType:'json',
+				crossDomain: true,
+                success:function(data,status,xhr){
+					console.log(data);
+					if(data.code == 0){
+						data = data.data;//hl参数值
+						if(data.code == 0){ //爱淘参数
+							alert("发送成功！");
+						}else{
+							alert(data.desc);
+						}
+					}else{
+						alert("获取验证码出错1");
+					}
+                },
+                error:function(er){
+					console.log(er);
+                    alert("获取验证码出错" + er);
+                }
+			});
+		},
+		register:function(){
+			var pwd     = $("#pwd").val();
+			var userid  = $("#userid").val();
+			var pwd     = $("#pwd").val();
+			var captcha = $("#imgVerCodeInput").val();
+			var verCode = $("#verCodeInput").val();
+			var invitecode = $("#invitecode").val();
+	
+			var reg = /^0?1[2|3|4|5|6|7|8|9][0-9]\d{8}$/; //手机号
+			var reg2 = /^[0-9a-zA-Z]+$/;  //字母数字
+			var regNum = /^\d+(\.\d+)?$/;
+			if (!reg.test(userid)) {
+				  alert("请填写正确的手机号码");
+				  return false;
+			}
+			if (!regNum.test(pwd) || pwd.length != 6) {
+				  alert("密码必须是 6位数字");
+				  return false;
+			}
+			if (!reg2.test(captcha)) {
+				  alert("图形验证码格式错误");
+				  return false;
+			}
+			
+			if (!regNum.test(verCode)) {
+				  alert("手机验证码格式错误");
+				  return false;
+			}
+			
+			var username = 'hltj' + userid.substr(userid.length-4);
+			if(channel == null){
+				channel = 'none';
+			}
+			$.ajax({
+                url: registerObj.hlapiregister,
+                data:{
+					 param1:registerObj.registerUrl,
+					 param2:userid,
+					 param3:pwd,
+					 param4:verCode,
+					 param5:invitecode,
+					 param6:username,
+					 param7:set_cookie,
+					 param8:channel
+				},
+                type: "POST",
+                dataType:'json',
+				crossDomain: true,
+                success:function(data,status,xhr){
+					console.log(data);
+					if(data.code == 0){
+						data = data.data;//hl参数值
+						if(data.code == 0){ //爱淘参数
+							//alert(data.desc);
+							window.location.href="http://qr32.cn/BwEdOA";
+						}else{
+							alert(data.desc);
+						}
+					}else{
+						alert("注册异常");
+					}
+                },
+                error:function(er){
+					console.log(er);
+                    alert("注册出错" + er);
+                }
+			});
+		},
+		cvrpShow:function(){
+			$("#cvrpBg").css("display","block");
+			$("#cvrpContent").css("display","block");
+		},
+		cvrpClose:function(){
+			
+			$("#cvrpBg").css("display","none");
+			$("#cvrpContent").css("display","none");
+		}
+	}
+	
+	var system ={
+		win : false,
+		mac : false,
+		xll : false
+	};
+
+	//检测平台
+
+	var p = navigator.platform;
+
+	system.win = p.indexOf("Win") == 0;
+
+	system.mac = p.indexOf("Mac") == 0;
+
+	system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+
+	//跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+
+	
+	function download(){
+		if(system.win||system.mac||system.xll){
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregisterpc.html?invitecode="+rqstObj.invitecode;
+				urlStr += "&channel="+rqstObj.channel;
+			// window.location.href= urlStr;
+		}else{
+			var urlStr = "http://"+window.location.host + "/hltjmobile/source/html/hlregister/hlregister.html?invitecode="+rqstObj.invitecode;
+				urlStr += "&channel="+rqstObj.channel;
+			// window.location.href= urlStr;
+		}
+	
+		
+		// window.location.href="http://qr32.cn/BwEdOA";
+	}
+	window.onload = function(){
+
+		rqstObj = getTheRequestParams();
+		download();
+		/*var htmlWidth = document.documentElement.clientWidth;
+		var inputWidth = htmlWidth-100;
+		$(".formItemInput").css("width",inputWidth+"px");
+		inputWidth -= 113;
+		$("#imgVerCodeInput").css("width",inputWidth+"px");
+		$("#verCodeInput").css("width",inputWidth+"px");
+		
+		var imgVerCodeObjLeft = htmlWidth -150;
+		$("#imgVerCodeObj").css("left",imgVerCodeObjLeft+"px");
+		$("#imgVerCodeObj").css("width","100px");
+		$("#imgVerCodeObj").css("top","5px");
+		
+		$("#getVerCodeBut").css("left",imgVerCodeObjLeft+"px");
+		$("#getVerCodeBut").css("top","5px");
+		
+		rqstObj = getTheRequestParams();
+		$("#invitecode").val(rqstObj.invitecode);
+		channel = rqstObj.channel;
+		//registerObj.downloadUrl = rqstObj.downloadUrl;
+		registerObj.loadImgVerCode();*/
+		
+	}
+	
+	function getTheRequestParams(){
+		var url = location.search; //获取url中"?"符后的字串 
+		var theRequest = new Object();
+		if (url.indexOf("?") != -1) {
+			var str = url.substr(1);
+			strs = str.split("&");
+			for(var i = 0; i < strs.length; i ++) {
+				theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+			}
+		} 
+		return theRequest;
+	}
+</script>
+</head>
+<body>
+	<div class="fromDiv">
+		<div class="formItemDiv" >
+			<img src="../../images/register/invitecode.png" />
+			<input id="invitecode" class="formItemInput" type="text"  value="" readonly="readonly" /> <!--68042 41378  69332-->
+		</div>
+		<div class="formItemDiv" >
+			<img src="../../images/register/mobile.png" />
+			<input id="userid" name="userid" class="formItemInput"  type="text"  placeholder="请输入手机号码"/>
+		</div>
+		<div class="formItemDiv" >
+			<img id="imgVerCode" src="../../images/register/imgVerCode.png" />
+			<input id="imgVerCodeInput" name="captcha"  class="formItemInput" type="text"  placeholder="请输入图片验证码"/>
+			<img id="imgVerCodeObj" src=""  onclick="registerObj.loadImgVerCode()"   style="position:absolute; top:0px;   height:35px;" />
+		</div>
+		<div class="formItemDiv" >
+			<img src="../../images/register/verCode.png" />
+			<input id="verCodeInput" class="formItemInput" type="text"  placeholder="请输入验证码"/>
+			<div id="getVerCodeBut" onclick="registerObj.loadVerCode()" >获取验证码</div>
+		</div>
+		<div class="formItemDiv" >
+			<img src="../../images/register/pwd.png" />
+			<input id="pwd" class="formItemInput" type="password" style=""  placeholder="请设置密码(6位/数字)"/>
+		</div>
+		
+		<div class="registerBut" onclick="registerObj.register()" >注册</div>
+	  
+	    <div id="cvrpBut" class= "cvrpBut" onclick="registerObj.cvrpShow()" ><<点击阅读注册协议>></div>
+	  
+	    <div id="cvrpBg" class="cvrpBg">  </div>
+		<div id="cvrpContent" class="cvrpContent">  
+			<div class="closeBut" onclick="registerObj.cvrpClose()" >×</div>
+			
+			<h2 style="text-align:center;" >海浪淘金注册协议</h2>
+			<h3>一、注册协议</h3>
+			<p>1、 海浪淘金：是指向您提供平台化服务，即向您展示、分享由第三方提供的与贵金属、农产品等投资理财相关的资讯信息，提供开户、交易系统入口等服务的特定空间。</p>
+			<p>2、您在使用上述服务时，必须：</p>
+			<p>（1）提供设备，包括个人电脑或移动终端一台及配备上网装置。</p>
+			<p>（2）个人上网和支付与此服务有关的费用。</p>
+			<h3>第二条 服务规则须知</h3>
+			<p>1、海浪淘金系出于客观传递更多信息之目的的登载资讯信息的平台，因此其展示、分享资讯信息（包括但不限于评论、预测、图表、指标、理论等）并不意味着海浪淘金赞同所分享、展示的资讯信息的观点或证实其描述。海浪淘金登载的资讯信息仅供您参考，不构成投资建议，您须对任何您自主决定的行为负全部责任。</p>
+			<p>2、您知悉并同意，海浪淘金仅为信息传递平台。对于任何种类的直接或间接的、实质或非实质的由于为您服务的果粒商城原因给您造成的损失，海浪淘金就此不承担任何责任。</p>
+			<h3>第三条 海浪淘金登记注册规则</h3>
+			<p>1、海浪淘金的注册资料包括但不限于您在海浪淘金平台上的昵称、头像，以及您在本平台提交的、可用来识别身份的其他信息资料，包括更新注册资料时输入的所有信息。</p>
+			<p>2、您在海浪淘金登记注册时，承诺遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等七条底线，不在海浪淘金登记注册资料中出现违法和不良信息，且您保证其在注册和使用账号时，不得有以下情形：</p>
+			<p>（1）违反宪法或法律法规规定的；</p>
+			<p>（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p>
+			<p>（3）损害国家荣誉和利益的，损害公共利益的；</p>
+			<p>（4）煽动民族仇恨、民族歧视，破坏民族团结的；</p>
+			<p>（5）破坏国家宗教政策，宣扬邪教和封建迷信的；</p>
+			<p>（6）散布谣言，扰乱社会秩序，破坏社会稳定的；</p>
+			<p>（7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</p>
+			<p>（8）侮辱或者诽谤他人，侵害他人合法权益的；</p>
+			<p>（9）含有法律、行政法规禁止的其他内容的。</p>
+			<p>	3、根据相关法律、法规规定，您同意：</p>
+			<p>	（1）登记注册海浪淘金账号时，提交真实、有效的个人身份信息；</p>
+			<p>	（2）提供及时、详尽及准确的账户注册资料；</p>
+			<p>	（3）不断更新注册资料，以符合及时、详尽、准确的要求，对注册账号时填写的身份证件信息不能更新。</p>
+			<p>	4、若您提供给海浪淘金的注册资料存在不准确、不真实或含有违法或不良信息的，包括但不限于以虚假信息骗取账号注册、冒用社会名人注册账号名称等，海浪淘金有权采取不予注册、限期改正、暂停使用、注销登记等措施，并保留终止您使用海浪淘金各项服务的权利。</p>
+
+			<h3>第四条 海浪淘金使用规则</h3>
+			<p>1、您确认在使用海浪淘金服务过程中，您是具备完全民事权利能力和完全民事行为能力的自然人。若您不具备前述主体资格，则您及您的监护人应承担因此而导致的一切后果，且海浪淘金有权注销您的账户，并向您及您的监护人索偿。</p>
+			<p>2、您可浏览海浪淘金提供的资讯信息，如您希望通过海浪淘金接入的果粒商城进行开户或交易操作的，您需先注册海浪淘金账号。您登陆时使用的账号和密码是海浪淘金确认您身份的唯一依据。</p>
+			<p>3、您须保管好自己的账号和密码，并对您账户中的所有活动负全部责任。如因您未保管好账号、密码而对自己、海浪淘金或任何第三方造成损害的，您须负全部责任。您可随时修改密码，若发现有非法使用您的帐号或出现安全漏洞的情况，请立即通告海浪淘金，海浪淘金会尽力予以妥善解决。</p>
+			<p>4、各开户及交易系统归相应的商城所有。海浪淘金将通过系统接口将您的开户资料或交易申请提交给相应的商城，由其负责审核您的开户资料及交易申请，并最终对您的开户及交易申请进行处理。</p>
+			<p>5、您保证您填写并提交的开户资料及交易信息准确、合法。您在开户及交易系统内点击确认的行为构成您向果粒商城提交的开户或交易申请的不可撤销的承诺，您同意承担因该等信息错误、非法所导致的后果。如您提供的信息过期、无效进而导致海浪淘金无法与您取得联系的，因此引起您产生损失或增加费用的，您需独自承担。</p>
+			<p>6、您有权在海浪淘金平台上发布文字、信息、数据、图片、图表、照片、声音、影像或者其他任何形式的资料。您发布的内容必须遵守所有适用于海浪淘金服务的地方法规、国家法律和国际条约。您承诺不发布以下内容，否则海浪淘金有义务立即停止传输，保存有关记录，向国家有关机关报告，并且删除含有该内容的地址、目录或关闭您的账号。</p>
+			<p>（1）侵犯他人版权等合法权益的相关内容；</p>
+			<p>（2）透露他人隐私信息，包含真实姓名、联系方式、家庭住址、照片、站内短信、聊天记录、社交网络账号等；</p>
+			<p>（3）任何政治观点或讨论敏感政治话题；</p>
+			<p>（4）商业广告或在评论区域发布广告链接；</p>
+			<p>（5）发布、宣传或讨论使用虚假证件等内容；</p>
+			<p>（6）相关法律、行政法规禁止的其他内容。</p>
+			<p>7、您了解并同意，海浪淘金有权应有权部门的要求，向其提供您提交给海浪淘金或在使用海浪淘金服务中存储于海浪淘金服务器的必要信息。如您涉嫌侵犯他人合法权益，则海浪淘金有权在初步判断涉嫌侵权行为存在的情况下，向权利人提供关于您的前述必要信息。</p>
+
+			<h3>第五条 个人信息保护</h3>
+			<p>1、尊重用户个人信息是海浪淘金的一项基本政策。海浪淘金非常重视您个人信息的保护。海浪淘金将积极地采取各项有效且必要的措施来保障您的信息安全，并采用商业上合理的安全技术措施来保护您的个人信息不被未经授权的访问、使用或泄露。</p>
+			<p>2、您理解，为了更好地理解您的需求，以向您提供更为优质高效的服务，以及为了满足其他履行本协议项下服务的需要，您授权海浪淘金以从合法保有您信息的第三方查询并获取您的各类信息。您已经认识到您的收入、存款、有价证券、商业保险等个人信息对于您而言是相当私密而重要的。您已经充分理解并知晓该等信息被提供和使用的风险。</p>
+			<p>3、海浪淘金承诺将善意使用您的个人信息。在未经您同意的情况下，海浪淘金不会以任何形式公开或披露您的任何个人信息。但以下情况除外：</p>
+			<p>（1）您同意或授权海浪淘金披露的；</p>
+			<p>（2）司法机关或行政机关基于法定程序要求海浪淘金提供的。</p>
+
+			
+			<h3>第六条 其他约定</h3>
+			<p>1、责任范围和限制</p>
+			<p>（1）海浪淘金对不可抗力导致的损失不承担责任。</p>
+			<p>（2）本服务协议所指不可抗力包括：天灾、法律法规或政府指令的变更，因网络服务特性而特有的原因，例如境内外基础电信运营商的故障、计算机或互联网相关技术缺陷、互联网覆盖范围限制、计算机病毒、黑客攻击等因素，及其他合法范围内的不能预见、不能避免并不能克服的客观情况。</p>
+			<p>2、服务中止、中断及终止：</p>
+			<p>（1）海浪淘金根据自身商业决策等原因可能会选择中止、中断及终止平台服务。如有此等情形发生，海浪淘金会采取公告的形式通知您。</p>
+			<p>（2）经国家行政或司法机关的生效法律文书确认您存在违法或侵权行为，或者海浪淘金根据自身的判断，认为您的行为涉嫌违反本协议的约定或涉嫌违反法律法规的规定的，则海浪淘金有权中止、中断或终止向您提供服务。</p>
+			<p>（3）海浪淘金根据前述约定中止、中断或终止向您提供服务的情况下，均无须为此向您或任何第三方承担责任。</p>
+			<p>3、所有权及知识产权：</p>
+			<p>（1）海浪淘金上所有内容，包括但不限于文字、软件、声音、图片、录像、图表、网站架构、网站画面的安排、网页设计、在广告中的全部内容以及其它信息均由海浪淘金或其他权利人依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等。非经海浪淘金或其他权利人书面同意，您不得擅自使用、修改、复制、公开传播、改变、散布、发行或公开发表本网站程序或内容。如有违反，您同意承担由此给海浪淘金或其他权利人造成的一切损失。</p>
+			<p>（2）海浪淘金尊重知识产权并注重保护您享有的各项权利。在海浪淘金，您可能需要通过发表评论等各种方式向海浪淘金提供内容。在此情况下，您仍然享有此等内容的完整知识产权。您在提供内容时将授予海浪淘金一项全球性的免费许可，允许海浪淘金使用、传播、复制、修改、再许可、翻译、创建衍生作品、出版、表演及展示此等内容。</p>
+			<p>4、保障：您同意保障和维护海浪淘金的利益，负责支付由您使用超出服务范围引起的律师费用，违反服务协议的损害补偿费用，其它人使用您的电脑、帐号而产生的费用。</p>
+			<p>5、通知：所有发给您的通知都可通过电子邮件、常规的信件或在海浪淘金显著位置公告的方式进行传送。</p>
+			<p>6、本协议适用中华人民共和国的法律。 当本协议的任何内容与中华人民共和国法律相抵触时，应当以法律规定为准，同时相关协议将按法律规定进行修改或重新解释，而本协议其他部分的法律效力不变。</p>
+			<p>7、如您使用海浪淘金过程中出现纠纷，您和海浪淘金一致同意将纠纷交由被告所在地人民法院管辖。</p>
+			<p>8、本协议自发布之日起实施，并构成您和海浪淘金之间的共识。</p>
+			<p>9、海浪淘金不行使、未能及时行使或者未充分行使本协议或者按照法律规定所享有的权利，不应被视为放弃该权利，也不影响海浪淘金在将来行使该权利。</p>
+			<p>10、如果您对本协议内容有任何疑问，请联系在线客服。</p>
+
+			<h3>二、风险告知</h3>
+			<p>您在爱淘商城投资时，可能存在以下风险。为了使您准确了解各项风险，特做如下告知：</p>
+			<p>1、宏观经济风险。由于国内外宏观经济的变化，可能会引起国内市场价格的波动，致使您产生亏损；</p>
+			<p>2、政策风险。由于相关法律、法规及相关政策的变化，可能导致行业、市场或交易发生变化，致使您产生亏损；</p>
+			<p>3、技术风险。由于交易、结算、交收、行情公告及交易资金结算等是通过电子通讯技术、电脑技术和相关软件来实现的，这些技术存在被网络黑客或计算机病毒攻击的可能；此外，电子通讯技术、电脑技术或相关软件可能存在缺陷等因素，您将承担由此带来的不便或风险；</p>
+			<p>4、交易对方违约的风险。在爱淘商城进行的现货电子交易中，买卖双方均存在违反交易规则的可能性。尽管爱淘商城将按照相关业务规则采取相应措施为您提供帮助，但您仍需承担由此而产生的风险或损失；</p>
+			<p>5、不可抗力导致的风险。诸如地震、台风、火灾、水灾、战争、社会动乱等不可抗力因素可能导致交易系统瘫痪，或造成各种故障。这些都会使您的交易目的无法实现，您将承担由此而产生的风险或损失；</p>
+			<p>6、用户的操作风险。由于您对密码管理不善、操作不当、投资决策失误等原因可能会使您在交易中发生亏损；此外，交易时因热键操作完毕后未及时退出账户系统，可能导致他人对您的交易账户进行恶意操作；您的交易电脑可能遭遇黑客攻击等。您将承担由此而产生的风险或损失；</p>
+			<p>7、违反爱淘商城交易规则时被采取处置措施的风险。爱淘商城制定的现货电子交易规则是电子交易顺利进行的前提，如果因为您没有完全遵守现货电子交易规则而导致爱淘商城按规定对您采取处置措施，由此造成的损失将由您自行承担。</p>
+			<p>特别提示：本风险告知书并不能涵盖从事爱淘商城的全部风险。在入市前，您应当慎重决定是否进行交易；在您决定前，应当根据自身的业务需求、经济条件以及自身风险承受能力，慎重制定交易策略；一旦您选择在爱淘商城进行现货电子交易，即视为您已完全了爱淘商城现行及今后适时修订的现货电子交易规则和从事此交易的各种风险。</p>
+		</div>
+	</div>
+</body>
+</html>
+

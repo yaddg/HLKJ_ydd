@@ -1,0 +1,250 @@
+
+	body{
+		background-image:url(../../../images/mobileRegisterBg_pc1.png);
+		background-repeat:no-repeat;
+		background-position:0px 0px;
+		background-size:100%;
+		overflow-x:hidden;
+		background-color:#fff;
+		font-family: "Microsoft YaHei","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+	.fromDiv{
+		position:absolute;
+		left:0px;
+		padding-top:15px;
+		width:24%;
+		font-family:STKaiti;
+		/*border:1px solid red;*/
+	}
+	.formItemDiv{	
+		position:relative;
+		height:39px;
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom:25px;
+		font-size:0px;
+		line-height:39px;
+		vertical-align: middle;
+		background-color:rgba(255,255,255,1);
+		border-radius:4px;
+		border:1px solid #ccc;
+		/*border:1px solid red;*/
+	}
+	
+	#formVerCodeDiv{	
+		position:relative;
+		height:39px;
+		margin-left:10px;
+		margin-right:150px;
+		margin-bottom:5px;
+		font-size:0px;
+		line-height:39px;
+		vertical-align: middle;
+		background-color:rgba(255,255,255,1);
+		border-radius:4px;
+		/*border:1px solid red;*/
+	}
+	.inputImg{
+		position:absolute;
+		top:9px;
+		left:10px;
+		margin:0px;
+		width:15px;
+		
+	}
+	#imgVerCode{
+		position:absolute;
+		top:13px;
+		left:10px;
+		margin:0px;
+		width:20px;
+	}
+	
+	.formItemInput{
+		position:absolute;
+		top:0px;
+		left:35px;
+		height:38px;
+		line-height:38px;
+		margin:0px;
+		padding:0px;
+		font-size:14px;
+		color:#666;
+		border:0px solid #fff;
+		background-color:rgba(0,0,0,0);
+		letter-spacing:2px;
+		outline:medium;
+	}
+	
+	
+	
+	#imgVerCodeObj{
+		position:absolute;
+		top:5px;
+		height:35px;
+	}
+	
+	#getVerCodeBut{
+		position:absolute;
+		top:0px;
+		background-color:rgb(75,155,234);
+		width:100px;
+		height:39px;
+		line-height:39px;
+		text-align:center;
+		font-size:14px;
+		color:#FFF;
+		border-radius:4px;
+		cursor:pointer;
+		
+	}
+	
+	.registerBut{
+		height:40px;
+		margin-top:20px;
+		margin-left:10px;
+		margin-right:10px;
+		background-color:#ffc600;
+		line-height:40px;
+		text-align:center;
+		font-size:16px;
+		color:#ffFFFF;
+		border-radius:4px;
+		background-color:#ff2323;
+		cursor:pointer;
+	}
+	
+	
+	.cvrpBg{
+		display:none;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		background-color:#FFF;
+	}
+	.cvrpContent{
+		display:none;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		padding-left:5px;
+		padding-right:5px;
+		color:#000;
+		font-size:15px;
+		overflow-x:auto;
+	}
+	.closeBut{
+		position:fixed;
+		top:10px;
+		left:10px;
+		font-size:30px;
+		width:40px;
+		height:30px;
+		line-height:25px;
+		opacity:0.5;
+		color:#fff;
+		text-align:center;
+		background-color:#000;
+		cursor:pointer;
+		z-index:999;
+	}
+	.fxts{
+		margin-top:2px;
+		margin-left:auto;
+		margin-right:auto;
+		letter-spacing:2px;
+		width:100%;
+		height:15px;
+		font-size:9px;
+		color:#fff;
+		text-align:center;
+	}
+	
+	.cvrpBut{
+		position:relative;
+		height:30px;
+		margin-top:5px;
+		margin-left:10px;
+		
+		height:20px;
+		line-height:20px;
+		color:#fff;
+		/*border:1px solid #FFF;*/
+		cursor:pointer;
+		font-size:0px;
+		
+	}
+	
+	.checkbox{
+		position:absolute;
+		top:1px;
+		left:0px;
+		display:block;
+		width:17px;
+		height:17px;
+		bolder:1px solid #FFF;
+		margin-right:10px;
+	}
+	.readTextLabel{
+		position:absolute;
+		top:10px;
+		left:30px;
+		display:block;
+		align-items:center;
+		font-size:13px;
+		line-height:5px;
+		color:#fff;
+		letter-spacing:1px;
+	}
+	
+	.readTextLabelLeft{
+		position:absolute;
+		top:10px;
+		left:100px;
+		display:block;
+		align-items:center;
+		font-size:13px;
+		line-height:5px;
+		color:#52EFFF;
+		letter-spacing:1px;
+		
+	}
+	
+	.fromTopDiv{
+		margin-left:10px;
+		margin-right:auto;
+		height:45px;
+		font-size:20px;
+		color:#fff;
+		/*text-align:center;
+		
+		border:1px solid #fff;*/
+	}
+	.hr{
+		display:inline-block;
+		height:1px;
+		border:none;
+		border-top:1px solid #fff; 
+		width:40px;
+		vertical-align: middle;
+	}
+	
+	.formVerCodeInputDiv{
+		height:38px;
+		border:1px solid #CCC;
+		border-radius:4px;
+	}
+	#verCodeInput{
+		letter-spacing:3px;
+	}
+	
+	.bottomDiv{
+		position:absolute;
+		bottom:3px;
+		width:100%;
+		height:50px;
+	}

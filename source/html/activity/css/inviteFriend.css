@@ -1,0 +1,471 @@
+/*html{
+	font-size: 100px;
+}*/
+
+body {
+	background: rgba(253, 95, 47, 1);
+}
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textarea;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    /*font: 400 13.3333px Arial;*/
+    border-width: 0;
+    border-style: solid;
+    /*border-color: rgb(169, 169, 169);*/
+    border-image: initial;
+    /*padding: 2px;*/
+   	position: fixed;
+   	top: 110px;
+   	left: 3.6rem;
+   	z-index: 999999;
+    /*height: 0;
+    color: rgba(253, 95, 47, 1);
+    background: rgba(253, 95, 47, 1);*/
+}
+.conetnt {
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+}
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.noviceWelfareDstjTip {
+	position: fixed;
+	width: 0.65rem;
+	height: 0.25rem;
+	right: 0;
+	top: 32%;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendExp.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+	z-index: 89;
+}
+
+.noviceWelfareDstjIp {
+	position: fixed;
+	width: 0.64rem;
+	height: 0.3rem;
+	right: 0;
+	top: 0.58rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/noviceWelfareDstjIp.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+
+
+/*蒙版*/
+
+.receiveBox {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.8);
+	z-index: 100;
+	text-align: center;
+}
+.dstjInviteFriendCardBot{
+	position: relative;
+    width: 76%;
+    /*height: 0.68rem;*/
+    margin-top: 0.78rem;
+}
+.mySuper {
+	position: absolute;
+	width: 100%;
+	height: 0.28rem;
+}
+
+.mySupernatantIonic {
+	width: 0.24rem;
+    height: 0.24rem;
+    margin: 0 auto;
+    /* margin-left: 2%; */
+    margin-top: 0.24rem;
+    background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendClose.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+.mySupernatantTxt {
+	width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    font-size: 0.14rem;
+    padding-top: 0.2rem;
+    color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    /* position: relative; */
+    margin-top: -0.1rem;
+    /* top: 0.42rem; */
+    background: linear-gradient(-6deg,rgba(252,69,19,1),rgba(253,120,52,1));
+    box-shadow: 0px -1px 5px 0px rgba(251,61,12,0.3);
+    border-radius: 5px;
+    text-align: left;
+    overflow: scroll;
+}
+
+/*.mySupernatantTxt p:first-child {
+	color: #E83E38;
+	font-size: 0.18rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mySupernatantTxt p:nth-child(2) {
+	font-size: 0.12rem;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}*/
+
+.mySupernatantTxt p {
+	width: 90%;
+	margin: 0 auto;
+	line-height: 0.24rem;
+}
+
+.mySupernatantTxt span {
+	color: #F9FF82;
+}
+
+.boxbg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.optionBgs {
+	position: absolute;
+	top: -0.52rem;
+	/* left: 5px; */
+	height: 140px;
+	width: 100%;
+	/* border-radius: 5px; */
+	/*background-color: #FFF;*/
+	text-align: center;
+	display: none;
+}
+
+.receiveButImgs {
+	position: absolute;
+	bottom: 15%;
+	height: 50px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.optionBg {
+	position: absolute;
+	top: 0px;
+	/* left: 5px; */
+	height: 100%;
+	width: 100%;
+	/* border-radius: 5px; */
+	/*background-color: #FFF;*/
+	text-align: center;
+}
+
+#optionTitle {
+	height: 0.35rem;
+	position: absolute;
+	left: 0.48rem;
+	top: 0.05rem;
+	position: absolute;
+}
+
+#openApp {
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.7rem;
+	height: 0.3rem;
+}
+
+#downloadAPP {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.1rem;
+	height: 0.3rem;
+}
+
+
+/*主页*/
+
+.dstjInviteFriendCard {
+	position: relative;
+	width: 96%;
+	/*height: 3rem;*/
+	/* line-height: 0.6rem; */
+	margin: 0 auto;
+	margin-top: -1.9rem;
+	padding-top: 1.28rem;
+	padding-bottom: 0.1rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendCard.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	z-index: 9;
+}
+
+.dstjInviteFriendCard ul {
+	width: 100%;
+}
+.dstjInviteFriendCard ul>li:first-child{
+	width: 88%;
+	margin: 0 auto;
+}
+.dstjCard20 {
+	float: left;
+	width: 32%;
+	max-width: 0.98rem;
+	height: 0.8rem; 
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendCard20.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	margin-bottom: 0.24rem;
+}
+
+.dstjCard64 {
+	float: left;
+	width: 32%;
+	max-width: 0.98rem;
+	height: 0.8rem; 
+	margin-left: 2%;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendCard64.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.dstjCard01 {
+	float: left;
+	width: 32%;
+	max-width: 0.98rem;
+	height: 0.8rem; 
+	margin-left: 2%;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjInviteFriendCard01.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.dstjCardBut {
+	width: 88%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0 auto;
+	margin-top: 0.26rem;
+	font-size: 0.18rem;
+	font-family: SourceHanSansCN-Medium;
+	font-weight: bold;
+	color: rgba(112, 46, 24, 1);
+	background: linear-gradient(0deg, rgba(255, 184, 59, 1), rgba(255, 226, 92, 1));
+	box-shadow: 1px 2px 6px 0px rgba(255, 176, 36, 0.4);
+	border-radius: 21px;
+}
+.dstjCardInvitation{
+	display: none;
+	height: 0.42rem;
+	color: #702E18;
+	font-size: 0.15rem;
+	font-weight: bold;
+}
+.dstjCardInvitation img{
+	width: 0.16rem;
+	height: 0.16rem;
+	vertical-align: middle
+}
+.dstjCardWeixin{
+	float: left;
+	margin-left: 6%;
+	width: 42%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin-top: 0.1rem;
+	vertical-align: middle;
+	background:linear-gradient(0deg,rgba(255,184,59,1),rgba(255,226,92,1));
+	box-shadow:1px 2px 6px 0px rgba(255,176,36,0.4);
+	border-radius:16px;
+}
+.dstjCardQQ{
+	float: right;
+	margin-right: 6%;
+	width: 42%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin-top: 0.1rem;
+	vertical-align: middle;
+	background:linear-gradient(0deg,rgba(255,184,59,1),rgba(255,226,92,1));
+	box-shadow:1px 2px 6px 0px rgba(255,176,36,0.4);
+	border-radius:16px;
+}
+
+.dstjCardTxt{
+	width: 88%;
+    /* height: 0.46rem; */
+    line-height: 0.2rem;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    padding: 0.14rem 0;
+    /* padding-top: 0.12rem; */
+    font-size: 0.14rem;
+    color: #333333;
+    background: rgba(253,95,47,0.15);
+    border-radius: 5px;
+}
+.dstjCardTxt span{
+	color: #FF3223;
+	font-size: 0.15rem;
+}
+.dstjCardTxt p:last-child{
+	font-size: 0.12rem;
+}
+
+.RegisterThBut {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    margin: 0 auto;
+    /* margin-top: 0.16rem; */
+    background:rgba(0,0,0,0.5);
+    z-index: 88;
+}
+.RegisterThBut>div{
+	float: left;
+	width: 18%;
+	height: 0.25rem;
+	margin: 0 auto;
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+}
+#ul1 {
+	float: right;
+	width: 80%;
+	height: 0.25rem;
+	margin: 0 auto;
+	text-align: left;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+}
+
+#ul1 li {
+	width: 100%;
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+#ul1 span {
+	color: #FFFA64;
+}
+
+.couponFiTSp01 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp02 {
+	color: #FFCD80;
+	font-weight: bold;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp03 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.couponFiTSp04 {
+	color: #FFCD80;
+	/*font-size: 0.14rem;*/
+}
+
+.RegisterTxt {
+	width: 100%;
+	text-align: center;
+	color: #E83531;
+	font-size: 0.14rem;
+}
+
+.RegisterAdBut {
+	position: absolute;
+	top: 12.76rem;
+	left: 6%;
+	width: 88%;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.17rem;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 21px;
+	background: -webkit-linear-gradient(#FECC7F, #FFA320);
+	background: -o-linear-gradient(#FECC7F, #FFA320);
+	background: -moz-linear-gradient(#FECC7F, #FFA320);
+	background: linear-gradient(#FECC7F, #FFA320);
+}
+
+.RegisterAdTip {
+	/* position: absolute; */
+	width: 100%;
+	/* bottom: 1%; */
+	/*padding: 0.1rem 0;*/
+	line-height: 0.16rem;
+	text-align: center;
+	font-size: 0.08rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.3rem;
+	color: rgba(255, 255, 255, 0.54);
+	opacity: 0.8;
+}
+
+.noviceWelfareDstjBut {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	color: #7E2C03;
+	font-size: 0.18rem;
+	margin-top: 0.16rem;
+	font-weight: bold;
+	z-index: 99;
+	background: -webkit-linear-gradient(rgba(237, 199, 163, 1) 0%, rgba(216, 154, 97, 1) 100%);
+	background: -moz-linear-gradient(rgba(237, 199, 163, 1) 0%, rgba(216, 154, 97, 1) 100%);
+	background: -o-linear-gradient(rgba(237, 199, 163, 1) 0%, rgba(216, 154, 97, 1) 100%);
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(237, 199, 163, 1)), to(rgba(216, 154, 97, 1)));
+	background: linear-gradient(rgba(237, 199, 163, 1) 0%, rgba(216, 154, 97, 1) 100%);
+}

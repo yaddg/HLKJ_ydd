@@ -1,0 +1,341 @@
+body {
+	background-color: #FFFFFF;
+}
+
+input select {
+	background-clip: #fff;
+}
+
+.apptip {
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+	font-size: 0.16rem;
+	/*padding: 0.15rem 0;*/
+	color: #999999;
+	/*margin-bottom: 0.1rem;*/
+	box-shadow:0px 1px 0px 0px rgba(231,231,231,1);
+}
+
+.apptip div:first-child {
+	/*width: 0.24rem;*/
+	/*height: 0.8rem;*/
+	float: left;
+	margin-left: 0.18rem;
+	/*padding-top: 0.4rem;*/
+	/*white-space:nowrap;*/
+	/*border-bottom: 3px solid #FFC50C;*/
+}
+
+
+
+.apptip div:nth-child(2) {
+	/*width: 66.6%;*/
+	/*height: 0.8rem; */
+	float: left;
+	margin-left: 0.2rem;
+}
+
+.apptip div:nth-child(3) {
+	/*width: 50%;*/
+	/*height: 0.8rem;*/
+	float: left;
+	margin-left: 0.2rem;
+	/*padding-top: 0.4rem;*/
+	/*border-right: 1px solid #e1e3e8;*/
+}
+
+
+/*.apptip div:nth-child(2) div:nth-child(2){
+	width: 50%; 
+	float: right; 
+}*/
+
+.emth {
+	width: 100%;
+	height: 0.28rem;
+}
+
+.imgLogo {
+	width: 0.6rem;
+	height: 0.6rem;
+}
+
+.mycol01 {
+	color: #151519;
+}
+.mycol02 {
+	color: #151519;
+}
+.mycol03 {
+	color: #151519;
+}
+.mycol01:after {
+	content: '';
+	position: absolute;
+	left: 0.34rem;
+	top: 0.45rem;
+	bottom: 0;
+	right: auto;
+	height: 3px;
+	width: 24px;
+	background-color: #FFC50C;
+}
+.mycol02:after {
+	content: '';
+	position: absolute;
+	left: 1.16rem;
+	top: 0.45rem;
+	bottom: 0;
+	right: auto;
+	height: 3px;
+	width: 24px;
+	background-color: #FFC50C;
+}
+.mycol03:after {
+	content: '';
+	position: absolute;
+	left: 2.05rem;
+	top: 0.45rem;
+	bottom: 0;
+	right: auto;
+	height: 3px;
+	width: 24px;
+	background-color: #FFC50C;
+}
+.othcol {
+	color: #999999;
+}
+
+.indTrades {
+	color: #151519;
+}
+.indTrades:after {
+	content: '';
+	position: absolute;
+	left: 0.34rem;
+	top: 0.45rem;
+	bottom: 0;
+	right: auto;
+	height: 3px;
+	width: 24px;
+	background-color: #FFC50C;
+}
+
+/*.mycols{
+	border-bottom: 4px solid #c7000b;
+}  */
+
+ul {
+	padding: 0 0.15rem;
+	color: #333333;
+}
+
+.dstjInfo li {
+	height: 1.08rem;
+	/*line-height: 0.5rem;*/
+	border-bottom: 1px solid #F4F5F7;
+	font-size: 0.14rem;
+}
+.dstjInfo li>div:first-child{
+	float: left;
+	width: 55%;
+	height: 1.08rem;
+	display:table;
+}
+.dstjInfo li>div:first-child p{
+	/*vertical-align:middle;   
+    display:table-cell;   */
+}
+.dstjInfo li>div:last-child{
+	float: right;
+	width: 45%;
+	height: 1.08rem;
+	text-align: right;
+}
+.dstjInfo li>div:last-child img{
+	width: 1.15rem;
+	height: 0.7rem;
+	margin-top: 0.19rem;
+	text-align: right;
+}
+.infoLiTxt01{
+	width: 100%;
+    height: 0.5rem;
+    font-size: 0.14rem;
+    color: #000000;
+    margin-top: 0.2rem;
+}
+.infoLiTxt02{
+	width: 100%;
+	height: 0.34rem;
+	font-size: 0.1rem;
+	color: #999999;
+}
+.infoHead{
+	height: 1.88rem;
+	padding: 0.15rem;
+	font-size: 0.15rem;
+	color: #000000;
+}
+.infoHeadLeft{
+	float: left;
+	width: 46%;
+	line-height: 0.26rem;
+}
+.infoHeadLeft img{
+	width: 100%;
+	height: 0.95rem;
+	margin-bottom: 0.12rem;
+}
+.infoHeadRight{
+	float: right;
+	width: 46%;
+	line-height: 0.26rem;
+}
+.infoHeadRight img{
+	width: 100%;
+	height: 0.95rem;
+	margin-bottom: 0.12rem;
+}
+.infoHeadEmpty{
+	width: 100%;
+	height: 0.1rem;
+	background:rgba(244,245,247,1);
+}
+p {
+	margin: 0;
+}
+
+li p:first-child {
+	float: left;
+	width: 85%;
+	text-align: left;
+}
+
+/*li p:nth-child(2) {
+	float: right;
+	width: 12%;
+	text-align: right;
+	padding-top: 0.18rem;
+}*/
+/*行业百科*/
+.dstjEncy li {
+	height: 0.8rem;
+	
+	border-bottom: 1px solid #F4F5F7;
+	font-size: 0.14rem;
+	color: #000000;
+}
+.dstjEncy li>div:first-child{
+	float: right;
+	width: 68%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	/*display:table;*/
+}
+.dstjEncy li>div:last-child{
+	float: left;
+	width: 30%;
+	height: 0.8rem;
+	/*text-align: right;*/
+}
+.dstjEncy li>div:last-child img{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin-top: 0.1rem;
+	text-align: right;
+}
+.encyHead{
+	width: 100%;
+	height: 2rem;
+	line-height: 0.28rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjEncy01s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.encyHead p{
+	position: relative;
+    top: 1.18rem;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 0.2rem;
+    color: #FFFFFF;
+}
+.encyCont{
+	height: 1.28rem;
+    padding: 0.15rem;
+    font-size: 0.17rem;
+    color: #000000;
+    text-align: center;
+}
+.encyContLeft{
+	float: left;
+	width: 44.5%;
+	height: 0.98rem;
+	line-height: 0.98rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjEncy02s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+.encyContRight{
+	float: right;
+	width: 44.5%;
+	height: 0.98rem;
+	line-height: 0.98rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjEncy03s.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+
+/*实践与市场*/
+.dstjMark li {
+	height: 1.08rem;
+	/*line-height: 0.5rem;*/
+	border-bottom: 1px solid #F4F5F7;
+	font-size: 0.14rem;
+}
+.dstjMark li>div:first-child{
+	float: left;
+	width: 55%;
+	height: 1.08rem;
+	display:table;
+}
+.dstjMark li>div:first-child p{
+	/*vertical-align:middle;   
+    display:table-cell;   */
+}
+.dstjMark li>div:last-child{
+	float: right;
+	width: 45%;
+	height: 1.08rem;
+	text-align: right;
+}
+.dstjMark li>div:last-child img{
+	width: 1.15rem;
+	height: 0.7rem;
+	margin-top: 0.19rem;
+	text-align: right;
+}
+.markHead{
+	width: 100%;
+	height: 2rem;
+	line-height: 0.28rem;
+	background-image: url(http://qiniuapp.hailangkeji.com/dstjMark01.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+}
+.markHead p{
+	position: relative;
+    top: 1.18rem;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 0.2rem;
+    color: #FFFFFF;
+}

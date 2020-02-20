@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>大圣淘金</title>
+
+		<script src="http://qiniuapp.mqkji.cn/jquery.min.js"></script>
+		<script src="http://qiniuapp.mqkji.cn/md5.js"></script>
+		<script src="/dstjmobile/source/js/common.js"></script> 
+		<link rel="stylesheet" href="/dstjmobile/source/css/common.css">
+		<script src="http://qiniuapp.mqkji.cn/jQueryRotate.js"></script> 
+		<!--私有-->
+		<link rel="stylesheet" href="css/octWheelFortune.css">
+		<!-- GrowingIO Analytics code version 2.1 -->
+		<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+		<script type='text/javascript'>
+			! function(e, t, n, g, i) {
+				e[i] = e[i] || function() {
+					(e[i].q = e[i].q || []).push(arguments)
+				}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+			}(window, document, "script", "assets.growingio.com/2.1/gio.js", "gio");
+			gio('init', 'bbf95ba2e2104717', {});
+
+			//custom page code begin here
+
+			//custom page code end here
+
+			gio('send');
+		</script>
+
+	</head>
+
+	<body>
+
+		<img class="bgimg" id="bgimg" disabled="disabled" onclick="return false" src="http://qiniuapp.hailangkeji.com/octWheelFortuneRollHead.png" />
+		<div class="bgdiv" id="bgdiv">
+			<div class="bgdivLeft">积分</div>
+			<div class="bgdivRight">投资</div>
+		</div>
+		
+		<div class="g-content" id="g-content">
+			<div class="g-lottery-case">
+				<div class="g-left">
+					<div class="g-lottery-box">
+						<div class="g-lottery-img">
+						</div>
+						<a class="playbtn" href="javascript:;" rel="external nofollow" rel="external nofollow" title="开始抽奖"></a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="octWheelForCheck">
+			<div>
+				<div class="octWheelForCheckLeft">您当前积分:0</div>
+				<p><span>400积分</span>可抽奖一次</p>
+			</div>
+			<div>
+				<div class="octWheelForCheckRight">当前可抽奖次数:0次</div>
+				<p>单笔现金投资<span>40元</span><br />可抽奖一次</p>
+			</div>
+		</div>
+		
+		<div class="contBoxMyExc">获奖记录<img src="http://qiniuapp.hailangkeji.com/octWheelFortuneArrow.png" /></div>
+		<img class="tipImg" disabled="disabled" onclick="return false" src="http://qiniuapp.hailangkeji.com/octWheelFortuneTip.png" />
+		<div class="FortuneTips">
+			<span>本产品属于高收益、高风险品种</span><br />
+			<span>大圣淘金温馨提示：市场有风险，投资需谨慎</span>
+		</div>
+		<div class="myObtain" id="myObtain">
+			<div class="myObtainImg">
+				<div class="FortuneHint">
+					<p id="drawDesc"></p>
+					<p id="heci"></p>
+				</div>
+				<div class="FortuneBut" onclick="drawObj.closeObtain()">
+					我知道了
+				</div>
+			</div>
+		</div>
+		<div class="mySupernatant" id="mySupernatant">
+			<div onclick="drawObj.closeTips()">
+				<div class="mySupernatantIonic"></div>
+			</div>
+			<div class="mySupernatantTxt" id="myTip">
+				<p>活动规则</p>
+				<p>1、</p>
+				<p>2、活动奖励代金券以积分的形式实时发放到账户</p>
+				<p>3、活动最终解释权归海浪淘金所有</p>
+			</div>
+			<div class="mySupernatantTxt" id="myRecord">
+				<p>获奖记录</p>
+				<ul id="optionBgLi">
+				</ul>
+				<!--<p class="mySupTip">该活动奖励实时到账</p>-->
+			</div>
+		</div>
+		<script src="js/octWheelFortune.js"></script>
+		<script>
+			//rem自适应代码
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth)
+							return;
+						docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+					};
+
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>
